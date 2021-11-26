@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+
+  <siteMapNode url="" title=""  description="">
+
+    <siteMapNode url="~/Account/Home.aspx"   title="Home" description="fa fa-home fa-lg fa-fw" id="MEHome"  />
+
+    <siteMapNode title="Movies" roles="Movies.Access" description="fa fa-film fa-lg fa-fw">
+      <siteMapNode title="Latest Releases" roles="Movies.Access" url="~/Movies/LatestReleases.aspx" description="fa fa-film fa-lg fa-fw" ></siteMapNode>
+      <siteMapNode title="All Movies" roles="Movies.Access" url="~/Movies/Movies.aspx" description="fa fa-film fa-lg fa-fw" ></siteMapNode>
+    </siteMapNode>
+
+	  <siteMapNode title="Purchase Products" roles="" description="fas fa-shopping-bag">
+		  <siteMapNode title="View All Products" roles="Account.Access" url="~/Products/Products.aspx" description="fas fa-shopping-bag" ></siteMapNode>
+	  </siteMapNode>
+
+	<siteMapNode title="My Cart"  roles="Account.Access" url="~/MyCart/MyCart.aspx" description="fas fa-shopping-cart">
+	</siteMapNode>
+
+    <siteMapNode title="My Account" roles="Account.Access" description="fa fa-user fa-lg fa-fw">
+      <siteMapNode title="Profile" roles="Account.Access" url="~/Profile/Profile.aspx" description="fa fa-user fa-lg fa-fw" ></siteMapNode>
+      <siteMapNode title="View Transactions" roles="Account.Access" url="~/Profile/Transactions.aspx" description="fa fa-table fa-lg fa-fw" ></siteMapNode>
+      <siteMapNode title="Deposit Funds" roles ="Account.Access" url="~/Profile/DepositFunds.aspx" description="fa fa-money fa-lg fa-fw"></siteMapNode>
+    </siteMapNode>
+
+    <siteMapNode title="Maintenance" roles="Maintenance.Access" description="fa fa-cogs fa-lg fa-fw">
+     	<siteMapNode title="Add Categories" roles="Maintenance.Access" url="~/Maintenance/AddCategories.aspx" description="fa fa-cogs fa-lg fa-fw" ></siteMapNode>
+		<siteMapNode title="Add Products" roles="Maintenance.Access" url="~/Maintenance/AddProducts.aspx" description="fas fa-cart-plus" ></siteMapNode>
+		<siteMapNode title="Security" roles="Maintenance.Access" url="~/Maintenance/Security.aspx" description="fas fa-user-lock"></siteMapNode>
+      <siteMapNode title="Users" roles="Maintenance.Access" url="~/Maintenance/Users.aspx" description="fas fa-users-cog"></siteMapNode>
+    </siteMapNode>
+    <siteMapNode url="~/Public/About.aspx" title="About" roles="About.Access"  description="fa fa-user fa-lg fa-fw" />
+
+	</siteMapNode>
+ 
+</siteMap>

@@ -1,0 +1,39 @@
+﻿.at-header {
+  cursor: pointer;
+}
+.at-header:hover {
+  background: linear-gradient(#DCE9EA 0%, #C2DBDC 100%);
+}
+.at-detail-value {
+  white-space: pre-wrap;
+}
+.at-buttons {
+  margin: 15px 0;
+}
+.at-filters {
+  display: inline-block;
+  margin-left: 10px;
+}
+.at-filters input {
+  margin: 0px 10px;
+}
+.Grid tbody td {
+  padding: 4px 2px;
+}
+.Grid .Grid-ChildCell {
+  border: none;
+  background: none;
+  padding: 0px !important;
+}
+.Grid tr.at-filtered td {
+  color: #aaa;
+}
+div.at-table-row {
+  background: linear-gradient(#647384 0%, #546170 100%);
+  padding: 5px;
+  color: #fff;
+  margin-top: 15px;
+}
+div.at-table-row span {
+  font-weight: 600;
+}

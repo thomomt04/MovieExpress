@@ -1,0 +1,117 @@
+﻿
+.coverpage{
+	border:solid;
+	border-width:1px;
+	border-color:darkgray;
+	padding: 10px;
+}
+
+.circlecontaineruser {
+	width: 70px;
+	height: 70px;
+	background-color: #F5F5F5;
+	margin: 10px;
+	border-radius: 50%;
+	display: inline-block;
+}
+
+.circlecontaineruserteal {
+	width: 70px;
+	height: 70px;
+	background-color: #23c6c8;
+	color: #FFFFFF;
+	margin: 10px;
+	border-radius: 50%;
+	display: inline-block;
+}
+
+.circlecontainerusergreen {
+	width: 70px;
+	height: 70px;
+	background-color: #1ab394;
+	color: #FFFFFF;
+	margin: 10px;
+	border-radius: 50%;
+	display: inline-block;
+}
+
+.indextotal {
+	width: 80px;
+	height: 80px;
+	color: #808080;
+	margin: 10px;
+	display: inline-block;
+}
+
+.ScorePercentage {
+	position: relative;
+	left: 35px;
+	top: -45px;
+}
+
+.circlecontainer {
+	width: 80px;
+	height: 80px;
+	background-color: #F5F5F5;
+	margin: 10px;
+	border-radius: 50%;
+	display: inline-block;
+}
+
+.circlecontainerteal {
+	width: 80px;
+	height: 80px;
+	background-color: #23c6c8;
+	color: #FFFFFF;
+	margin: 10px;
+	border-radius: 50%;
+	display: inline-block;
+}
+
+.circlecontainergreen {
+	width: 80px;
+	height: 80px;
+	background-color: #1ab394;
+	color: #FFFFFF;
+	margin: 10px;
+	border-radius: 50%;
+	display: inline-block;
+}
+
+	.circlecontainer a:hover {
+		background: #676a6c;
+	}
+
+.circlecenter {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-moz-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-moz-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+}
+
+.LButtons {
+	width: 15px;
+}
+
+.tabs-container .nav-tabs > li.active > a, .tabs-container .nav-tabs > li.active > a:hover, .tabs-container .nav-tabs > li.active > a:focus {
+	/*border: 1px solid #e7eaec;*/
+	/* border-bottom-color: transparent; */
+	/* background-color: #fff; */
+}
+
+/*uratool {
+	width: 20px;
+	height: 20px;
+	background-color: transparent;
+}*/

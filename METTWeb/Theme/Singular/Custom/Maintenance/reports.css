@@ -1,0 +1,415 @@
+﻿div.row label {
+	width: 150px;
+}
+
+input[type=text] {
+	width: 200px;
+	margin-bottom: 10px;
+	height: 32px;
+}
+
+div.wrapper.wrapper-content.animated.fadeInRight {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+button, input, select, textarea {
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+	height: 32px;
+	margin-bottom: 8px;
+}
+
+.navbar-default .nav > li > a:active, .navbar-default .nav > li > a:focus {
+	background-color: #293846;
+	color: white;
+}
+
+.navbar-default .nav > li > a.active, .navbar-default .nav > li > a.active {
+	background-color: #293846;
+	color: white;
+	border-left: 3px solid #19aa8d;
+}
+
+button#Save.btn.btn-success {
+	position: fixed;
+	top: 518px;
+	right: 0px;
+}
+
+button#Undo.btn.btn-primary {
+	float: right;
+	position: fixed;
+	top: 518px;
+	right: 80px;
+	padding: 6px;
+	/* margin-bottom: 20; */
+	width: 60px;
+	height: 36px;
+}
+
+legend {
+	display: block;
+	width: 100%;
+	padding-bottom: 10px;
+	margin-bottom: 25px;
+	font-size: 14px;
+	line-height: inherit;
+	color: #7a7a7a;
+	border: 0;
+	font-weight: 600;
+	margin-left: 15px;
+	padding-bottom: 15px;
+	padding-top: 15px;
+}
+
+	legend:before {
+		/*	content: "\f013";*/
+		font-family: FontAwesome;
+		font-style: normal;
+		font-weight: normal;
+		text-decoration: inherit;
+		/*--adjust as necessary--*/
+		color: #7a7a7a;
+		font-size: 14px;
+		padding-right: 0.5em;
+		padding-left: 0.1em;
+		position: absolute;
+		top: 34px;
+		left: 5px;
+		margin-left: 0px;
+	}
+
+button#Save {
+	float: right;
+	/* margin-bottom: 15px; */
+	/* width: 150px; */
+	/* height: 35px; */
+	padding: 0px;
+	text-align: center;
+}
+
+#Undo {
+	padding: 0px;
+}
+
+input[type=text] {
+	width: 200px;
+}
+
+h1 {
+	font-size: 26px;
+}
+
+div.row label {
+	width: 150px;
+}
+
+input[type=text] {
+	width: 200px;
+	margin-bottom: 10px;
+	height: 32px;
+}
+
+div.wrapper.wrapper-content.animated.fadeInRight {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+button, input, select, textarea {
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+	height: 32px;
+	margin-bottom: 8px;
+}
+
+.navbar-default .nav > li > a:active, .navbar-default .nav > li > a:focus {
+	background-color: #293846;
+	color: white;
+}
+
+.navbar-default .nav > li > a.active, .navbar-default .nav > li > a.active {
+	background-color: #293846;
+	color: white;
+	border-left: 3px solid #19aa8d;
+}
+
+button#Save {
+	float: right;
+	/* margin-bottom: 15px; */
+	/* width: 150px; */
+	/* height: 35px; */
+	padding: 0px;
+	text-align: center;
+}
+
+#Undo {
+	padding: 0px;
+}
+
+input[type=text] {
+	width: 200px;
+}
+
+h1 {
+	font-size: 26px;
+}
+
+legend {
+	display: block;
+	width: 100%;
+	padding-bottom: 10px;
+	margin-bottom: 25px;
+	font-size: 14px;
+	line-height: inherit;
+	color: #7a7a7a;
+	border: 0;
+	font-weight: 600;
+	margin-left: 15px;
+	padding-bottom: 15px;
+	padding-top: 15px;
+}
+
+	legend:before {
+		/*	content: "\f013";*/
+		font-family: FontAwesome;
+		font-style: normal;
+		font-weight: normal;
+		text-decoration: inherit;
+		/*--adjust as necessary--*/
+		color: #7a7a7a;
+		font-size: 14px;
+		padding-right: 0.5em;
+		padding-left: 0.1em;
+		position: absolute;
+		top: 34px;
+		left: 5px;
+		margin-left: 0px;
+	}
+
+/*div.DivToolbar {
+	display: none;
+}*/
+
+#Undo {
+	float: right;
+}
+
+.fa-undo.fa {
+	display: none;
+}
+
+
+
+button#Save.btn.btn-success {
+	position: fixed;
+	top: 518px;
+	right: 0px;
+}
+
+button#Undo.btn.btn-primary {
+	float: right;
+	position: fixed;
+	top: 518px;
+	right: 80px;
+	padding: 6px;
+	/* margin-bottom: 20; */
+	width: 60px;
+	height: 36px;
+}
+
+div.Heading {
+	background-color: transparent !important;
+	font-size: 24px;
+	border-bottom: 1px solid #ddd;
+	padding: 5px;
+}
+
+ul, ol {
+	padding-left: 10px;
+}
+
+.PaddingLi {
+	padding: 15px;
+	list-style: none;
+}
+
+label {
+	margin-left: 20px;
+}
+
+input#ProductID_679a2236-e638-41af-ba1c-6d92abc2a6e8.ComboBox {
+	margin-left: 20px;
+}
+
+input#YearID_4be7cf02-ce34-45c7-8d2f-5736bffb7d4d.ComboBox {
+	margin-left: 40px;
+}
+
+/*labels command fields*/
+
+label[for^="DateTo"] {
+	margin-left: 37px;
+}
+
+#Data {
+	margin-left: 158px;
+	margin-top: 10px;
+	width: 150px;
+	height: 32px;
+	font-size: 13px;
+}
+
+#GridData {
+	margin-top: 10px;
+	width: 150px;
+	height: 32px;
+	font-size: 13px;
+}
+
+label[for^="LoanNumber"] {
+	margin-left: -1px;
+}
+
+label[for^="From"] {
+	margin-left: 48px;
+}
+
+label[for^="To"] {
+	margin-left: 66px;
+}
+
+input.DatePicker.hasDatepicker {
+	height: 32px;
+}
+/*labels command fields*/
+.ReportCriteriaRow label {
+	width: 20%;
+	display: inline-block;
+}
+
+button img {
+	padding: 0px;
+	padding-right: 5px;
+	width: 24px;
+}
+
+.ReportSection {
+	/*float: left;
+	width: 100%;
+	border-radius: 3px;*/
+	margin: 5px;
+}
+
+	.ReportSection .Heading {
+		background-color: transparent;
+		border-radius: 3px 3px 0 0;
+		padding: 8px;
+		font-size: 14px;
+		margin-left: 10px;
+		margin-bottom: 10px;
+	}
+
+	.ReportSection a {
+		text-decoration: none;
+		font-size: 13.5px;
+		color: #7a7a7a;
+		padding-left: 10px;
+		text-decoration: underline;
+		font-weight: 600;
+		color: #337ab7;
+	}
+
+		.ReportSection a:hover {
+			color: #7a7a7a;
+		}
+
+
+	.ReportSection li {
+		font-size: 11pt;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		list-style: none;
+	}
+
+#DateTo_0122d1f2-708d-44e2-85a0-71698df7215a {
+	margin-right: 20px;
+}
+
+#containerWidth > div > div > fieldset > div:nth-child(3) > label {
+	margin-right: 23px;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	#Data {
+		margin-left: 95px;
+	}
+
+	label[for^="LoanNumber"] {
+		margin-left: -5px;
+	}
+}
+
+@media screen and (min-width:768px) and (max-width:1366px) {
+	#Data {
+		margin-left: 94px;
+	}
+}
+
+@media screen (min-width:768px) and (max-width:1366px) {
+	#Data {
+		margin-left: 95px;
+	}
+}
+
+.ReportSection .Heading:before {
+	/*content: "\f1c1"; */
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	text-decoration: inherit;
+	/*--adjust as necessary--*/
+	color: #7a7a7a;
+	font-size: 14px;
+	padding-right: 20px;
+	padding-left: 0.1em;
+	position: absolute;
+	top: 29px;
+	left: 0px;
+	margin-left: 6px;
+}
+
+div.DivToolbar > h2 {
+	font-size: 14px;
+	font-weight: 600;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 16px;
+	padding-left: 20px;
+}
+
+.ui-datepicker select.ui-datepicker-month, .ui-datepicker select.ui-datepicker-year {
+	width: 49%;
+	color: #7a7a7a;
+}
+
+
+.nav > li.active {
+	border-left: 4px solid #19aa8d;
+	background: #293846;
+}
+
+.panel {
+	border-radius: 0px;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+.undp-skin .nav > li.active > a {
+	border-left: none!important;
+}
+.ImgIcon.ImgValidation {
+	float: none; 
+	margin-top: 0px !important;
+	margin-right:0px;
+}
+

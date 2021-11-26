@@ -1,0 +1,125 @@
+﻿
+/*div.DivToolbar {
+	display: none;
+}*/
+
+legend {
+	display: block;
+	width: 100%;
+	padding-bottom: 10px;
+	margin-bottom: 25px;
+	font-size: 14px;
+	line-height: inherit;
+	color: #7a7a7a;
+	border: 0;
+	border-bottom: 1px solid #e5e5e5;
+	font-weight: 600;
+	margin-left: 15px;
+	padding-top: 15px;
+}
+
+	legend:before {
+		content: "\f013";
+		font-family: FontAwesome;
+		font-style: normal;
+		font-weight: normal;
+		text-decoration: inherit;
+		color: #7a7a7a;
+		font-size: 14px;
+		padding-right: 0.5em;
+		padding-left: 0.1em;
+		position: absolute;
+		top: 16px;
+		left: -10px;
+		margin-left: 20px;
+	}
+
+button#EditRoles.btn-sm.btn.btn-default {
+	color: #23c6c8;
+	border-color: #23c6c8;
+	background: transparent;
+	height: 35px;
+	width: 90px;
+	line-height: 8px;
+}
+
+	button#EditRoles.btn-sm.btn.btn-default:hover,
+	button#EditRoles.btn-sm.btn.btn-default:focus, .button#EditRoles.btn-sm.btn.btn-default:active,
+	button#EditRoles.btn-sm.btn.btn-default.active,
+	.open .dropdown-toggle button#EditRoles.btn-sm.btn.btn-default,
+	button#EditRoles.btn-sm.btn.btn-default:active:focus,
+	button#EditRoles.btn-sm.btn.btn-defaults:active:hover,
+	button#EditRoles.btn-sm.btn.btn-default.active:hover,
+	button#EditRoles.btn-sm.btn.btn-default.active:focus {
+		background-color: #1a7bb9;
+		border-color: #1a7bb9;
+		color: #FFFFFF;
+	}
+
+.fa-edit.fa {
+	display: none;
+}
+div.wrapper.wrapper-content.animated.fadeInRight {
+	background: white;
+	margin-top: 15px;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+
+input[type=text] {
+	width: 200px;
+	margin-bottom: 10px;
+	height: 28px;
+	padding:8px;
+}
+.Grid .RButtons .btn {
+	padding: 8px 8px 8px 8px;
+	font-size: 14px;
+	margin: -2px 0;
+}
+img{
+	display:none;
+}
+button.btn-primary.btn.btn-xs {
+	height:35px;
+	width:95px;
+	font-size:14px;
+}
+.fa.fa-thumbs-up{
+	display:none;
+}
+.fa.fa-thumbs-down {
+	display: none;
+}
+button.btn-info.btn.btn-xs {
+	height: 35px;
+	width: 95px;
+	font-size: 14px;
+}
+.fa.fa-plus-circle {
+	display:none;
+}
+button.btn-primary.btn-sm.btn {
+	height: 35px;
+	width: 95px;
+	font-size: 14px;
+}
+.ValBorderErr {
+	border: 1px solid #d22 !important;
+}
+ div.DivToolbar > h2{
+	 font-size:12px;
+	 display:none;
+}
+#Save {
+	float: right;
+	position: relative;
+	background: #1ab394;
+	color: #fff;
+	border: 1px solid #1ab394;
+	top:10px;
+	right:40px;
+}
+.fa.fa-floppy-o {
+	display:none;
+}

@@ -1,0 +1,67 @@
+<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
+<%@ Master Language="C#" AutoEventWireup="false" CodeBehind="/SiteLoggedOut.Master.cs" Inherits="MEWeb.SiteLoggedOut" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head id="Head1" runat="server">
+  <title></title>
+  <!--<link href="~/Styles/jquery-ui-1.8.19.custom.css" rel="stylesheet" type="text/css" />-->
+  <link href="~/Theme/Singular/jquery-ui-1.8.19.custom.css" rel="stylesheet" type="text/css" />
+  <%= Singular.Web.CSSFile.RenderLibraryStyles() %>
+  <%= Singular.Web.CSSFile.RenderStyleTag("~/Theme/Singular/Site.css")%>
+  <%= Singular.Web.CSSFile.IncludeFontAwesome() %>
+  <%= Singular.Web.Scripts.Scripts.RenderLibraryScripts() %>
+  <%--	@media tag reference --%>
+  <style type="text/css" media="screen, print"></style>
+  <%--	@media tag reference --%>
+  <!--Main CSS -->
+  <link href="Theme/Inspinia/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="Theme/Inspinia/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="Theme/Singular/Site.css" rel="stylesheet" />
+  <link href="Theme/Singular/css/loginandlockscreen.css" rel="stylesheet" />
+  <link href="Theme/Singular/css/inputs.css" rel="stylesheet" />
+  <link href="Theme/Singular/css/custombase.css" rel="stylesheet" />
+  <!-- Javascript -->
+  <script type="text/javascript" src="Theme/Inspinia/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="../Helpers/MEHelpers.js"></script>
+  <script type="text/javascript" src="../Scripts/noty/packaged/jquery.noty.packaged.js"></script>
+  <script type="text/javascript" src="../Scripts/noty/layouts/topRight.js"></script>
+  <script type="text/javascript" src="../Scripts/noty/layouts/bottom.js"></script>
+  <script type="text/javascript" src="../Scripts/noty/layouts/bottomCenter.js"></script>
+  <script type="text/javascript" src="../Scripts/noty/layouts/bottomLeft.js"></script>
+  <script type="text/javascript" src="../Scripts/noty/layouts/bottomRight.js"></script>
+  <script type="text/javascript" src="../Scripts/noty/layouts/center.js"></script>
+  <script type="text/javascript" src="../Scripts/noty/layouts/centerLeft.js"></script>
+  <script type="text/javascript" src="../Scripts/noty/layouts/centerRight.js"></script>
+  <script type="text/javascript" src="../Scripts/noty/layouts/inline.js"></script>
+  <script type="text/javascript" src="../Scripts/noty/layouts/top.js"></script>
+  <script type="text/javascript" src="../Scripts/noty/layouts/topCenter.js"></script>
+  <script type="text/javascript" src="../Scripts/noty/layouts/topLeft.js"></script>
+  <style>
+    #example2 {
+      padding: 10px;
+      box-shadow: 5px 10px 18px #888888;
+    }
+  </style>
+  <asp:ContentPlaceHolder ID="HeadContent1" runat="server">
+  </asp:ContentPlaceHolder>
+</head>
+<body>
+  <form id="Form2" runat="server">
+    <div class="col-md-12 col-sm-12 col-xs-12 PaddingleftRightNone backgroundImage" id="LoadingOverlay" data-bind="visible: true">
+      <div id="example2" class="middle-box text-center loginscreen animated fadeInDown">
+        <div>
+          <div>
+            <img style="width: 36%;" src="../Theme/Singular/css/Images/Logos/default_logo.png" />
+          </div>
+          <asp:ScriptManager ID="METTMain1" runat="server" AjaxFrameworkMode="Disabled" />
+          <asp:ContentPlaceHolder ID="MainContent1" runat="server" />
+          <singular:PageModelRenderer ID="pmrMain" runat="server" />
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+  </form>
+</body>
+</html>

@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ALTER_InsSecurityRole" xml:space="preserve">
+    <value>ALTER PROCEDURE InsProcs.insSecurityRole
+(
+	@SecurityRoleID Int OUTPUT,
+	@SectionName VarChar(50),
+	@SecurityRole VarChar(50),
+	@Description VarChar(100),
+	@AutoGeneratedInd Bit = 1
+)
+AS
+
+
+INSERT INTO SecurityRoles
+	(SectionName, SecurityRole, Description, AutoGeneratedInd)
+VALUES
+	(@SectionName, @SecurityRole, @Description, @AutoGeneratedInd)
+
+	
+SET @SecurityRoleID = SCOPE_IDENTITY()
+
+RETURN</value>
+  </data>
+  <data name="CREATE_GetTableReferences" xml:space="preserve">
+    <value>CREATE PROCEDURE [GetProcs].[getTableReferenceList]
+(
+	@TableToCheck VarChar(40), 
+	@Key Int
+)
+As
+
+DECLARE @References TABLE (
+			TableSchema VarChar(150),
+			TableName VarChar(150), 
+			ColumnName VarChar(100), 
+			ConstraintName VarChar(150), 
+			ConstraintDescription VarChar(1024),
+			NoOfReferences Int
+)
+
+INSERT INTO @References
+SELECT 
+		CONVERT(VarChar(150), FK.TABLE_SCHEMA) As TableSchema,
+		CONVERT(VarChar(150), FK.TABLE_NAME) As TableName,
+		CONVERT(VarChar(100), CU.COLUMN_NAME) As ColumnName,
+		CONVERT(VarChar(150), C.CONSTRAINT_NAME) As ConstraintName,
+		CONVERT(VarChar(1024), ex.Value) As ConstraintDescription,
+		0 As NoOfRefereces
+FROM INFORMATION_SCHEMA.REFERENTIAL_CONSTRAINTS C
+INNER JOIN INFORMATION_SCHEMA.TABLE_CONSTRAINTS FK ON C.CONSTRAINT_NAME = FK.CONSTRAINT_NAME
+INNER JOIN INFORMATION_SCHEMA.TABLE_CONSTRAINTS PK ON C.UNIQUE_CONSTRAINT_NAME = PK.CONSTRAINT_NAME
+INNER JOIN INFORMATION_SCHEMA.KEY_COLUMN_USAGE CU ON C.CONSTRAINT_NAME = CU.CONSTRAINT_NAME
+INNER JOIN	
+(
+		SELECT i1.TABLE_NAME, i2.COLUMN_NAME
+		FROM INFORMATION_SCHEMA.TABLE_CONSTRAINTS i1
+	  INNER JOIN      INFORMATION_SCHEMA.KEY_COLUMN_USAGE i2 ON i1.CONSTRAINT_NAME = i2.CONSTRAINT_NAME
+    WHERE i1.CONSTRAINT_TYPE = 'PRIMARY KEY'
+) PT ON PT.TABLE_NAME = PK.TABLE_NAME
+INNER JOIN sys.objects so ON so.name = C.CONSTRAINT_NAME
+LEFT JOIN sys.extended_properties ex ON so.object_id = ex.major_id
+WHERE 		PK.TABLE_NAME = @TableToCheck 
+
+DECLARE @TableSchema VarChar(100),
+	@TableName VarChar(50), 
+	@ColumnName VarChar(50), 
+	@Select NVarChar(120), 
+	@NoOfReferences Int
+
+DECLARE @Rows TABLE (Num Int)
+
+WHILE Exists(SELECT * FROM @References WHERE NoOfReferences = 0)
+	BEGIN
+		
+		SELECT TOP 1 @TableName = TableName, @ColumnName = ColumnName, @TableSchema = TableSchema
+		FROM @References
+		WHERE NoOfReferences = 0
+
+		-- BUILD UP THE SELECT STATEMENT
+		SET @Select = 'SELECT Count(*) As Num FROM ' + @TableSchema + '.' + @TableName + 
+					' WHERE ' + @ColumnName + ' = ' + CONVERT(VarChar, @Key)
+	
+		INSERT INTO @Rows 
+		Exec sp_executesql @Select
+	
+		SELECT @NoOfReferences = Num FROM @Rows
+	
+		DELETE FROM @Rows
+	
+		IF @NoOfReferences &gt; 0 
+		BEGIN
+			UPDATE @References
+				SET NoOfReferences = @NoOfReferences
+			WHERE TableName = @TableName
+				AND ColumnName = @ColumnName
+				AND NoOfReferences = 0
+		END
+		ELSE
+		BEGIN
+			DELETE FROM @References 
+			WHERE TableName = @TableName
+				AND ColumnName = @ColumnName
+				AND NoOfReferences = 0
+		END
+	END
+
+	SELECT TableName, ColumnName,	ConstraintName, ConstraintDescription, NoOfReferences FROM @References
+
+	RETURN</value>
+  </data>
+  <data name="CREATE_InsSecurityRole" xml:space="preserve">
+    <value>CREATE PROCEDURE InsProcs.insSecurityRole
+(
+	@SecurityRoleID Int OUTPUT,
+	@SectionName VarChar(50),
+	@SecurityRole VarChar(50),
+	@Description VarChar(100),
+	@AutoGeneratedInd Bit = 1
+)
+AS
+
+
+INSERT INTO SecurityRoles
+	(SectionName, SecurityRole, Description, AutoGeneratedInd)
+VALUES
+	(@SectionName, @SecurityRole, @Description, @AutoGeneratedInd)
+
+	
+SET @SecurityRoleID = SCOPE_IDENTITY()
+
+RETURN</value>
+  </data>
+  <data name="GetDatabases" xml:space="preserve">
+    <value> SELECT name 
+FROM sys.databases 
+WHERE name NOT IN 
+(
+	'master',
+	'tempdb',
+	'model',
+	'msdb'
+)
+ORDER BY name</value>
+  </data>
+  <data name="getDuplicateRecord" xml:space="preserve">
+    <value>CREATE PROCEDURE [GetProcs].[getDuplicateRecord]
+(
+	@XmlUniqueProperties xml, 
+	@XmlUniqueValues xml, 
+	@XmlDisplayProperties xml,
+	@PrimaryKeyProperty VarChar(100), 
+	@PrimaryKeyValue Int, 
+	@TableName VarChar(200)
+)
+AS
+
+-- WAITFOR DELAY '00:00:01'
+
+DECLARE @FieldList VarChar(Max), @CriteriaList VarChar(Max)
+
+SELECT @FieldList = '', @CriteriaList = ''
+
+SELECT @FieldList = @FieldList + ParamValues.Value.value('.','VarChar(100)') + ', '
+FROM @XmlDisplayProperties.nodes('/Node/Value') AS ParamValues(Value)
+
+SELECT @CriteriaList = @CriteriaList + UniqueProperty + ' = ' + UniqueValue + ' AND '
+FROM
+(
+	SELECT ROW_NUMBER() Over (Order By Ord) As Link, UniqueProperty
+	FROM
+	(
+		SELECT 1 As Ord,
+			ParamValues.Value.value('.','VarChar(100)') AS UniqueProperty
+		FROM @XmlUniqueProperties.nodes('/Node/Value') AS ParamValues(Value)
+	) x
+) Props
+INNER JOIN
+(
+	SELECT ROW_NUMBER() Over (Order By Ord) As Link, UniqueValue
+	FROM
+	(
+		SELECT 1 As Ord,
+			ParamValues.Value.value('.','VarChar(100)') AS UniqueValue
+		FROM @XmlUniqueValues.nodes('/Node/Value') AS ParamValues(Value)
+	) x
+) Vals ON Props.Link = Vals.Link
+	
+	
+SELECT @FieldList = SUBSTRING(@FieldList, 0, LEN(@FieldList)),
+			@CriteriaList = @CriteriaList + @PrimaryKeyProperty + ' &lt;&gt; ' + CONVERT(VarChar, @PrimaryKeyValue)
+	
+DECLARE @Sql VarChar(Max)
+
+SET @Sql = 
+'SELECT ' + @FieldList + '
+FROM ' + @TableName + '
+WHERE ' + @CriteriaList
+
+	
+EXEC(@Sql)</value>
+  </data>
+  <data name="GetStoredProcedures" xml:space="preserve">
+    <value>SELECT SPECIFIC_SCHEMA As [Schema], SPECIFIC_NAME AS ProcName
+FROM INFORMATION_SCHEMA.ROUTINES
+WHERE LOWER(SPECIFIC_SCHEMA) = LOWER(@SchemaName)
+ORDER BY SPECIFIC_SCHEMA, SPECIFIC_NAME
+
+SELECT SPECIFIC_SCHEMA As [Schema], SPECIFIC_NAME AS ProcName,
+	PARAMETER_NAME As ParameterName, DATA_TYPE As DataType
+FROM INFORMATION_SCHEMA.PARAMETERS
+WHERE LOWER(SPECIFIC_SCHEMA) = LOWER(@SchemaName)
+ORDER BY SPECIFIC_SCHEMA, SPECIFIC_NAME, ORDINAL_POSITION</value>
+  </data>
+  <data name="SetContextInfo" xml:space="preserve">
+    <value>DECLARE @CONTEXT_INFO VarBinary(128)
+	SET @CONTEXT_INFO = CONVERT(VarBinary(128), CONVERT(VarBinary(4), @UserID) + CONVERT(VarBinary(2), DB_ID()))
+	SET CONTEXT_INFO @CONTEXT_INFO</value>
+  </data>
+</root>

@@ -1,0 +1,31 @@
+﻿@charset "utf-8";
+
+
+.lightTip {
+}
+
+	.lightTip .content {
+		width: 310px;
+		padding: 10px;
+		border: 2px solid #e2e2e2;
+		-moz-border-radius: 5px;
+		-webkit-border-radius: 5px;
+		background: #e5e5e5;
+		color: #7a7a7a;
+		z-index:1;
+	}
+
+	.lightTip .bottom {
+		content: '';
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 0;
+		height: 0;
+		border: 13px solid transparent;
+		border-top-color: #e5e5e5;
+		border-bottom: 0;
+		margin-left: -13px;
+		margin-bottom: -13px;
+		z-index: 1;
+	}

@@ -1,0 +1,139 @@
+﻿
+
+/* 
+	 Input Stylesheet
+    Author: Kelly Render
+    Date: 28 Feb 2018
+    Purpose: This holds all the styles the field inputs, input erros and inputs as part of form controls
+*/
+/* INPUTS */
+.inline {
+    display: inline-block !important;
+}
+
+.input-s-sm {
+    width: 120px;
+}
+
+.input-s {
+    width: 200px;
+}
+
+.input-s-lg {
+    width: 250px;
+}
+
+.i-checks {
+    padding-left: 0;
+}
+
+.checkbox20 {
+    vertical-align: middle;
+    position: relative;
+    height: 20px;
+    width: 20px;
+    padding: 0 !important;
+    margin: 0;
+    top: -3px;
+    margin-left: 5px !important;
+}
+
+.form-control,
+.single-line {
+    background-color: #FFFFFF;
+    background-image: none;
+    border: 1px solid #e5e6e7;
+    border-radius: 1px;
+    color: inherit;
+    display: block;
+    padding: 6px 12px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    width: 100%;
+    font-size: 14px;
+}
+
+    .form-control:focus,
+    .single-line:focus {
+        border-color: #1ab394;
+    }
+
+.has-success .form-control,
+.has-success .form-control:focus {
+    border-color: #1ab394;
+}
+
+.has-warning .form-control,
+.has-warning .form-control:focus {
+    border-color: #f8ac59;
+}
+
+.has-error .form-control,
+.has-error .form-control:focus {
+    border-color: #ed5565;
+}
+
+.has-success .control-label {
+    color: #1ab394;
+}
+
+.has-warning .control-label {
+    color: #f8ac59;
+}
+
+.has-error .control-label {
+    color: #ed5565;
+}
+
+.input-group-addon {
+    background-color: #fff;
+    border: 1px solid #E5E6E7;
+    border-radius: 1px;
+    color: inherit;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    padding: 6px 12px;
+    text-align: center;
+}
+
+.spinner-buttons.input-group-btn .btn-xs {
+    line-height: 1.13;
+}
+
+.spinner-buttons.input-group-btn {
+    width: 20%;
+}
+
+.noUi-connect {
+    background: none repeat scroll 0 0 #1ab394;
+    box-shadow: none;
+}
+
+.slider_red .noUi-connect {
+    background: none repeat scroll 0 0 #ed5565;
+    box-shadow: none;
+}
+/* UI Sortable */
+.ui-sortable .ibox-title {
+    cursor: move;
+}
+
+.ui-sortable-placeholder {
+    border: 1px dashed #cecece !important;
+    visibility: visible !important;
+    background: #e7eaec;
+}
+
+.ibox.ui-sortable-placeholder {
+    margin: 0 0 23px !important;
+}
+/* Validation */
+label.error {
+    color: #cc5965;
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.form-control.error {
+    border: 1px dotted #cc5965;
+}

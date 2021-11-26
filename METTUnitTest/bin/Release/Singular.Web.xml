@@ -1,0 +1,1782 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Singular.Web
+</name>
+</assembly>
+<members>
+<member name="T:Singular.Web.My.Resources.ControlScripts">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Singular.Web.My.Resources.ControlScripts.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Singular.Web.My.Resources.ControlScripts.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:Singular.Web.My.Resources.ControlScripts.SecurityControlSelectAll">
+<summary>
+  Looks up a localized string similar to function SelectAll(Selected) {
+
+            for (var i = 0; i &lt; ViewModel.ROSecurityRoleHeaderList().length; i++) {
+
+                for (var j = 0; j &lt; ViewModel.ROSecurityRoleHeaderList()[i].ROSecurityRoleList().length; j++) {
+
+                    ViewModel.ROSecurityRoleHeaderList()[i].ROSecurityRoleList()[j].SelectedInd(Selected);
+
+                };
+
+            };
+
+        };.
+</summary>
+</member>
+<member name="T:Singular.Web.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Singular.Web.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Singular.Web.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:Singular.Web.My.Resources.Resources.GoogleAnalyticsInclude">
+<summary>
+  Looks up a localized string similar to &lt;script&gt;
+  (function(i,s,o,g,r,a,m){{i[&apos;GoogleAnalyticsObject&apos;]=r;i[r]=i[r]||function(){{
+  (i[r].q=i[r].q||[]).push(arguments)}},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  }})(window,document,&apos;script&apos;,&apos;//www.google-analytics.com/analytics.js&apos;,&apos;ga&apos;);
+
+  ga(&apos;create&apos;, &apos;{0}&apos;, &apos;{1}&apos;);
+  ga(&apos;send&apos;, &apos;pageview&apos;);
+
+&lt;/script&gt;.
+</summary>
+</member>
+<member name="P:Singular.Web.ApplicationSettings.SettingsApplication.StoreViewStateInSession">
+ <summary>
+ Tells the Singular Library so store the View State on the server, instead of Sending it to the Browser.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Singular.Web.ApplicationSettings.SettingsApplication.RenameMasterContentControls">
+ <summary>
+ Renames the Master Pages Content controls to A,B,C etc. As these are prefixed to child control names and make page sizes bigger.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Singular.Web.CustomControls.Bootstrap.Button`1.mPostBackType">
+ <summary>
+ Indicates what will happen when the button is clicked on the browser.
+ If PostBackType = Ajax, then set the Argument, Validate and LoadingText properties
+ If PostBackType = Full, then set the Argument and Validate properties
+ </summary>
+</member>
+<member name="T:Singular.Web.CustomControls.Bootstrap.Table`2">
+ <summary>
+ Creates a table / grid and creates a row for each item in the provided list.
+ </summary>
+</member>
+<member name="M:Singular.Web.CustomControls.Bootstrap.Table`2.DataRowTemplate.AddColumn(System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)">
+ <summary>
+ Adds a column with nothing in it.
+ </summary>
+</member>
+<member name="M:Singular.Web.CustomControls.Bootstrap.Table`2.DataRowTemplate.AddColumn(System.Linq.Expressions.Expression{System.Func{`1,System.Object}},System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)">
+ <summary>
+ Adds an editable Column. 
+ </summary>
+ <param name="le">The property to bind the column to.</param>
+</member>
+<member name="M:Singular.Web.CustomControls.Bootstrap.Table`2.DataRowTemplate.AddColumn(System.Reflection.PropertyInfo,System.String,System.String)">
+ <summary>
+ Adds an editable Column. 
+ </summary>
+</member>
+<member name="M:Singular.Web.CustomControls.Bootstrap.Table`2.DataRowTemplate.AddColumn(System.Linq.Expressions.Expression{System.Func{`1,System.Object}},System.Int32,System.String,System.String)">
+ <summary>
+ Adds an editable Column. 
+ </summary>
+ <param name="le">The property to bind the column to.</param>
+</member>
+<member name="M:Singular.Web.CustomControls.Bootstrap.Table`2.DataRowTemplate.AddReadOnlyColumn(System.Linq.Expressions.Expression{System.Func{`1,System.Object}},System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.Nullable{System.Int32},System.String)">
+ <summary>
+ Adds a Column that displays the property but doesn't allow it to be edited.
+ </summary>
+ <param name="le">The Property to Display</param>
+</member>
+<member name="M:Singular.Web.CustomControls.Bootstrap.Table`2.DataRowTemplate.AddReadOnlyColumn(System.Reflection.PropertyInfo,System.String,System.String)">
+ <summary>
+ Adds a Column that displays the property but doesn't allow it to be edited.
+ </summary>
+</member>
+<member name="M:Singular.Web.CustomControls.Bootstrap.Table`2.DataRowTemplate.AddReadOnlyColumn(System.Linq.Expressions.Expression{System.Func{`1,System.Object}},System.Int32,System.String,System.String)">
+ <summary>
+ Adds a Column that displays the property but doesn't allow it to be edited.
+ </summary>
+ <param name="le">The Property to Display</param>
+</member>
+<member name="M:Singular.Web.CustomControls.Bootstrap.Table`2.TableFooterRow.AddSumColumn(System.Linq.Expressions.Expression{System.Func{`1,System.Object}})">
+ <summary>
+ Adds a footer column that displays the sum of all the items in the list. 
+ </summary>
+</member>
+<member name="M:Singular.Web.CustomControls.Bootstrap.Table`2.TableFooterRow.AddAverageColumn(System.Linq.Expressions.Expression{System.Func{`1,System.Object}})">
+ <summary>
+ Adds a footer column that displays the average of all the items in the list. 
+ </summary>
+</member>
+<member name="M:Singular.Web.CustomControls.Bootstrap.Table`2.TableFooterRow.AddAverageNZColumn(System.Linq.Expressions.Expression{System.Func{`1,System.Object}})">
+ <summary>
+ Adds a footer column that displays the average of all the items in the list. Only items with a non zero value are included.
+ </summary>
+</member>
+<member name="M:Singular.Web.CustomControls.Bootstrap.Table`2.AddButton(System.String)">
+ <summary>
+ Adds a button to the data rows last cell. E.g. if you want to add a select button.
+ </summary>
+ <param name="ButtonText">The text of the button.</param>
+</member>
+<member name="M:Singular.Web.CustomControls.Bootstrap.Table`2.AddRow">
+ <summary>
+ Adds a row to each data row. E.g. If you want each item in a list to have 2 rows in the table.
+ </summary>
+</member>
+<member name="M:Singular.Web.CustomControls.Bootstrap.Table`2.AutoGenerateColumns">
+ <summary>
+ Adds a column for each browsable property in the object. List properties are added as child tables.
+ </summary>
+</member>
+<member name="P:Singular.Web.CustomControls.BootstrapButton`1.mPostBackType">
+ <summary>
+ Indicates what will happen when the button is clicked on the browser.
+ If PostBackType = Ajax, then set the Argument, Validate and LoadingText properties
+ If PostBackType = Full, then set the Argument and Validate properties
+ </summary>
+</member>
+<member name="T:Singular.Web.CustomControls.BootstrapTable`2">
+ <summary>
+ Creates a table / grid and creates a row for each item in the provided list.
+ </summary>
+</member>
+<member name="M:Singular.Web.CustomControls.BootstrapTable`2.DataRowTemplate.AddColumn(System.String)">
+ <summary>
+ Adds a column with nothing in it.
+ </summary>
+</member>
+<member name="M:Singular.Web.CustomControls.BootstrapTable`2.DataRowTemplate.AddColumn(System.Linq.Expressions.Expression{System.Func{`1,System.Object}},System.String)">
+ <summary>
+ Adds an editable Column. 
+ </summary>
+ <param name="le">The property to bind the column to.</param>
+</member>
+<member name="M:Singular.Web.CustomControls.BootstrapTable`2.DataRowTemplate.AddColumn(System.Reflection.PropertyInfo,System.String)">
+ <summary>
+ Adds an editable Column. 
+ </summary>
+</member>
+<member name="M:Singular.Web.CustomControls.BootstrapTable`2.DataRowTemplate.AddColumn(System.Linq.Expressions.Expression{System.Func{`1,System.Object}},System.Int32,System.String)">
+ <summary>
+ Adds an editable Column. 
+ </summary>
+ <param name="le">The property to bind the column to.</param>
+</member>
+<member name="M:Singular.Web.CustomControls.BootstrapTable`2.DataRowTemplate.AddReadOnlyColumn(System.Linq.Expressions.Expression{System.Func{`1,System.Object}},System.String)">
+ <summary>
+ Adds a Column that displays the property but doesn't allow it to be edited.
+ </summary>
+ <param name="le">The Property to Display</param>
+</member>
+<member name="M:Singular.Web.CustomControls.BootstrapTable`2.DataRowTemplate.AddReadOnlyColumn(System.Reflection.PropertyInfo,System.String)">
+ <summary>
+ Adds a Column that displays the property but doesn't allow it to be edited.
+ </summary>
+</member>
+<member name="M:Singular.Web.CustomControls.BootstrapTable`2.DataRowTemplate.AddReadOnlyColumn(System.Linq.Expressions.Expression{System.Func{`1,System.Object}},System.Int32,System.String)">
+ <summary>
+ Adds a Column that displays the property but doesn't allow it to be edited.
+ </summary>
+ <param name="le">The Property to Display</param>
+</member>
+<member name="M:Singular.Web.CustomControls.BootstrapTable`2.TableFooterRow.AddSumColumn(System.Linq.Expressions.Expression{System.Func{`1,System.Object}})">
+ <summary>
+ Adds a footer column that displays the sum of all the items in the list. 
+ </summary>
+</member>
+<member name="M:Singular.Web.CustomControls.BootstrapTable`2.TableFooterRow.AddAverageColumn(System.Linq.Expressions.Expression{System.Func{`1,System.Object}})">
+ <summary>
+ Adds a footer column that displays the average of all the items in the list. 
+ </summary>
+</member>
+<member name="M:Singular.Web.CustomControls.BootstrapTable`2.TableFooterRow.AddAverageNZColumn(System.Linq.Expressions.Expression{System.Func{`1,System.Object}})">
+ <summary>
+ Adds a footer column that displays the average of all the items in the list. Only items with a non zero value are included.
+ </summary>
+</member>
+<member name="M:Singular.Web.CustomControls.BootstrapTable`2.AddButton(System.String)">
+ <summary>
+ Adds a button to the data rows last cell. E.g. if you want to add a select button.
+ </summary>
+ <param name="ButtonText">The text of the button.</param>
+</member>
+<member name="M:Singular.Web.CustomControls.BootstrapTable`2.AddRow">
+ <summary>
+ Adds a row to each data row. E.g. If you want each item in a list to have 2 rows in the table.
+ </summary>
+</member>
+<member name="M:Singular.Web.CustomControls.BootstrapTable`2.AutoGenerateColumns">
+ <summary>
+ Adds a column for each browsable property in the object. List properties are added as child tables.
+ </summary>
+</member>
+<member name="P:Singular.Web.CustomControls.BootstrapSpanButton`1.mPostBackType">
+ <summary>
+ Indicates what will happen when the button is clicked on the browser.
+ If PostBackType = Ajax, then set the Argument, Validate and LoadingText properties
+ If PostBackType = Full, then set the Argument and Validate properties
+ </summary>
+</member>
+<member name="T:Singular.Web.CustomControls.FindScreen`2">
+ <summary>
+ Renders a button that displays a find popup.
+ </summary>
+</member>
+<member name="P:Singular.Web.CustomControls.FindScreen`2.PreFindJSFunction">
+ <summary>
+ Called before the find screen is opened.
+ </summary>
+</member>
+<member name="P:Singular.Web.CustomControls.FindScreen`2.PreSearchJSFunction">
+ <summary>
+ Called when the user clicks the search button after entering criteria
+ </summary>
+</member>
+<member name="P:Singular.Web.CustomControls.FindScreen`2.OnRowSelectJSFunction">
+ <summary>
+ Called when a row is selected in the results grid.
+ </summary>
+</member>
+<member name="P:Singular.Web.CustomControls.FindScreen`2.DialogBootstrapColumnCount">
+ <summary>
+ Setting this will add a col-x class to each criteria input. Note, this must be divide into 12.
+ </summary>
+</member>
+<member name="P:Singular.Web.CustomControls.SearchDialog`1.DialogInstructions">
+ <summary>
+ Allow additional instructions text above the criteria.
+ </summary>
+</member>
+<member name="P:Singular.Web.CustomControls.SearchDialog`1.InstructionsDiv">
+ <summary>
+ Allow additional instructions to be added above the criteria.
+ </summary>
+</member>
+<member name="P:Singular.Web.CustomControls.SearchDialog`1.BootstrapColumnCount">
+ <summary>
+ Setting this will add a col-x class to each criteria input. Note, this must be divide into 12.
+ </summary>
+</member>
+<member name="T:Singular.Web.CustomControls.FieldLabel`1">
+ <summary>
+ Label which describes what an editor is for.
+ </summary>
+</member>
+<member name="T:Singular.Web.CustomControls.FieldDisplay`1">
+ <summary>
+ Displays the value of a property as a non editable label.
+ </summary>
+</member>
+<member name="T:Singular.Web.CustomControls.HTMLSnippet">
+ <summary>
+ Allows any asp control to be added to the helper control tree.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Singular.Web.CustomControls.HTMLSnippet.LoadContent(System.String)">
+ <summary>
+ Loads the content in the Editable HTML content table / file.
+ </summary>
+</member>
+<member name="P:Singular.Web.CustomControls.Image`1.Alt">
+ <summary>
+ Alternate Text of the Image.
+ </summary>
+</member>
+<member name="P:Singular.Web.CustomControls.Image`1.Src">
+ <summary>
+ The path of the image. Can use ~ as the root of the site. Leave blank if using knockout src binding.
+ </summary>
+</member>
+<member name="M:Singular.Web.CustomControls.Image`1.AuthorisationIcon(System.String)">
+ <summary>
+ Sets the image to be pending/  authorised / rejected based on the value of the property. Uses default singular images.
+ </summary>
+</member>
+<member name="M:Singular.Web.CustomControls.Image`1.HashSrc(System.String,System.String)">
+ <summary>
+ Sets the Image to get as a document in the documents table. The property is the property on this object that contains the hash.
+ </summary>
+</member>
+<member name="T:Singular.Web.CustomControls.Button`1">
+ <summary>
+ Renders an HTML Button with the specified Text.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Singular.Web.CustomControls.Button`1.Text">
+ <summary>
+ The Text that will be displayed to the user.
+ </summary>
+</member>
+<member name="P:Singular.Web.CustomControls.Button`1.ButtonID">
+ <summary>
+ The Buttons ID and Name which will be returned when it is clicked. Leave this blank if you don't want the button to cause post back.
+ </summary>
+</member>
+<member name="P:Singular.Web.CustomControls.Button`1.Validate">
+ <summary>
+ True if the page must not post back if Rules are broken on the client.
+ </summary>
+</member>
+<member name="P:Singular.Web.CustomControls.Button`1.ClickOnEnterKey">
+ <summary>
+ If true, will mark this as a submit button, which will be pressed when the user pressed enter
+ </summary>
+</member>
+<member name="P:Singular.Web.CustomControls.Button`1.PromptText">
+ <summary>
+ Text to warn the user they are about to do something. E.g. PromptText = "Are you sure?"
+ </summary>
+</member>
+<member name="P:Singular.Web.CustomControls.Button`1.PostBackType">
+ <summary>
+ Indicates what will happen when the button is clicked on the browser.
+ If PostBackType = Ajax, then set the Argument, Validate and LoadingText properties
+ If PostBackType = Full, then set the Argument and Validate properties
+ </summary>
+</member>
+<member name="P:Singular.Web.CustomControls.Button`1.LoadingText">
+ <summary>
+ When PostBackType is set to Ajax, this is the text that will apear while the async post back is in progress.
+ </summary>
+</member>
+<member name="P:Singular.Web.CustomControls.Button`1.ButtonType">
+ <summary>
+ The Predefined Type of Button. 
+ </summary>
+</member>
+<member name="M:Singular.Web.CustomControls.Button`1.AddAddBinding(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})">
+ <summary>
+ Adds a binding that will add a new object to the specified list when the control is clicked.
+ </summary>
+</member>
+<member name="M:Singular.Web.CustomControls.Button`1.AddRemoveBinding">
+ <summary>
+ Adds a binding that will remove the current item from its parent list.
+ </summary>
+</member>
+<member name="T:Singular.Web.CustomControls.TabControl`1">
+ <summary>
+ Renders JQuery Tabs.
+ </summary>
+</member>
+<member name="M:Singular.Web.CustomControls.TabControl`1.AddTab(System.String,System.String)">
+ <summary>
+ Add a tab to the tab container.
+ </summary>
+ <param name="TabText">The text of the tab</param>
+ <param name="TabKey">The key if you are using SelectedTabIndex. Not required.</param>
+</member>
+<member name="T:Singular.Web.CustomControls.TabControl`1.Tab">
+ <summary>
+ Renders a single tab within the Tab holder.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Singular.Web.CustomControls.TabControl`1.Tab.TabKey">
+ <summary>
+ If the tab container is bound to a selected tab index property, the value of TabKey will be set in the sub property 'TabKey'
+ </summary>
+</member>
+<member name="P:Singular.Web.CustomControls.Link`1.Href">
+ <summary>
+ if you want to call a js function, specify it with the brackets. e.g. OnLinkClick()
+ </summary>
+</member>
+<member name="M:Singular.Web.CustomControls.Dialog`1.AddHiddenFocusElement">
+ <summary>
+ Adds a hidden element which will get focus when the dialog is opened. Use this if you don't want the first actual control to be focused.
+ </summary>
+</member>
+<member name="T:Singular.Web.CustomControls.Table`2">
+ <summary>
+ Creates a table / grid and creates a row for each item in the provided list.
+ </summary>
+</member>
+<member name="P:Singular.Web.CustomControls.Table`2.TableColumn.InnerControl">
+ <summary>
+ The editor, or display control depending on if the field is read-only.
+ </summary>
+</member>
+<member name="M:Singular.Web.CustomControls.Table`2.TableColumn.BootstrapHide(Singular.Web.BootstrapSize)">
+ <summary>
+ Hides the column below a certain size.
+ </summary>
+</member>
+<member name="M:Singular.Web.CustomControls.Table`2.DataRowTemplate.AddColumn(System.String,System.Int32)">
+ <summary>
+ Adds a column with nothing in it.
+ </summary>
+</member>
+<member name="M:Singular.Web.CustomControls.Table`2.DataRowTemplate.AddColumn(System.Linq.Expressions.Expression{System.Func{`1,System.Object}},System.String)">
+ <summary>
+ Adds an editable Column. 
+ </summary>
+ <param name="le">The property to bind the column to.</param>
+</member>
+<member name="M:Singular.Web.CustomControls.Table`2.DataRowTemplate.AddColumn(System.Reflection.PropertyInfo,System.String)">
+ <summary>
+ Adds an editable Column. 
+ </summary>
+</member>
+<member name="M:Singular.Web.CustomControls.Table`2.DataRowTemplate.AddColumn(System.Linq.Expressions.Expression{System.Func{`1,System.Object}},System.Int32,System.String)">
+ <summary>
+ Adds an editable Column. 
+ </summary>
+ <param name="le">The property to bind the column to.</param>
+</member>
+<member name="M:Singular.Web.CustomControls.Table`2.DataRowTemplate.AddReadOnlyColumn(System.Linq.Expressions.Expression{System.Func{`1,System.Object}},System.String)">
+ <summary>
+ Adds a Column that displays the property but doesn't allow it to be edited.
+ </summary>
+ <param name="le">The Property to Display</param>
+</member>
+<member name="M:Singular.Web.CustomControls.Table`2.DataRowTemplate.AddReadOnlyColumn(System.Reflection.PropertyInfo,System.String)">
+ <summary>
+ Adds a Column that displays the property but doesn't allow it to be edited.
+ </summary>
+</member>
+<member name="M:Singular.Web.CustomControls.Table`2.DataRowTemplate.AddColumnGroup(System.String)">
+ <summary>
+ Adds a column Group. You must specify which columns are linked to this group using .AddColumn(...).Group = ThisGroup
+ </summary>
+</member>
+<member name="M:Singular.Web.CustomControls.Table`2.DataRowTemplate.AddReadOnlyColumn(System.Linq.Expressions.Expression{System.Func{`1,System.Object}},System.Int32,System.String)">
+ <summary>
+ Adds a Column that displays the property but doesn't allow it to be edited.
+ </summary>
+ <param name="le">The Property to Display</param>
+</member>
+<member name="M:Singular.Web.CustomControls.Table`2.TableFooterRow.AddSumColumn(System.Linq.Expressions.Expression{System.Func{`1,System.Object}})">
+ <summary>
+ Adds a footer column that displays the sum of all the items in the list. 
+ </summary>
+</member>
+<member name="M:Singular.Web.CustomControls.Table`2.TableFooterRow.AddAverageColumn(System.Linq.Expressions.Expression{System.Func{`1,System.Object}})">
+ <summary>
+ Adds a footer column that displays the average of all the items in the list. 
+ </summary>
+</member>
+<member name="M:Singular.Web.CustomControls.Table`2.TableFooterRow.AddAverageNZColumn(System.Linq.Expressions.Expression{System.Func{`1,System.Object}})">
+ <summary>
+ Adds a footer column that displays the average of all the items in the list. Only items with a non zero value are included.
+ </summary>
+</member>
+<member name="M:Singular.Web.CustomControls.Table`2.AddStaticRow">
+ <summary>
+ Add static rows instead of having datasource. the controls in this control will act as cells. Setup headers by calling AddColumn.
+ </summary>
+</member>
+<member name="M:Singular.Web.CustomControls.Table`2.AddButton(System.String)">
+ <summary>
+ Adds a button to the data rows last cell. E.g. if you want to add a select button.
+ </summary>
+ <param name="ButtonText">The text of the button.</param>
+</member>
+<member name="M:Singular.Web.CustomControls.Table`2.AddRow">
+ <summary>
+ Adds a row to each data row. E.g. If you want each item in a list to have 2 rows in the table.
+ </summary>
+</member>
+<member name="M:Singular.Web.CustomControls.Table`2.AutoGenerateColumns(System.Func{System.Reflection.PropertyInfo,System.Boolean})">
+ <summary>
+ Adds a column for each browsable property in the object. List properties are added as child tables.
+ </summary>
+</member>
+<member name="P:Singular.Web.CustomControls.ImageChooser`1.BackColor">
+ <summary>
+ If blank, the background will be transparent, and the image will be saved according to its original dimensions if smaller than the required size.
+ If a background color is specified, the image will be bordered with this color, and will be the required diminesions
+ </summary>
+</member>
+<member name="T:Singular.Web.CustomControls.MessageHolderControl`1">
+ <summary>
+ Renders a message holder and the messages it contains.
+ </summary>
+</member>
+<member name="M:Singular.Web.CustomControls.SGrid.SGrid.#ctor(System.String)">
+ <summary>
+ Datasource must be the address of a JS function.
+ The function must return an object with the following properties:
+ Data: the data to show in the grid
+ (Optional):
+ UniqueKey: unique name in case the layout of the grid is going to be saved.
+ LayoutInfo: The band / column layout of the grid.
+ Schema: The schema of the datasource.
+ AutoHeight: The height of the grid will be (window height - auto height) when resizing the browser.
+ </summary>
+</member>
+<member name="T:Singular.Web.CustomControls.EditorRow`1">
+ <summary>
+ Combines a label and an editor for a given property.
+ </summary>
+</member>
+<member name="T:Singular.Web.CustomControls.FieldSet`2">
+ <summary>
+ Creates a Fieldset group where all the child controls are bound under the given context.
+ </summary>
+</member>
+<member name="P:Singular.Web.CustomControls.FieldSet`2.Legend">
+ <summary>
+ The Title / Legend / Header
+ </summary>
+</member>
+<member name="T:Singular.Web.CustomControls.ForEach`2">
+ <summary>
+ Repeats the child controls for each item in the provided list.
+ </summary>
+</member>
+<member name="T:Singular.Web.CustomControls.DocumentManager`1">
+ <summary>
+ Creates a document upload control that binds to a Singular.Documents.IDocumentProvider
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Singular.Web.CustomControls.DocumentManager`1.AllowOverwrite">
+ <summary>
+ True if the user can overwrite the file once it has been uploaded.
+ Make sure you call mark old when fetching documents
+ </summary>
+</member>
+<member name="P:Singular.Web.CustomControls.DocumentManager`1.ContainerClassName">
+ <summary>
+ If specified, the components of the document manager will placed in a single container div with this class name.
+ </summary>
+</member>
+<member name="P:Singular.Web.CustomControls.DocumentDownloader`1.ExtraQueryString">
+ <summary>
+ Extra query string appended when calling FileDownloader.ashx
+ </summary>
+</member>
+<member name="T:Singular.Web.CustomControls.CaptchaEntry`1">
+ <summary>
+ Creates a random image to make sure the user is human.
+ </summary>
+ <typeparam name="ObjectType"></typeparam>
+ <remarks></remarks>
+</member>
+<member name="T:Singular.Web.CustomControls.EditorBase`1">
+ <summary>
+ Base class for input and select controls.
+ </summary>
+</member>
+<member name="P:Singular.Web.CustomControls.EditorBase`1.AutoPostBack">
+ <summary>
+ Causes the page to post back when the value is changed on the client.
+ </summary>
+</member>
+<member name="M:Singular.Web.CustomControls.EditorBase`1.GetEditor(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})">
+ <summary>
+ Returns the correct editor for the specified property type.
+ </summary>
+</member>
+<member name="T:Singular.Web.CustomControls.DropDownEditor`1">
+ <summary>
+ Creates a select element on the server. The options are created by the knockout library.
+ </summary>
+</member>
+<member name="T:Singular.Web.CustomControls.TextEditor`1">
+ <summary>
+ Create a an input type=text element.
+ </summary>
+</member>
+<member name="T:Singular.Web.CustomControls.NumericEditor`1">
+ <summary>
+ Creates an input type=text element, but with a class name of numeric editor.
+ The singular.js library will force numeric input.
+ </summary>
+</member>
+<member name="T:Singular.Web.CustomControls.DateEditor`1">
+ <summary>
+ Creates an input type=text element, but with a class name of date picker.
+ The singular.js library will convert this to a jquery date picker.
+ </summary>
+</member>
+<member name="T:Singular.Web.CustomControls.CheckBoxEditor`1">
+ <summary>
+ Creates an input type=checkbox element
+ </summary>
+</member>
+<member name="M:Singular.Web.CustomControls.FileEditor`1.AddAllowedExtensions(System.String[])">
+ <summary>
+ Adds 1 or more file extensions that are allowed to be uploaded.
+ Will allow any extension if this is left blank.
+ Don't include the "." part of the extension. 
+ </summary>
+ <param name="Extensions"></param>
+ <remarks></remarks>
+</member>
+<member name="T:Singular.Web.CustomControls.SliderEditor`1">
+ <summary>
+ Creates div with the slider ko binding.
+ </summary>
+</member>
+<member name="P:Singular.Web.CustomControls.EditableHTMLControl.Width">
+ <summary>
+ Width in Pixels
+ </summary>
+</member>
+<member name="P:Singular.Web.CustomControls.EditableHTMLControl.Height">
+ <summary>
+ Height in Pixels
+ </summary>
+</member>
+<member name="P:Singular.Web.CustomControls.SDropDownList.Value">
+ <summary>
+ Returns a value Compatible with Singular CSLA Objects. E.g. DBNull.Value or an Integer Value.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Singular.Web.CustomControls.LoginStatus.LoginJSFunction">
+ <summary>
+ The Name of a Javascript function to call when the login button is clicked.
+ </summary>
+</member>
+<member name="P:Singular.Web.Controls.KnockoutBindingManager`1.JSonBindings">
+ <summary>
+ if true, brackets wont be added after property names. This is for when you are binding to a plain JSON object, not a KO object.
+ </summary>
+</member>
+<member name="M:Singular.Web.Controls.KnockoutBindingManager`1.AddAddBinding(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})">
+ <summary>
+ Adds a binding that will add a new object to the specified list when the control is clicked.
+ </summary>
+</member>
+<member name="M:Singular.Web.Controls.KnockoutBindingManager`1.AddDragBinding(System.String,System.String,System.String)">
+ <summary>
+ Adds a drag binding which allows the element to be dragged to another element.
+ </summary>
+ <param name="Scope">The drop target must have the same scope as this</param>
+ <param name="DragStartText">The text to display when this element is not over the drop target.</param>
+</member>
+<member name="M:Singular.Web.Controls.KnockoutBindingManager`1.AddDropBinding(System.String,System.String,System.String)">
+ <summary>
+ Adds a drop binding which allows an element with a drag binding to be dropped.
+ </summary>
+ <param name="Scope">The drag target must share the same scope as this</param>
+ <param name="OnDropFunctionName">function that must be called when a valid drop occurs</param>
+ <param name="OnHoverFunctionName">function that must be called when a drop element hovers over this. function(ev, ui, from, to)</param>
+</member>
+<member name="M:Singular.Web.Controls.KnockoutBindingManager`1.AddForEachBinding(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.String,System.String)">
+ <summary>
+ Adds a for each binding, to render any child controls for each item in the supplied list.
+ </summary>
+ <param name="AfterRenderFunctionName">Allows custom UI code to run after an item is rendered. Function can take arguments: (elements, object)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Singular.Web.Controls.KnockoutBindingManager`1.AddForEachBinding(System.String,System.String,System.String)">
+ <summary>
+ Adds a for each binding, to render any child controls for each item in the supplied list.
+ </summary>
+ <param name="AfterRenderFunctionName">Allows custom UI code to run after an item is rendered. Function can take arguments: (elements, object)</param>
+ <remarks></remarks>
+</member>
+<member name="M:Singular.Web.Controls.HtmlTextWriter.WriteCloseTag(System.Boolean)">
+ <summary>
+ Writes >
+ </summary>
+</member>
+<member name="M:Singular.Web.Controls.HtmlTextWriter.WriteFullCloseTag">
+ <summary>
+ Writes />
+ </summary>
+</member>
+<member name="F:Singular.Web.Controls.Controls.RenderMode.BuildOnServer">
+ <summary>
+ Specifies that the action should be performed on the server.
+ </summary>
+</member>
+<member name="F:Singular.Web.Controls.Controls.RenderMode.BuildOnClient">
+ <summary>
+ Specifies that the action should be performed on the clients browser.
+ </summary>
+</member>
+<member name="P:Singular.Web.Controls.Controls.ShowMobileNumericKeyboard">
+ <summary>
+ Adds inputmode=numeric attribute to editors bound to a number. This doesn't seem to work on all mobile browsers and can prevent the user typeing in decimals.
+ </summary>
+</member>
+<member name="M:Singular.Web.Controls.Controls.UsesBootstrap">
+ <summary>
+ Tell the library controls to render using bootstrap classes
+ </summary>
+</member>
+<member name="M:Singular.Web.Controls.Controls.FindControl(System.Web.UI.Control,System.Type)">
+ <summary>
+ Returns the first occurance of a control matching the specified control type.
+ </summary>
+ <param name="Control">The Root Control to look in.</param>
+ <param name="ControlType">The type of control you want to find.</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Singular.Web.Controls.Controls.FindControl(System.Web.UI.Control,System.String)">
+ <summary>
+ Looks at all the controls in a control for the specified name.
+ </summary>
+ <param name="ID">The ID / Unique ID / Client ID to look for.</param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Singular.Web.Controls.HelperControls.HelperBase.OnlyChildControls">
+ <summary>
+ True if this control doesnt have custom rendering, and is only renders through child controls.
+ Setting this to true allows you to omit the render method.
+ </summary>
+</member>
+<member name="P:Singular.Web.Controls.HelperControls.HelperBase.TemplateRenderAnimation">
+ <summary>
+ Sets the animation type to use when rendering this control inside a template.
+ e.g. in an if statement, you want the inner controls to fade in. Set this property on the control directly inside the if.
+ </summary>
+</member>
+<member name="M:Singular.Web.Controls.HelperControls.HelperBase`1.With(System.Action{Singular.Web.Controls.HelperControls.HelperBase{`0}})">
+ <summary>
+ Fake c# with statement.
+ </summary>
+</member>
+<member name="M:Singular.Web.Controls.HelperControls.HelperBase`1.WithH(System.Action{Singular.Web.Controls.HelperControls.HelperAccessors{`0}})">
+ <summary>
+ Fake c# with statement.
+ </summary>
+</member>
+<member name="T:Singular.Web.Controls.HelperControls.HelperBase`2">
+ <summary>
+ Helperbase for controls that contain child controls which need a sub binding context.
+ </summary>
+ <typeparam name="ObjectType">The object type that this control binds to.</typeparam>
+ <typeparam name="ChildControlObjectType">The object type that the child controls bind to.</typeparam>
+</member>
+<member name="P:Singular.Web.Controls.HelperControls.HelperBase`2.OverrideChildType">
+ <summary>
+ Allows the proper child type to be specified in cases where you have to pass object as the generic type.
+ </summary>
+</member>
+<member name="M:Singular.Web.Controls.HelperControls.HelperBase`2.WithH(System.Action{Singular.Web.Controls.HelperControls.HelperAccessors{`1}})">
+ <summary>
+ Fake c# with statement.
+ </summary>
+</member>
+<member name="M:Singular.Web.Controls.HelperControls.HelperAccessors.Control(System.Web.UI.Control)">
+ <summary>
+ Adds a control 
+ </summary>
+ <param name="WebControl"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Singular.Web.Controls.HelperControls.HelperAccessors`1.Control(System.Type,Singular.Web.ContainerType,System.String,System.Func{System.String})">
+ <summary>
+ Loads this control asyncronously, and only if the html content has changed.
+ The control will not have any state.
+ </summary>
+</member>
+<member name="M:Singular.Web.Controls.HelperControls.HelperAccessors`1.Control``1(Singular.Web.ContainerType,System.String,System.Func{System.String})">
+ <summary>
+ Loads this control asyncronously, and only if the html content has changed.
+ The control will not have any state.
+ </summary>
+</member>
+<member name="M:Singular.Web.Controls.HelperControls.HelperAccessors`1.FindScreen``1(System.String,System.String,System.Boolean,System.Type,System.Boolean,System.Boolean,System.String,System.String,System.String)">
+ <summary>
+ Creates a find button, that when clicked, opens a find dialog with criteria based on the Lists Criteria object.
+ When the user selects a record, the page is posted back with the selected id.
+ </summary>
+ <typeparam name="ListType">The list type of the records to find.</typeparam>
+ <param name="ButtonText">The text to show on the find button.</param>
+ <param name="DialogCaption">The text to show on the title of the find dialog.</param>
+ <param name="AsyncFetch">True if only the model is re-fetched using ajax. False if the whole page is posted back.</param>
+ <param name="ListTypeOverride">If the listType is an object, then use this to specify the actual type.</param>
+ <param name="AutoPopulate">If true, the list will be fetched using the default criteria the first time the user clicks find.</param>
+ <param name="MultiSelect">True if multiselect.</param>
+ <param name="BeforeOpenJSFunction">Called before the find screen is opened.</param>
+ <param name="OnRowSelectJSFunction">Called when a row is selected in the results grid.</param>
+ <param name="PreSearchJSFunction">Called when the user clicks the search button after entering criteria</param>
+</member>
+<member name="M:Singular.Web.Controls.HelperControls.HelperAccessors`1.SearchDialog``1(System.String)">
+ <summary>
+ Adds a search dialog for a criteria object. Add this if you want to trigger a find screen from javascript
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Singular.Web.Controls.HelperControls.HelperAccessors`1.SearchDialog``1(System.String,System.Linq.Expressions.Expression{System.Func{`0,System.Object}})">
+ <summary>
+ Adds a search dialog for a criteria object. Add this if you want to trigger a find screen from javascript
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Singular.Web.Controls.HelperControls.HelperAccessors`1.SearchDialog``1(System.String,System.String)">
+ <summary>
+ Adds a search dialog for a criteria object. Add this if you want to trigger a find screen from javascript
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Singular.Web.Controls.HelperControls.HelperAccessors`1.TableFor``1(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Boolean,System.Boolean)">
+ <summary>
+ Creates an editable table that will be bound on the client.
+ </summary>
+ <typeparam name="ChildControlsObjectType">The type of the lists items.</typeparam>
+ <param name="le">The property of a list to bind to.</param>
+ <param name="AllowAddNew">Allow the user to add items.</param>
+ <param name="AllowRemove">Allow the user to remove items.</param>
+</member>
+<member name="M:Singular.Web.Controls.HelperControls.HelperAccessors`1.Table``1(System.Object)">
+ <summary>
+ Creates a static table that is bound on the server.
+ </summary>
+ <typeparam name="ChildControlsObjectType"></typeparam>
+ <param name="List"></param>
+</member>
+<member name="M:Singular.Web.Controls.HelperControls.HelperAccessors`1.LinkFor(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.String,System.String,Singular.Web.LinkTargetType)">
+ <summary>
+ Creates an anchor tag.
+ </summary>
+ <param name="HRefExpression">Dynamic href</param>
+ <param name="LinkTextExpression">Dynamic inner text.</param>
+ <param name="HrefString">The static location to redirect to. If you want to call a js function, specify it with the brackets. e.g. OnLinkClick()</param>
+ <param name="LinkTextString">Static inner text.</param>
+ <param name="Target">If a new window or tab must be opened.</param>
+</member>
+<member name="M:Singular.Web.Controls.HelperControls.HelperAccessors`1.DivInline">
+ <summary>
+ Adds a div with display: inline-block
+ </summary>
+</member>
+<member name="M:Singular.Web.Controls.HelperControls.HelperAccessors`1.SpanC(System.String)">
+ <summary>
+ Allows you specify the css classes in the constrcutor 
+ </summary>
+ <param name="CssClasses"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Singular.Web.Controls.HelperControls.HelperAccessors`1.Toolbar(System.Boolean)">
+ <summary>
+ Creates a toolbar to put buttons etc in. Also contains a popup validation control if specified.
+ </summary>
+ <param name="AddValidation">True will add a popup validation control.</param>
+</member>
+<member name="M:Singular.Web.Controls.HelperControls.HelperAccessors`1.AddImageResizeDialog">
+ <summary>
+ Adds an image resize dialog control to the page. Must be used with an ImageChooser control. ImageResizer.js must also be included in your page.
+ </summary>
+</member>
+<member name="M:Singular.Web.Controls.HelperControls.HelperAccessors`1.ImageChooser(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Int32,System.Int32,System.Decimal,System.String,System.String)">
+ <summary>
+ Adds a button which allows the user to select, and resize an image. Must be used with an ImageResizeDialog
+ </summary>
+ <param name="RequiredWidth">Required width in pixels of the saved image</param>
+ <param name="RequiredHeight">Required height in pixels of the saved image</param>
+ <param name="Scale">Scale that the dialog must display. Use this to reduce the size of the dialog if a large image size is required.</param>
+ <param name="BackColor">If blank, the background will be transparent, and the image will be saved according to its original dimensions if smaller than the required size.
+ If a background color is specified, the image will be bordered with this color, and will be the required diminesions.
+ Use this is the image needs to be displayed on a crystal report.</param>
+</member>
+<member name="M:Singular.Web.Controls.HelperControls.HelperAccessors`1.DocumentImage(System.Linq.Expressions.Expression{System.Func{`0,System.Object}})">
+ <summary>
+ For use with ImageChooser
+ </summary>
+</member>
+<member name="M:Singular.Web.Controls.HelperControls.HelperAccessors`1.DivC(System.String)">
+ <summary>
+ Allows you specify the css classes in the constrcutor 
+ </summary>
+ <param name="CssClasses"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:Singular.Web.Controls.HelperControls.HelperAccessors`1.BootstrapAccessors.TableFor``1(System.Linq.Expressions.Expression{System.Func{`0,System.Object}},System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.Boolean,System.String,System.String,System.String)">
+ <summary>
+ Creates an editable table that will be bound on the client.
+ </summary>
+ <typeparam name="ChildControlsObjectType">The type of the lists items.</typeparam>
+ <param name="le">The property of a list to bind to.</param>
+ <param name="AllowAddNew">Allow the user to add items.</param>
+ <param name="AllowRemove">Allow the user to remove items.</param>
+</member>
+<member name="M:Singular.Web.Controls.CustomWebControl.CSSStyle.MarginRight(System.String)">
+ <summary>
+ Adds a Right Margin
+ </summary>
+</member>
+<member name="M:Singular.Web.Controls.CustomWebControl.CSSStyle.MarginLeft(System.String)">
+ <summary>
+ Adds a Left Margin
+ </summary>
+</member>
+<member name="M:Singular.Web.Controls.CustomWebControl.CSSStyle.Margin(System.Object,System.Object,System.Object,System.Object)">
+ <summary>
+ Adds a margin style
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Singular.Web.Controls.CustomWebControl.CSSStyle.MarginI(System.Int32,System.Int32,System.Int32,System.Int32)">
+ <summary>
+ Adds a margin style in pixels (px)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Singular.Web.Controls.CustomWebControl.CSSStyle.MarginVH(System.Int32,System.Int32)">
+ <summary>
+ Adds margins for vertical (tb) and horizontal (lr)
+ </summary>
+</member>
+<member name="M:Singular.Web.Controls.CustomWebControl.CSSStyle.FloatLeft">
+ <summary>
+ Adds the 'float:left' style
+ </summary>
+</member>
+<member name="M:Singular.Web.Controls.CustomWebControl.CSSStyle.FloatRight">
+ <summary>
+ Adds the 'float:right' style
+ </summary>
+</member>
+<member name="M:Singular.Web.Controls.CustomWebControl.CSSStyle.ClearBoth">
+ <summary>
+ Adds the 'clear:both' style for use after floating divs.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Singular.Web.Controls.CustomWebControl.GetString">
+ <summary>
+ Gets the rendered ouput of this control only, and removes it from the parent.
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Singular.Web.Misc.WebSiteStats.SessionStats.TotalStartedSessions">
+ <summary>
+ Returns the total number of sessions started since the application was last recycled.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Singular.Web.Misc.WebSiteStats.SessionStats.MinActiveSessions">
+ <summary>
+ Returns the Min Active Sessions for the period.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Singular.Web.Misc.WebSiteStats.SessionStats.MaxActiveSessions">
+ <summary>
+ Returns the Max Active Sessions for the period.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Singular.Web.Misc.WebSiteStats.TotalActiveSessions">
+ <summary>
+ Returns the total number of Active sessions.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Singular.Web.Misc.BroswerInfo.SupportsJSon">
+ <summary>
+ True if the browser has native support for JSON.parse and JSON.stringify
+ </summary>
+</member>
+<member name="M:Singular.Web.Misc.Misc.GetPageFromURL(System.String)">
+ <summary>
+ Removes any query string from a url.
+ </summary>
+ <param name="URL"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Singular.Web.Misc.Misc.IsPostBack">
+ <summary>
+ Returns false if this is the first time the page is being requested. True if the page is being posted back, e.g. the user clicked a button.
+ This is an alternative to Page.IsPostBack if you don't have a reference to a Page control.
+ </summary>
+</member>
+<member name="M:Singular.Web.Misc.NavigationHelper.RedirectAndRemember(System.String)">
+ <summary>
+ Redirects the user to a page, and remembers the current page. When the user has done what they need to on the new page, call RedirectBack() to come back to this page.
+ </summary>
+ <param name="RedirectTo"></param>
+ <remarks></remarks>
+</member>
+<member name="M:Singular.Web.Misc.NavigationHelper.RedirectBack(System.String)">
+ <summary>
+ Checks if the page you are calling this from, was redirected from another page.
+ If so, then redirect back to the original page.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Singular.Web.Misc.NavigationHelper.WasRedirected">
+ <summary>
+ Checks if the user was redirected to the current page.
+ </summary>
+</member>
+<member name="P:Singular.Web.Reporting.ROGridUserInfo.WebGridUserInfoID">
+ <summary>
+ Gets the Web Grid User Info value
+ </summary>
+</member>
+<member name="P:Singular.Web.Reporting.ROGridUserInfo.WebGridInfoID">
+ <summary>
+ Gets the Web Grid Info value
+ </summary>
+</member>
+<member name="P:Singular.Web.Reporting.ROGridUserInfo.UserID">
+ <summary>
+ Gets the User value
+ </summary>
+</member>
+<member name="P:Singular.Web.Reporting.ROGridUserInfo.LayoutInfo">
+ <summary>
+ Gets the Layout Info value
+ </summary>
+</member>
+<member name="P:Singular.Web.Reporting.ROGridUserInfo.LayoutName">
+ <summary>
+ Gets the Layout Name value
+ </summary>
+</member>
+<member name="T:Singular.Web.DataAnnotations.AutoBindings">
+ <summary>
+ Adds Knockout Binding to Editor for property if autogenerated.
+ </summary>
+</member>
+<member name="M:Singular.Web.Data.ClientDataProvider.GetData(Singular.Web.WebServices.GetDataArguments)">
+ <summary>
+ Checks if the object implements WCDF.IGetData, if so, calls GetData on the object, if not, calls FetchList
+ </summary>
+</member>
+<member name="M:Singular.Web.Data.ClientDataProvider.FetchList(System.Type,System.Object,System.Boolean)">
+ <summary>
+ Returns a list of the supplied type using its criteria object.
+ </summary>
+</member>
+<member name="M:Singular.Web.Data.ClientDataProvider.AddDataSource(System.String,System.Object,System.Boolean)">
+ <summary>
+ Add some readonly data to be used on the client
+ </summary>
+</member>
+<member name="M:Singular.Web.Data.ClientDataProvider.AddStringVariable(System.String,System.String)">
+ <summary>
+ Adds a variable to ClientData. Encloses the provided string in double quotes.
+ </summary>
+</member>
+<member name="M:Singular.Web.Data.ClientDataProvider.AddDataSource(Singular.DataAnnotations.DropDownWeb.SourceType,System.String)">
+ <summary>
+ Adds some readonly data to be used on the client. Providing the source location of the data.
+ </summary>
+</member>
+<member name="M:Singular.Web.Data.ClientDataProvider.AddDataSource(Singular.DataAnnotations.DropDownWeb.SourceType,System.Type)">
+ <summary>
+ Adds some readonly data to be used on the client. Providing the source location of the data, and the property type to look for on the source.
+ </summary>
+</member>
+<member name="M:Singular.Web.Data.ClientDataProvider.AddDataSource``1(Singular.DataAnnotations.DropDownWeb.SourceType)">
+ <summary>
+ Adds some readonly data to be used on the client. Providing the source location of the data, and the property type to look for on the source.
+ </summary>
+</member>
+<member name="P:Singular.Web.Data.ClientDataProvider.ClientDataSource.PropertyName">
+ <summary>
+ E.g Look for a specific property Name on Commondata, not the type.
+ </summary>
+</member>
+<member name="P:Singular.Web.WebError.SupportsWebError">
+ <summary>
+ Does this database have a proc called [CmdProcs].[cmdInsWebError] 
+ </summary>
+</member>
+<member name="P:Singular.Web.WebError.ShowDetailedErrors">
+ <summary>
+ Set to true if you always want detailed errors to be shown to the user. Useful for test websites.
+ </summary>
+</member>
+<member name="P:Singular.Web.WebError.ErrorPageLocation">
+ <summary>
+ Path of the applications error page.
+ </summary>
+</member>
+<member name="P:Singular.Web.WebError.SuppressLog">
+ <summary>
+ True if LogEvent must not log.
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Singular.Web.WebError.GetErrorText(System.Exception,System.String,System.String)">
+ <summary>
+ Gets error text to be returned to the client. If in debug mode, or the error is a customerror, the error text is returned. Else the error ID from the WebErrors table
+ </summary>
+</member>
+<member name="M:Singular.Web.WebError.RedirectToErrorPage(System.String,System.String)">
+ <summary>
+ Redirects to the default error page.
+ </summary>
+</member>
+<member name="M:Singular.Web.WebError.HandleApplicationError(System.String,System.String,System.String)">
+ <summary>
+ Logs any unhandled exceptions to the database, and directs the user to the error page. Your database must have the weberrors table and cmd proc.
+ </summary>
+</member>
+<member name="F:Singular.Web.KnockoutBindingString.value">
+ <summary>
+ The property to bind the Value / Selected Value of the control.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Singular.Web.KnockoutBindingString.text">
+ <summary>
+ Sets the inner text of an html element. Does not work for buttons, use buttonText instead.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Singular.Web.KnockoutBindingString.with">
+ <summary>
+ Creates a Binding Context, where all bindings of controls in this control will be bound under the root of this object.
+ </summary>
+</member>
+<member name="F:Singular.Web.KnockoutBindingString.valueUpdate">
+ <summary>
+ When must the value be updated? None=On lost focus or use 'afterkeydown'.
+ </summary>
+</member>
+<member name="F:Singular.Web.KnockoutBindingString.visible">
+ <summary>
+ Makes an item visible or not. Uses CSS property display: none, not visibility: hidden.
+ </summary>
+</member>
+<member name="F:Singular.Web.KnockoutBindingString.visibleA">
+ <summary>
+ Makes an item visible or not with animation.
+ </summary>
+</member>
+<member name="F:Singular.Web.KnockoutBindingString.foreach">
+ <summary>
+ Creates a template which will be repeated for each item in the list. Same binding context as 'with' binding.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:Singular.Web.KnockoutBindingString.ButtonArgument">
+ <summary>
+ Sets the Button Argument to be sent to the ViewModel when the button is clicked.
+ </summary>
+</member>
+<member name="F:Singular.Web.KnockoutBindingString.id">
+ <summary>
+ Binds the ID of the control to the property specified. Should only be used in controls (not in custom code).
+ </summary>
+</member>
+<member name="F:Singular.Web.KnockoutBindingString.for">
+ <summary>
+ Links a label to an input so when you click the label, the input gets focus. I.E lblUser's lfor='txtUser'.
+ </summary>
+</member>
+<member name="F:Singular.Web.KnockoutBindingString.title">
+ <summary>
+ Tooltip
+ </summary>
+</member>
+<member name="F:Singular.Web.KnockoutBindingString.href">
+ <summary>
+ Link for anchor tag
+ </summary>
+</member>
+<member name="F:Singular.Web.KnockoutBindingString.src">
+ <summary>
+ Source for images.
+ </summary>
+</member>
+<member name="F:Singular.Web.KnockoutBindingString.placeholder">
+ <summary>
+ Placeholder of an Input control
+ </summary>
+</member>
+<member name="F:Singular.Web.FontAwesomeIcon.None">
+ <summary>
+ No image, if you want a blank image in order to bind later, use 'blank'.
+ </summary>
+</member>
+<member name="F:Singular.Web.VisibleFadeType.None">
+ <summary>
+ Changes state without any animation
+ </summary>
+</member>
+<member name="F:Singular.Web.VisibleFadeType.Fade">
+ <summary>
+ Fades in / out using opacity
+ </summary>
+</member>
+<member name="F:Singular.Web.VisibleFadeType.SlideUpDown">
+ <summary>
+ Fades in / out by changing the height 
+ </summary>
+</member>
+<member name="F:Singular.Web.VisibleFadeType.FlyInOut">
+ <summary>
+ Fly's in from the Left, out to the Right.
+ </summary>
+</member>
+<member name="M:Singular.Web.CSSFile.RenderStyleTag(System.String)">
+ <summary>
+ Renders a style tag and changes the file name to match the version no.
+ </summary>
+</member>
+<member name="M:Singular.Web.CSSFile.AddFile(System.String,System.Action{System.Text.StringBuilder})">
+ <summary>
+ Call this from global.asax to add and process a style file.
+ </summary>
+</member>
+<member name="P:Singular.Web.Scripts.ScriptFile.ScriptTag">
+ <summary>
+ Returns the Debug / release / CDN path depending on the debugger being attached, settings etc.
+ </summary>
+</member>
+<member name="P:Singular.Web.Scripts.ScriptGroup.GroupName">
+ <summary>
+ Name of the group used with RenderScriptGroup
+ </summary>
+</member>
+<member name="P:Singular.Web.Scripts.ScriptGroup.Path">
+ <summary>
+ The path where the files in this group are located.
+ </summary>
+</member>
+<member name="M:Singular.Web.Scripts.ScriptGroup.EnableCombineAndMinify(Singular.Web.Scripts.ScriptFile,System.String)">
+ <summary>
+ All files in this group will be merged into one file and minified.
+ </summary>
+ <param name="MainScript">The script which contains the release name, and version no if versioning required.</param>
+ <param name="CheckVersion">The version the script file must equal. Useful to check in case the script files haven't been copied to the web server.</param>
+</member>
+<member name="M:Singular.Web.Scripts.ScriptGroup.EnableCombineAndMinify(System.String)">
+ <summary>
+ All files in this group will be merged into one file and minified.
+ </summary>
+ <param name="ServerVersion">The version of the scripts. This version will be added to the file name.</param>
+ <remarks></remarks>
+</member>
+<member name="M:Singular.Web.Scripts.ScriptGroup.EnableCombineAndMinify">
+ <summary>
+ All files in this group will be merged into one file and minified.
+ The version no will be retrieved from the assembly version no. Note, * must be used in the assembly info file for auto version increment.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:Singular.Web.Scripts.ScriptGroup.AddScript(System.String,System.String,System.String)">
+ <summary>
+ Adds a script to this group.
+ </summary>
+ <param name="DebugScriptName">The name of the file with the readable source code.</param>
+ <param name="ReleaseScriptName">The name of the minified file.</param>
+ <param name="CDNPath">The complete URL of the file on a CDN</param>
+</member>
+<member name="M:Singular.Web.Scripts.ScriptGroup.AddScript(System.String,System.String)">
+ <summary>
+ Adds a script to this group.
+ </summary>
+ <param name="DebugScriptName">The name of the file with the readable source code.</param>
+ <param name="ReleaseScriptName">The name of the minified file.</param>
+</member>
+<member name="M:Singular.Web.Scripts.ScriptGroup.AddScript(System.String)">
+ <summary>
+ Adds a script to this group.
+ </summary>
+ <param name="DebugScriptName">The name of the file with the readable source code.</param>
+</member>
+<member name="M:Singular.Web.Scripts.Scripts.RenderLibraryScripts">
+ <summary>
+ Renders the script tags to include all the .js files required by the singular library.
+ </summary>
+</member>
+<member name="P:Singular.Web.Scripts.ScriptSettings.ScriptsPath">
+ <summary>
+ Project scripts
+ </summary>
+</member>
+<member name="P:Singular.Web.Scripts.ScriptSettings.LibraryScriptsOldPath">
+ <summary>
+ Library scripts when referenced from virtual directory
+ </summary>
+</member>
+<member name="P:Singular.Web.Scripts.ScriptSettings.LibraryScriptsResPath">
+ <summary>
+ Library scripts when referenced from resource handler
+ </summary>
+</member>
+<member name="P:Singular.Web.Scripts.ScriptSettings.AlwaysUseDebugScripts">
+ <summary>
+ Tells the script manager to always make the browser load debug javascript files., even when the web site is not running in debug mode.
+ </summary>
+</member>
+<member name="P:Singular.Web.Scripts.ScriptSettings.UseCDN">
+ <summary>
+ Tells the script manager to make the browser load javascript files from a content delivery network. Debug files will still be loaded locally when in debug mode.
+ </summary>
+</member>
+<member name="P:Singular.Web.Scripts.ScriptSettings.UsePatchedKnockoutFiles">
+ <summary>
+ Uses version 2.3.0 of knockout, including fixed security vulnerabilities.
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:Singular.Web.Scripts.ScriptSettings.ByPassSingularVirtualDir(System.String,System.String,System.String)">
+ <summary>
+ Specifies an alternate location for Singular\Files if you dont have a Singular virtual directory.
+ </summary>
+ <param name="SingularPath">The physical file path, or path relative to your site root. e.g. ..\..\Singular.Web</param>
+ <param name="StylesUrl">Where are the non Singular styles found? e.g. ~/styles/font-awesome.css</param>
+ <param name="ScriptsUrl">Where are the non Singular scripts found? e.g. knockout / jquery. Leave blank if they are in your ~/scripts folder.</param>
+</member>
+<member name="M:Singular.Web.Scripts.ScriptManager.AddScriptGroup(System.String,System.String)">
+ <summary>
+ Adds a container for a collection of files.
+ </summary>
+ <param name="GroupName">The unique name of the group.</param>
+ <param name="Path">The URL where all of the files in this group are stored. (Use ~ for the web site root)</param>
+</member>
+<member name="P:Singular.Web.Charting.BarSeries.SourceName">
+ <summary>
+ The column / property name on the data source that this series will get its data from. 
+ </summary>
+</member>
+<member name="M:Singular.Web.Charting.ChartSettings.GetJsonData">
+ <summary>
+ Gets the JSon data needed by the grid, using the series and axis settings.
+ </summary>
+</member>
+<member name="P:Singular.Web.Charting.XAxisSettings.SourceName">
+ <summary>
+ The column / property name on the data source that this series will get its data from. 
+ </summary>
+</member>
+<member name="F:Singular.Web.Charting.LegendPlacement.insideGrid">
+ <summary>
+ Puts the legend in the grid area
+ </summary>
+</member>
+<member name="F:Singular.Web.Charting.LegendPlacement.outsideGrid">
+ <summary>
+ Resizes the Grid in order to fit the legend outside the grid, but in the graph canvas area.
+ </summary>
+</member>
+<member name="F:Singular.Web.Charting.LegendPlacement.outside">
+ <summary>
+ Keeps the Grid the same size, and puts the legend outside the graph canvas area. May overlap other elements.
+ </summary>
+</member>
+<member name="P:Singular.Web.Charting.LineSeries.XSourceName">
+ <summary>
+ The column / property name on the data source that this series will get its data from. 
+ </summary>
+</member>
+<member name="P:Singular.Web.Charting.LineSeries.LowName">
+ <summary>
+ Column name of the low value for this point. (Will cause this to be a histogram series with high / low values)
+ </summary>
+</member>
+<member name="P:Singular.Web.Charting.LineSeries.HighName">
+ <summary>
+ Column name of the high value for this point. (Will cause this to be a histogram series with high / low values)
+ </summary>
+</member>
+<member name="P:Singular.Web.Charting.PieChartSettings.TopRecords">
+ <summary>
+ The number of pie slices to show before grouping everything into an 'other' pie slice.
+ </summary>
+</member>
+<member name="P:Singular.Web.Security.UsersControl`3.UsersGridSetup">
+ <summary>
+ Custom setup for the users grid.
+ </summary>
+</member>
+<member name="P:Singular.Web.Security.WebIdentity`1.LoginLabelHTML">
+ <summary>
+ The HTML to be used by the LoggedInName control.
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:Singular.Web.Security.WebIdentity`1.CustomAuthCriteria">
+ <summary>
+ Additional check to determine if the user is authenticated or not.
+ </summary>
+</member>
+<member name="M:Singular.Web.Security.WebIdentity`1.Invalidate">
+ <summary>
+ Marks this identity object as old, so other webservers will refetch it.
+ </summary>
+</member>
+<member name="M:Singular.Web.Security.WebIdentity`1.Rename(System.String)">
+ <summary>
+ Sets a new user name, and re-generates the auth cookie.
+ </summary>
+</member>
+<member name="M:Singular.Web.Security.WebIdentity`1.Login(Singular.Web.Security.LoginDetails,System.Action{Singular.Web.Result})">
+ <summary>
+ Checks the user credentials, and creates the authentication cookie
+ </summary>
+ <param name="LoginInfo">Login Information</param>
+ <param name="OnError">An optional function to provide custom error text</param>
+</member>
+<member name="P:Singular.Web.Security.Security.DecryptCookie">
+ <summary>
+ True if the auth cookie must be decrypted on each request in order to extract the cookies user data.
+ </summary>
+</member>
+<member name="M:Singular.Web.Security.Security.RedirectSafe(System.String)">
+ <summary>
+ Checks that the url is local, then redirects. Otherwise redirects to root path.
+ </summary>
+</member>
+<member name="M:Singular.Web.Security.WebPrinciple`1.Refetch(System.String,Singular.Web.Security.AuthType,System.Web.Security.FormsAuthenticationTicket)">
+ <summary>
+ Refetches the User From the Database. This is called when the User Session has expired, but the Authentication Cookie is still active.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:Singular.Web.CommandArgs.ModelHasBeenUpdated">
+ <summary>
+ Indicates that the Model has been updated and is in sync with the model on the client.
+ </summary>
+</member>
+<member name="P:Singular.Web.CommandArgs.IsAjaxPostBack">
+ <summary>
+ Indicates that this is an AJAX request, and only data will be sent back, the page will not be re-rendered.
+ </summary>
+</member>
+<member name="P:Singular.Web.CommandArgs.TransferModelToClient">
+ <summary>
+ Indicates that the Model must be sent back and updated on the client.
+ </summary>
+</member>
+<member name="P:Singular.Web.CommandArgs.ClientArgs">
+ <summary>
+ The arguments from the browser.
+ </summary>
+</member>
+<member name="P:Singular.Web.CommandArgs.ReturnData">
+ <summary>
+ Data to be returned to the browser. Either set this property to a new object, or set properties on this, e.g. ReturnData.RandomProperty = "1234"
+ </summary>
+</member>
+<member name="M:Singular.Web.AjaxProgress.SetStreamData``1(System.Func{``0},System.Action{``0})">
+ <summary>
+ Set data to be received by the client. This is meant for incremental updates as the data is available. The Object will be reset, and needs to be re-created / emptied on each call of StreamDataCreate.
+ </summary>
+ <param name="StreamDataCreate">Function to Create / Clear the data / list. This happens each time data is sent to the client.</param>
+ <param name="StreamDataSet">Method to add data to the stream. This may happen multiple times before data is sent to the client.</param>
+</member>
+<member name="M:Singular.Web.AjaxProgress.AddLogItem(System.String,Singular.Misc.LogEntry.LogEntryType,System.Boolean)">
+ <summary>
+ Uses stream data to add to a list of progress items.
+ </summary>
+</member>
+<member name="M:Singular.Web.AjaxProgress.Update">
+ <summary>
+ Updates all values and sends them to the client.
+ </summary>
+</member>
+<member name="M:Singular.Web.AjaxProgress.Update(System.String,System.Int32)">
+ <summary>
+ Updates all values and sends them to the client.
+ </summary>
+</member>
+<member name="P:Singular.Web.AjaxProgress.WrapResponse">
+ <summary>
+ True if the return value must be wrapped in a Singular.Web.Result
+ </summary>
+</member>
+<member name="P:Singular.Web.SaveImmediateArgs.Success">
+ <summary>
+ Specifies if the save was successfull or not. This is ignored if SaveHelper is set.
+ </summary>
+</member>
+<member name="P:Singular.Web.SaveImmediateArgs.SaveError">
+ <summary>
+ Specifies the cause of the save failing. This is ignored if SaveHelper is set.
+ </summary>
+</member>
+<member name="P:Singular.Web.SaveImmediateArgs.SaveHelper">
+ <summary>
+ Set to the save helper that was used to save the object.
+ </summary>
+</member>
+<member name="M:Singular.Web.WebServices.Helpers.SuccessResponse(System.Object)">
+ <summary>
+ Returns the object serialised as JSON to the client.
+ </summary>
+</member>
+<member name="M:Singular.Web.WebServices.Helpers.SuccessResponse(System.Object,Singular.Web.WebCallable)">
+ <summary>
+ Returns the object serialised as JSON to the client.
+ </summary>
+</member>
+<member name="M:Singular.Web.WebServices.Helpers.FailedResonse(System.Int32,System.String)">
+ <summary>
+ Returns HTTP status code {StatusCode} to the client, with the specified error text. 
+ </summary>
+</member>
+<member name="M:Singular.Web.WebServices.Helpers.ServerErrorResonse(System.String)">
+ <summary>
+ Returns HTTP status code 500 to the client, with the specified error text. 
+ </summary>
+</member>
+<member name="M:Singular.Web.WebServices.Helpers.ClientErrorResponse(System.String)">
+ <summary>
+ Returns HTTP status code 400 to the client, with the specified error text. 
+ </summary>
+</member>
+<member name="M:Singular.Web.WebServices.Helpers.AuthorisationErrorResponse(System.String)">
+ <summary>
+ Returns HTTP status code 403 to the client, with the specified error text. 
+ </summary>
+</member>
+<member name="M:Singular.Web.WebServices.Helpers.NotFoundResponse">
+ <summary>
+ Returns HTTP status code 404 to the client
+ </summary>
+</member>
+<member name="P:Singular.Web.WebServices.RoutingSettings.URLFolder">
+ <summary>
+ The url from the base url for api calls. Eg. http://website/Api/GetUserList URLFolder would be 'Api'
+ </summary>
+</member>
+<member name="P:Singular.Web.WebServices.RoutingSettings.HasSubFolder">
+ <summary>
+ If a subfolder will be including before the method name.
+ E.g. http://website/Api/GetUserList has no subfolder.
+ http://website/Api/Security/GetUserList has a subfolder called security. The GetUserList method will be in a class called Security.
+ </summary>
+</member>
+<member name="P:Singular.Web.WebServices.RoutingSettings.DefaultClassName">
+ <summary>
+ When HasSubFolder is true, and you want common methods in the root Api folder, specify the default class here.
+ E.g. http://website/Api/GetUserList will map to {ApiNameSpace}.{DefaultClassName}.GetUserList
+ </summary>
+</member>
+<member name="M:Singular.Web.WebServices.StatelessService.GetData(System.IO.Stream)">
+ <summary>
+ Executes a fetch on the type specified in the Input Arguments. Either using the lists criteria object, or calling GetData if the type implements IGetData
+ </summary>
+</member>
+<member name="M:Singular.Web.WebServices.StatelessService.GetData(Singular.Web.WebServices.GetDataArguments)">
+ <summary>
+ Executes a fetch on the type specified in the Input Arguments. Either using the lists criteria object, or calling GetData if the type implements IGetData
+ </summary>
+</member>
+<member name="T:Singular.Web.WebServices.DataHandler">
+ <summary>
+ HTTP handler used to handle requests which require write access to the session.
+ Only one request can run at a time per session.
+ This class also contains all the helper functions relating to readonly session access.
+ </summary>
+</member>
+<member name="M:Singular.Web.WebServices.DataHandler.GetCommonData(Singular.Web.IViewModel,System.Object)">
+ <summary>
+ Used by the JS library to fetch drop down data.
+ </summary>
+</member>
+<member name="M:Singular.Web.WebServices.FileDownloadHandler.SendFile(System.Web.HttpResponse,System.String,System.Byte[],System.Boolean,System.Int32,System.String)">
+ <summary>
+ Sends a file to the browser.
+ </summary>
+ <param name="response">Page.Response or System.Web.HttpContext.Current.Response</param>
+ <param name="FileName">The name of the attachment. Must not be the full file path.</param>
+ <param name="FileBytes">The byte array of the file content.</param>
+ <param name="Attachment">True if this must act like a download, where the save dialog is shown. False if you are doing something like img.src=downloadhandler?imgid=123</param>
+</member>
+<member name="M:Singular.Web.WebServices.FileDownloadHandler.SaveTempFile(System.String,System.Byte[],System.Int32,System.Web.Caching.Cache)">
+ <summary>
+ Temporarily stores a file in the application cache. Used if you need to return the file guid in an ajax response, and then fetch the file directly afterwards.
+ </summary>
+ <param name="FileName">File name to be presented to the user.</param>
+ <param name="FileContents">File contents.</param>
+ <param name="StoreDuration">Amount of time in seconds to store the file. This should be as low as possible.</param>
+ <returns>Guid to be used to retrieve the file using Singular.DownloadTempFile(Guid)</returns>
+</member>
+<member name="M:Singular.Web.WebServices.FileDownloadHandler.SaveTempFile(Singular.Documents.TemporaryDocument,System.Int32,System.Web.Caching.Cache)">
+ <summary>
+ Temporarily stores a file in the application cache. Used if you need to return the file guid in an ajax response, and then fetch the file directly afterwards.
+ </summary>
+ <param name="StoreDuration">Amount of time in seconds to store the file. This should be as low as possible.</param>
+ <returns>Guid to be used to retrieve the file using Singular.DownloadTempFile(Guid)</returns>
+</member>
+<member name="M:Singular.Web.WebServices.FileDownloadHandler.SaveTempFile(Singular.Documents.IDocument,System.Int32,System.Web.Caching.Cache)">
+ <summary>
+ Temporarily stores a file in the application cache. Used if you need to return the file guid in an ajax response, and then fetch the file directly afterwards.
+ </summary>
+ <param name="StoreDuration">Amount of time in seconds to store the file. This should be as low as possible.</param>
+ <returns>Guid to be used to retrieve the file using Singular.DownloadTempFile(Guid)</returns>
+</member>
+<member name="P:Singular.Web.MaintenanceHelpers.MaintenancePage.InfoText">
+ <summary>
+ Text which is displayed at the top of the page when editing this maintenance list.
+ </summary>
+</member>
+<member name="P:Singular.Web.MaintenanceHelpers.MaintenancePage.RefreshTypes">
+ <summary>
+ Specifies which types in common data must be refreshed after this maintenance list is saved.
+ </summary>
+</member>
+<member name="M:Singular.Web.MaintenanceHelpers.MaintenancePage.AddRefreshType``1">
+ <summary>
+ Adds a type in common data that must be refreshed after this maintenance list is saved.
+ </summary>
+</member>
+<member name="P:Singular.Web.ContentEditing.WebContent.WebContentID">
+ <Summary>
+ Gets the Web Content value
+ </Summary>
+</member>
+<member name="P:Singular.Web.ContentEditing.WebContent.Name">
+ <Summary>
+ Gets and sets the Name value
+ </Summary>
+</member>
+<member name="P:Singular.Web.ContentEditing.WebContent.HTMLContent">
+ <Summary>
+ Gets and sets the HTML Content value
+ </Summary>
+</member>
+<member name="P:Singular.Web.ContentEditing.ContentEditing.FileStorageDirectory">
+ <summary>
+ Directory where all the content files are located. If using File StorageMode.
+ </summary>
+</member>
+<member name="P:Singular.Web.ContentEditing.ContentEditing.ContentExpires">
+ <summary>
+ Number of minutes before the content is re fetched from the database. If using Database StorageMode
+ </summary>
+</member>
+<member name="P:Singular.Web.ContentEditing.ContentEditing.DefaultEditRole">
+ <summary>
+ The role the user must have to be able to edit web content.
+ </summary>
+</member>
+<member name="M:Singular.Web.ViewModel`1.AssertAccess">
+ <summary>
+ Ensures the user has the required role returned by the SecurityRole property.
+ If SecurityRole returns an empty string, this does nothing.
+ </summary>
+</member>
+<member name="M:Singular.Web.ViewModel`1.SendFile(System.String,System.Byte[],System.Boolean)">
+ <summary>
+ Sends a file to the browser for the user to view or download.
+ </summary>
+ <param name="FileName">The name of the file without a path.</param>
+ <param name="FileBytes">The contents of the file.</param>
+ <param name="Attachment">True if the user must see the 'view/save as' prompt. False if the document should display in the page. E.g. a PDF document.</param>
+</member>
+<member name="M:Singular.Web.ViewModel`1.SendFile(Singular.Documents.TemporaryDocument,System.Boolean)">
+ <summary>
+ Sends a file to the browser for the user to view or download.
+ </summary>
+ <param name="Attachment">True if the user must see the 'view/save as' prompt. False if the document should display in the page. E.g. a PDF document.</param>
+</member>
+<member name="M:Singular.Web.ViewModel`1.SendFile(Singular.Documents.IDocument,System.Boolean)">
+ <summary>
+ Sends a file to the browser for the user to view or download.
+ </summary>
+ <param name="Attachment">True if the user must see the 'view/save as' prompt. False if the document should display in the page. E.g. a PDF document.</param>
+</member>
+<member name="P:Singular.Web.ViewModel`1.MessageFadeTime">
+ <summary>
+ The time in milliseconds after which messages will fade.
+ </summary>
+</member>
+<member name="M:Singular.Web.ViewModel`1.AddRoleGroup(System.String)">
+ <summary>
+ Adds a list of roles the user is in according to the role group. E.g. AddRoleGroup('Entity') will add Entity.Access and Entity.Edit
+ </summary>
+</member>
+<member name="M:Singular.Web.ViewModel`1.AddRoles(System.String[])">
+ <summary>
+ Adds a list of roles the user is in. This can be checked on client side using Singular.HasAccess(Role)
+ </summary>
+</member>
+<member name="M:Singular.Web.PageBase.LocalText(System.String)">
+ <summary>
+ Gets the localised text for the given key. Returns the text in the default language if the localised version is missing.
+ </summary>
+</member>
+<member name="M:Singular.Web.PageBase.LocalText(System.String,System.Object[])">
+ <summary>
+ Gets the localised text for the given key and parameters. Returns the text in the default language if the localised version is missing.
+ Requires that the localised text has the parameters in {0}, {1} format.
+ </summary>
+</member>
+<member name="M:Singular.Web.PageBase`2.GetPostBackTarget">
+ <summary>
+ Gets the html control that caused the post back.
+ </summary>
+</member>
+<member name="M:Singular.Web.PageBase`2.PreSetup">
+ <summary>
+ Gets called before the ViewModel is created.
+ </summary>
+</member>
+<member name="M:Singular.Web.PageBase`2.Setup">
+ <summary>
+ Gets called after the View Model is created, and only on an initial page load (not post backs)
+ </summary>
+</member>
+<member name="P:Singular.Web.Result.IsInitialData">
+ <summary>
+ True if property marked with InitialDataOnly must be rendered.
+ </summary>
+</member>
+<member name="P:Singular.Web.Web.IsServerFarm">
+ <summary>
+ True indicates that the web application is hosted accross multiple servers.
+ </summary>
+</member>
+</members>
+</doc>

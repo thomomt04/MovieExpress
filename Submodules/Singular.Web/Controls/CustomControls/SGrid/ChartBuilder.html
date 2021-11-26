@@ -1,0 +1,55 @@
+﻿<div id="ChartPopup" style="display: none;">
+      
+  <div data-bind="with: Singular.GridChart.CurrentChart" style="width: 1200px; height: 600px;">
+    <button type="button" class="btn btn-danger" onclick="Singular.GridChart.CloseChart()" style="position: absolute; right: 5px; top: 4px; padding: 2px 4px; z-index: 10;">
+      <span class="fa fa-close"></span>
+    </button>
+    <div class="SGrid-Toolbar SGrid-ChartBuilder" style="float: left; width: 250px; background-color: #eee; padding: 10px; position: relative">
+
+      <input type="text" style="font-weight: bold" data-bind="SValue: ChartTitle, InlineLabel: 'Chart Title'" />
+
+      <label>Chart Type</label>
+      <select data-bind="options: Singular.GridChart.ChartTypes, value: ChartType, optionsCaption: 'Select Chart Type'"></select>
+          
+      <div data-bind="visible: !IsGrouped">
+        <label>Display Column</label>
+        <select data-bind="options: DisplayColumns, value: DisplayColumn, optionsValue: 'Key', optionsText: 'Text', optionsCaption: 'Select Display Column'"></select>
+      </div>
+                   
+      <label style="position: relative;"><span data-bind="text: ChartType() == 'Pie Chart' ? 'Value Column' : 'Series Columns'"></span>
+        <a href="#" data-bind="visible: (ChartType() && ChartType() != 'Pie Chart'), click: function () { $data.AddChartSeries(false) }" style="right: 6px; position: absolute;">Add Series</a></label>
+      <div data-bind="foreach: SeriesList">
+        <select data-bind="options: $parent.GetValueColumns($data), value: ValueColumn, optionsValue: 'Key', optionsText: 'Text'"></select>
+      </div>
+          
+      <label>Sort Mode</label>
+      <select data-bind="options: Singular.GridChart.SortMode, value: SortMode"></select>
+
+
+      <div style="display: inline-block">
+        <label>No of records</label>
+        <input type="text" data-bind="value: TopNo" style="width: 75px" />
+      </div>
+      <div style="display: inline-block; text-align:right; position:absolute; right: 16px;">
+        <label>Show 'Other'? </label>
+        <input style="margin: 6px; width: 16px; height: 16px;" type="checkbox" data-bind="checked: ShowOther" />
+      </div>
+      <div data-bind="visible: ChartType() == 'Pie Chart'">
+        <label>Show Percentages? </label>
+        <input style="margin: 6px; width: 16px; height: 16px;" type="checkbox" data-bind="checked: ShowPercentages" />
+        
+      </div>
+      <br />
+      <button type="button" class="btn btn-med btn-success" style="margin-top:16px; display: block; margin-left: auto;" data-bind="enable: IsValid, click: Singular.GridChart.CurrentChart().GridInfo.SaveChart"><span class="fa fa-check"></span> Save Graph</button>
+
+    </div>
+    <div style="float:right; position: relative; font-family: Calibri, Arial; font-size: 13.5px;">
+      <button type="button" class="btn btn-sm btn-primary" style="padding: 5px 10px; position:absolute; z-index: 1;" data-bind="visible: CanGoBack, click: GoBack">
+        <i class="fa fa-chevron-left" style="vertical-align: middle"></i><span> Back</span></button>
+      <div id="divChartContainer" style="width: 900px; height: 600px;">
+    </div>
+    </div>
+        
+  </div>
+
+</div>

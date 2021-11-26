@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A40E160D-F284-4490-ABED-91ACF2D82B01}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MELib</RootNamespace>
+    <AssemblyName>MELib</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Csla, Version=4.2.0.0, Culture=neutral, PublicKeyToken=93be5fdc093e4c30, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Submodules\Singular.Server\Dlls\Csla.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Documents.Excel.v12.2, Version=12.2.20122.2038, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Submodules\Singular.Server\Dlls\Infragistics4.Documents.Excel.v12.2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessObjects\Accounts\Account.cs" />
+    <Compile Include="BusinessObjects\Accounts\AccountList.cs" />
+    <Compile Include="BusinessObjects\Base\BaseObjects.cs" />
+    <Compile Include="BusinessObjects\Basket\Delivery.cs" />
+    <Compile Include="BusinessObjects\Basket\DeliveryList.cs" />
+    <Compile Include="BusinessObjects\Basket\ShoppingCart.cs" />
+    <Compile Include="BusinessObjects\Basket\ShoppingCartList.cs" />
+    <Compile Include="BusinessObjects\Basket\UserCart.cs" />
+    <Compile Include="BusinessObjects\Basket\UserCartList.cs" />
+    <Compile Include="BusinessObjects\Cart\Cart.cs" />
+    <Compile Include="BusinessObjects\Cart\CartList.cs" />
+    <Compile Include="BusinessObjects\Categories\Category.cs" />
+    <Compile Include="BusinessObjects\Categories\CategoryList.cs" />
+    <Compile Include="BusinessObjects\Categories\SubCategory.cs" />
+    <Compile Include="BusinessObjects\Categories\SubCategoryList.cs" />
+    <Compile Include="BusinessObjects\Documents\Document.cs" />
+    <Compile Include="BusinessObjects\Documents\DocumentList.cs" />
+    <Compile Include="BusinessObjects\Maintenance\Category.cs" />
+    <Compile Include="BusinessObjects\Maintenance\CategoryList.cs" />
+    <Compile Include="BusinessObjects\Maintenance\MovieGenre.cs" />
+    <Compile Include="BusinessObjects\Maintenance\MovieGenreList.cs" />
+    <Compile Include="BusinessObjects\Maintenance\Product.cs" />
+    <Compile Include="BusinessObjects\Maintenance\ProductCategory.cs" />
+    <Compile Include="BusinessObjects\Maintenance\ProductCategoryList.cs" />
+    <Compile Include="BusinessObjects\Maintenance\ProductList.cs" />
+    <Compile Include="BusinessObjects\Maintenance\RODelivery.cs" />
+    <Compile Include="BusinessObjects\Maintenance\RODeliveryList.cs" />
+    <Compile Include="BusinessObjects\Maintenance\Setting.cs" />
+    <Compile Include="BusinessObjects\Maintenance\SettingList.cs" />
+    <Compile Include="BusinessObjects\Movies\Movie.cs" />
+    <Compile Include="BusinessObjects\Movies\MovieList.cs" />
+    <Compile Include="BusinessObjects\Movies\UserMovie.cs" />
+    <Compile Include="BusinessObjects\Movies\UserMovieList.cs" />
+    <Compile Include="BusinessObjects\Orders\Order.cs" />
+    <Compile Include="BusinessObjects\Orders\OrderList.cs" />
+    <Compile Include="BusinessObjects\Products\Product.cs" />
+    <Compile Include="BusinessObjects\Products\ProductList.cs" />
+    <Compile Include="BusinessObjects\RO\ROMovieGenre.cs" />
+    <Compile Include="BusinessObjects\RO\ROMovieGenreList.cs" />
+    <Compile Include="BusinessObjects\RO\ROProduct.cs" />
+    <Compile Include="BusinessObjects\RO\ROProductCategory.cs" />
+    <Compile Include="BusinessObjects\RO\ROProductCategoryList.cs" />
+    <Compile Include="BusinessObjects\RO\ROProductList.cs" />
+    <Compile Include="BusinessObjects\RO\ROUser.cs" />
+    <Compile Include="BusinessObjects\RO\ROUserList.cs" />
+    <Compile Include="BusinessObjects\Security\ROSecurityGroup.cs" />
+    <Compile Include="BusinessObjects\Security\ROSecurityGroupList.cs" />
+    <Compile Include="BusinessObjects\Security\ROUserPaged.cs" />
+    <Compile Include="BusinessObjects\Security\ROUserPagedList.cs" />
+    <Compile Include="BusinessObjects\Security\User.cs" />
+    <Compile Include="BusinessObjects\Security\UserList.cs" />
+    <Compile Include="BusinessObjects\SystemSettings\Correspondence.cs" />
+    <Compile Include="BusinessObjects\Transactions\Transaction.cs" />
+    <Compile Include="BusinessObjects\Transactions\TransactionList.cs" />
+    <Compile Include="BusinessObjects\Transactions\TransactionType.cs" />
+    <Compile Include="BusinessObjects\Transactions\TransactionTypeList.cs" />
+    <Compile Include="CommonData.cs" />
+    <Compile Include="Document\Document.cs" />
+    <Compile Include="Document\DocumentEnums.cs" />
+    <Compile Include="Document\ValidationMessage.cs" />
+    <Compile Include="Helpers\MEHelpers.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Security\MEIdentity.cs" />
+    <Compile Include="Security\MEWebSecurity.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BusinessObjects\Category\" />
+    <Folder Include="BusinessObjects\Home\" />
+    <Folder Include="BusinessObjects\Reports\" />
+    <Folder Include="BusinessObjects\Test\" />
+    <Folder Include="Reports\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Submodules\Singular.Server\Singular.Server.461.vbproj">
+      <Project>{2cb7ebc8-a8a2-441c-a6b8-a76f64b2158d}</Project>
+      <Name>Singular.Server.461</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Submodules\Singular.Web\Singular.Web.461.vbproj">
+      <Project>{5f74ab00-b5e2-47a3-8dbe-f726cb3d03cd}</Project>
+      <Name>Singular.Web.461</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

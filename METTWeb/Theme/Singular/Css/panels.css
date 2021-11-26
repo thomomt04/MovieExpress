@@ -1,0 +1,73 @@
+﻿
+/*  Panels Stylesheet
+    Author: Kelly Render
+    Date: 28 Feb 2018
+    Purpose: This holds all the styles for all your side panels, main panels, panels with tabs and accrodian panels for each card
+*/
+
+
+
+
+/* REZISABLE PANELS */
+.resizable-panels .ibox {
+  clear: none;
+  margin: 10px;
+  float: left;
+  overflow: hidden;
+  min-height: 150px;
+  min-width: 150px;
+}
+.resizable-panels .ibox .ibox-content {
+  height: calc(100% - 49px);
+}
+.ui-resizable-helper {
+  background: rgba(211, 211, 211, 0.4);
+}
+/* REZISABLE PANELS */
+
+
+body.mini-navbar .footer.fixed,
+body.body-small.mini-navbar .footer.fixed {
+  margin: 0 0 0 70px;
+}
+body.mini-navbar.canvas-menu .footer.fixed,
+body.canvas-menu .footer.fixed {
+  margin: 0 !important;
+}
+body.fixed-sidebar.body-small.mini-navbar .footer.fixed {
+  margin: 0 0 0 220px;
+}
+body.body-small .footer.fixed {
+  margin-left: 0;
+}
+/* PANELS */
+.page-heading {
+	border-top: 0;
+	padding: 15px 15px 23px 10px;
+}
+.panel-heading h1,
+.panel-heading h2 {
+  margin-bottom: 5px;
+}
+
+/* PANELS */
+.panel.blank-panel {
+  background: none;
+  margin: 0;
+}
+.blank-panel .panel-heading {
+  padding-bottom: 0;
+}
+.nav-tabs > li > a {
+  color: #A7B1C2;
+  font-weight: 600;
+  padding: 10px 20px 10px 25px;
+}
+.nav-tabs > li > a:hover,
+.nav-tabs > li > a:focus {
+  background-color: #e6e6e6;
+  color: #676a6c;
+}
+.ui-tab .tab-content {
+  padding: 20px 0;
+}

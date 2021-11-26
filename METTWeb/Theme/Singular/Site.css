@@ -1,0 +1,724 @@
+﻿/* Version 1.0 */
+
+/* #region Body and Headings */
+
+* {
+	box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	background-color: #2b6777;
+}
+
+@font-face {
+	font-family: 'Material Icons';
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'MaterialIcons-Regular';
+	src: url('../fonts/MaterialIcons-Regular.eot') format('embedded-opentype');
+}
+
+@font-face {
+	font-family: 'MaterialIcons-Regular';
+	src: url('../fonts/MaterialIcons-Regular.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'MaterialIcons-Regular';
+	src: url('../fonts/MaterialIcons-Regular.ttf') format('truetype');
+}
+
+.material-icons {
+	font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 24px; /* Preferred icon size */
+	display: inline-block;
+	line-height: 1;
+	text-transform: none;
+	letter-spacing: normal;
+	word-wrap: normal;
+	white-space: nowrap;
+	direction: ltr;
+	/* Support for all WebKit browsers. */
+	-webkit-font-smoothing: antialiased;
+	/* Support for Safari and Chrome. */
+	text-rendering: optimizeLegibility;
+	/* Support for Firefox. */
+	-moz-osx-font-smoothing: grayscale;
+	/* Support for IE. */
+	font-feature-settings: 'liga';
+}
+
+body {
+	background: #f3f3f4;
+	font-size: 13px;
+	font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+	margin: 0px;
+	padding: 0px;
+	color: #7a7a7a;
+	font-weight: 100;
+}
+
+p {
+	margin-bottom: 10px;
+	line-height: 1.6em;
+}
+
+h1, h2, h3, h4, h5 {
+	font-variant: unset !important;
+	text-transform: none;
+	line-height: 1em;
+	font-weight: 200;
+	color: #fff;
+	font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+	/*padding-left: 20px;*/
+}
+
+h1 {
+	font-size: 36px;
+}
+
+h2 {
+	font-size: 30px;
+}
+
+h3 {
+	font-size: 24px;
+}
+
+h4 {
+	font-size: 18px;
+}
+
+h5 {
+	font-size: 14px;
+}
+
+.clear {
+	clear: both;
+}
+
+/* #endregion */
+
+/* #region Page container and Header */
+
+.page-container {
+	max-width: 1000px;
+	margin: 10px auto 0px auto;
+	padding: 0px 20px;
+}
+
+.page {
+	background-color: #fff;
+	z-index: 1;
+	border: 1px solid #D3D9D9;
+	border-top: none;
+}
+
+.header {
+	color: #fff;
+	background: #385678;
+	position: relative;
+	z-index: 99;
+}
+	/*Login Controls*/
+
+	.header .title {
+		font-weight: 600;
+		padding: 10px 20px;
+		font-size: 26px;
+	}
+
+.login-display {
+	position: absolute;
+	right: 0;
+	top: 0;
+	font-weight: 600;
+	font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+	color: #fff;
+	padding-right: 40px;
+	padding-top: 16px;
+}
+
+	.login-display a:visited {
+		color: #7a7a7a;
+	}
+
+
+.content-holder {
+	min-height: 420px;
+	margin: 20px;
+}
+
+@media (max-width: 600px) {
+	.page-container {
+		margin: 5px auto 0px auto;
+		padding: 0px 10px;
+	}
+}
+
+.FloatLeft {
+	float: left;
+}
+
+span.fa.fa-sign-out.fa {
+	float: left;
+	margin-right: 10px;
+	margin-top: 4px;
+	    color: #7a7a7a;
+}
+
+/*Login Controls*/
+
+/* #endregion */
+
+/* #region Main Menu */
+
+div.MenuContainer {
+	background-color: #273D55;
+	clear: both;
+}
+
+div.menu {
+	padding: 3px;
+}
+
+	div.menu ul {
+		list-style: none;
+		margin: 0px;
+		padding: 0px;
+		width: auto;
+	}
+
+		div.menu ul li a, div.menu ul li a:visited {
+			background-color: #2B3D51;
+			color: #dde4ec;
+			display: block;
+			padding: 5px 20px;
+			text-decoration: none;
+			white-space: nowrap;
+		}
+
+		div.menu ul.level2 li a {
+			padding: 8px 20px;
+		}
+
+		div.menu ul li a:hover {
+			background-color: #bfcbd6;
+			color: #465c71;
+			text-decoration: none;
+		}
+
+		div.menu ul li a:active {
+			background-color: #273D55;
+			color: #fff;
+			text-decoration: none;
+		}
+
+/* #endregion */
+
+/* #region Form elements and inputs */
+
+
+fieldset legend {
+	font-weight: 600;
+}
+
+select, input[type='text'], input[type='password'], input[type='checkbox'], input[type='file'], textarea {
+	box-shadow: inset 0px 2px 4px rgba(205,211,221,0.3);
+	border: 1px solid #CDD3DD;
+	padding: 4px;
+	background-color: #F4F5F6;
+	font: inherit;
+	line-height: 1em;
+}
+
+textarea {
+	vertical-align: middle;
+}
+
+input[type='checkbox'] {
+	position: relative;
+	top: 2px;
+}
+
+input:focus, select:focus, textarea:focus {
+	border: 1px solid #5A7A98;
+	box-shadow: inset 0px 1px 4px #DCE4F0, 0 0 2px 1px #DBE3EB;
+	-webkit-transition: all 0.10s ease-in-out;
+	-moz-transition: all 0.10s ease-in-out;
+	-ms-transition: all 0.10s ease-in-out;
+	transition: all 0.10s ease-in-out;
+}
+
+select {
+	cursor: pointer;
+}
+
+div.row {
+	overflow: hidden;
+	padding: 2px 0px 2px 0px;
+	display: block;
+}
+
+	div.row span.label, div.row label, div.row span.display {
+		display: inline-block;
+		width: 130px;
+		    text-align: inherit!important;
+				padding:0px;
+	}
+
+div.rowMulti {
+	display: inline-block;
+	padding-right: 20px;
+}
+
+.NumericEditor {
+	text-align: right;
+}
+
+.DatePicker {
+	text-align: center;
+}
+
+.ValidationError {
+	margin-left: 0px;
+	display: none;
+	vertical-align: middle;
+}
+.StackedEditors input[type=text], .StackedEditors input[type=password] {
+	display: block;
+	margin-top: 4px;
+	/*width: 100%;*/
+}
+
+.StackedEditors div.row {
+	margin: 5px 0;
+}
+
+/* #endregion */
+
+/* #region Grid */
+
+.Grid {
+	border-spacing: 0;
+	empty-cells: show;
+	font-size: 1em;
+	border-collapse: collapse;
+}
+
+	.Grid thead th {
+		background-color: #EAEDF0;
+		padding: 5px 3px;
+		font-weight: 600;
+		color: #222;
+		text-align: left;
+	}
+
+	.Grid thead tr:last-child th, .Grid th.LButtons, .Grid th.RButtons {
+		border-bottom: 2px solid #C2CAD4;
+	}
+
+		.Grid thead tr:last-child th.Highlight {
+			border-bottom-color: #384758;
+		}
+
+	.Grid thead th.Highlight {
+		background-color: #4B5F75;
+		color: #fff !important;
+	}
+
+	.Grid tbody td {
+		padding: 2px;
+		color: #333;
+	}
+
+	.Grid caption {
+		padding: 4px;
+		background: #006E9F;
+		color: #fff;
+	}
+
+.GridAltRow {
+	background: #F3F5F7;
+}
+
+.GridDeletedRow {
+	background: #fff0f0;
+}
+
+.ChildGrid {
+}
+
+.GridHL tr:hover {
+	background-color: #EDF1F7;
+	cursor: pointer;
+}
+
+/* #endregion */
+
+/* #region Combo box */
+input.ComboBox {
+	/*background-color: #b6b7bc;*/
+}
+
+.ComboBox.Blank {
+	color: #bbb !important;
+}
+
+.ComboDropDown {
+	position: absolute;
+	max-height: 400px;
+	background-color: #ffffff;
+	border: 1px solid #ccc;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	display: none;
+	z-index: 1004;
+	overflow-y: hidden;
+	-webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	-webkit-background-clip: padding-box;
+	-moz-background-clip: padding;
+	background-clip: padding-box;
+}
+
+	.ComboDropDown table {
+		border-spacing: 0px;
+	}
+
+	.ComboDropDown tr, .ComboDropDown div div {
+		background: linear-gradient(to bottom, #ffffff 0%,#ffffff 100%);
+		padding: 5px;
+		overflow: hidden;
+		white-space: nowrap;
+		padding-right: 5px;
+		cursor: pointer;
+	}
+
+	.ComboDropDown td {
+		border-left: 1px solid #ccc;
+		padding: 2px 4px 2px 4px;
+	}
+
+	.ComboDropDown th {
+		padding: 2px;
+		cursor: pointer;
+		background: linear-gradient(to bottom, #666 0%, #444 100%);
+		color: #fff;
+		font-size: 0.9em;
+	}
+
+	.ComboDropDown .ComboChild {
+		padding-left: 5px;
+	}
+
+	.ComboDropDown .ComboGroup, .ComboDropDown .ComboGroup:hover {
+		background: linear-gradient(to bottom, #777 0%,#555 100%);
+		color: #fff;
+		font-weight: bold;
+		cursor: default;
+	}
+
+	.ComboDropDown tr:hover, .ComboDropDown div div:hover {
+		text-decoration: none !important;
+		color: #ffffff !important;
+		background-color: #0081c2 !important;
+		background-image: -moz-linear-gradient(top, #0088cc, #0077b3) !important;
+		background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0077b3)) !important;
+		background-image: -webkit-linear-gradient(top, #0088cc, #0077b3) !important;
+		background-image: -o-linear-gradient(top, #0088cc, #0077b3) !important;
+		background-image: linear-gradient(to bottom, #0088cc, #0077b3) !important;
+		background-repeat: repeat-x !important;
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0077b3', GradientType=0) !important;
+	}
+
+	.ComboDropDown .Selected {
+		text-decoration: none !important;
+		color: #ffffff !important;
+		background-color: #0081c2 !important;
+		background-image: -moz-linear-gradient(top, #0088cc, #0077b3) !important;
+		background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0077b3)) !important;
+		background-image: -webkit-linear-gradient(top, #0088cc, #0077b3) !important;
+		background-image: -o-linear-gradient(top, #0088cc, #0077b3) !important;
+		background-image: linear-gradient(to bottom, #0088cc, #0077b3) !important;
+		background-repeat: repeat-x !important;
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0077b3', GradientType=0) !important;
+	}
+
+/* #endregion */
+
+/* #region Paged Grid */
+.Pager {
+	width: 100%;
+	vertical-align: middle;
+	background-color: #EAEDF0;
+	padding: 2px 0;
+	position: relative;
+	border: 1px solid #C2CAD4;
+	border-top-style: none;
+	font-size: 12px;
+}
+
+	.Pager .Buttons {
+		float: none !important;
+		padding-left: 2px;
+	}
+
+	.Pager .Status {
+		float: none !important;
+		position: absolute;
+		right: 4px;
+		top: 4px;
+	}
+
+	.Pager input[type=text] {
+		vertical-align: middle;
+		background-color: #fff;
+		box-shadow: inset 0px 2px 4px #eee;
+	}
+
+.TBElement {
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 22px;
+	outline: 0 none;
+	padding: 0;
+	margin: 0;
+	background-color: transparent;
+	border-style: none;
+	vertical-align: middle;
+}
+
+.TBButton {
+	width: 20px;
+}
+
+	.TBButton:hover {
+		background-color: #C2CAD4;
+	}
+
+.TBSeperator {
+	background-image: url(../Images/TBSeperator.gif);
+	width: 4px;
+	display: inline-block;
+}
+/* #endregion */
+
+/* #region Singular Lib Control styles */
+
+.DivToolbar {
+	position: relative;
+	background-color: #F1F5F7;
+	border-bottom: 2px solid #2B6777;
+	padding: 15px;
+	margin: 10px 0 10px 0;
+	min-height: 50px;
+	color: #fff;
+}
+
+	.DivToolbar h1, .DivToolbar h2 {
+		margin-top: 5px;
+		font-weight: normal;
+	}
+
+.Msg div {
+	border-radius: 0;
+	border-style: none;
+	border-left-style: solid;
+	border-left-width: 4px;
+}
+
+.ValidationPopup {
+	border-radius: 0;
+	border-style: none;
+	border-right-style: solid;
+	border-right-width: 4px;
+}
+
+.ConfButtons {
+	margin-top: 10px;
+}
+
+.LoadingOverlay {
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.1);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 10000;
+}
+/*
+	.LoadingOverlay .Outer {
+		margin: 30px auto auto auto;
+		width: 95px;
+		padding: 2px;
+		border: 1px solid #8F8F8F;
+		background-color: #D6D6D6;
+	}
+
+	.LoadingOverlay .Inner {
+		padding: 3px;
+		padding-top: 2px;
+		width: 100%;
+		border: 1px solid #CCCCCC;
+		background-color: #fff;
+		color: #222;
+		font-weight: 600;
+		background-image: url(../Images/LoadingSmall.gif);
+		background-repeat: no-repeat;
+		background-position: 4px 5px;
+	}*/
+/*
+	.LoadingOverlay span {
+		margin-left: 22px;
+		display: inline-block;
+	}
+*/
+.ConfButtons {
+	margin-top: 10px;
+}
+
+/* #endregion */
+
+/* #region Login Popup Menu */
+.login-status {
+	font-size: 15px;
+	font-weight: 600;
+	margin: 5px 10px;
+}
+
+.context-menu-ls {
+	position: absolute;
+	margin-top: 8px;
+	z-index: 2000;
+	display: none;
+	color: #272727;
+}
+
+	.context-menu-ls .CM-Main {
+		background-color: #FFF;
+		border-radius: 5px;
+		margin-right: -10px;
+		text-align: left;
+		min-width: 200px;
+		border: 1px solid #DDD;
+	}
+
+	.context-menu-ls .CM-Header {
+		padding: 7px 15px 13px 15px;
+	}
+
+		.context-menu-ls .CM-Header div:first-child {
+			font-weight: 600;
+			font-size: 1.1em;
+			margin-bottom: 5px;
+		}
+
+	.context-menu-ls .Selectable {
+		background-color: #F7F7F7;
+		padding-bottom: 2px;
+		border-radius: 5px;
+	}
+
+		.context-menu-ls .Selectable div:hover {
+			background-color: #385678;
+			color: #FFF;
+			cursor: pointer;
+		}
+
+		.context-menu-ls .Selectable div {
+			border-top: 1px solid #E7E7E7;
+		}
+
+			.context-menu-ls .Selectable div a {
+				text-decoration: none;
+				color: inherit;
+				padding: 10px 15px;
+				display: block;
+			}
+
+/* #endregion */
+
+/* #region JQuery overrides */
+
+.ui-widget-header {
+	background-color: #3D434F;
+	background: linear-gradient(180deg, #464D5C, #3D434F);
+	font-weight: 600;
+	border: none;
+}
+
+.ui-widget-content {
+	border: none;
+}
+
+.ui-corner-all {
+	border-radius: 0px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	-khtml-border-radius: 0px;
+}
+
+.ui-dialog {
+	padding: 0;
+}
+
+	.ui-dialog .ui-dialog-titlebar {
+		padding: 10px;
+	}
+
+	.ui-dialog .ui-dialog-titlebar-close {
+		right: 10px;
+		height: 20px;
+		width: 20px;
+	}
+
+	.ui-dialog .ui-dialog-content {
+		padding: 10px;
+	}
+
+.ui-datepicker .ui-datepicker-header {
+	padding: 5px;
+	border-radius: 3px 3px 0 0;
+}
+
+.ui-datepicker .ui-datepicker-title select {
+	padding: 2px;
+}
+
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-prev:hover {
+	top: 6px;
+	left: 6px;
+}
+
+.ui-datepicker .ui-datepicker-next, .ui-datepicker .ui-datepicker-next:hover {
+	top: 6px;
+	right: 6px;
+}
+
+.ui-widget-overlay {
+	background: #000;
+	opacity: 0.5;
+}
+.footer {
+    background: none repeat scroll 0 0 white;
+    border-top: 1px solid #e7eaec;
+    bottom: 0;
+    left: 0;
+    padding: 10px 20px;
+    position: absolute;
+    right: 0;
+}
+
+
+
+/* #endregion */
+

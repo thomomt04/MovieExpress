@@ -1,0 +1,305 @@
+<%@ Master Language="C#" AutoEventWireup="false" CodeBehind="Site.Master.cs" Inherits="MEWeb.Site" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head id="Head" runat="server">
+  <title>Movie Express</title>
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+  <meta name="copyright" content="© Singular Systems, 2020" />
+  <meta name="author" lang="en" content="Singular Systems" />
+  <meta name="robots" content="Index,Follow" />
+  <meta name="description" content="" />
+
+  <link href="~/Theme/Singular/jquery-ui-1.8.19.custom.css" rel="stylesheet" type="text/css" />
+  <%= Singular.Web.CSSFile.RenderLibraryStyles() %>
+  <%--	<%= Singular.Web.CSSFile.RenderStyleTag("~/Theme/Singular/Site.css")%>--%>
+  <%= Singular.Web.CSSFile.IncludeFontAwesome() %>
+  <%= Singular.Web.Scripts.Scripts.RenderLibraryScripts() %>
+
+  <!--Font Awesome Latest Update -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+    integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  <!--Font Awesome Latest Update -->
+
+  <%--	@media tag reference --%>
+  <style type="text/css" media="screen, print"></style>
+  <%--	@media tag reference --%>
+  <link rel="icon" type="image/x-icon" href="favico.ico" />
+
+  <!-- Boostrap & FA -->
+  <link href="Theme/Inspinia/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="Theme/Inspinia/font-awesome/css/font-awesome.css" rel="stylesheet" />
+
+  <!-- Toastr style inspinia (inspinia style notys) -->
+  <link href="Theme/Singular/css/toastr.css" rel="stylesheet" />
+
+  <!-- Inspinia -->
+  <link href="Theme/Inspinia/css/animate.css" rel="stylesheet" />
+
+  <!-- Custom Main Base (Global and Generic Styles) -->
+  <link href="Theme/Singular/css/custombase.css" rel="stylesheet" />
+  <link href="Theme/Singular/css/bootstrapoverrides.css" rel="stylesheet" />
+  <link href="Theme/Singular/css/nav.css" rel="stylesheet" />
+  <link href="Theme/Singular/css/pace.css" rel="stylesheet" />
+  <link href="Theme/Singular/css/responsivemedia.css" rel="stylesheet" />
+
+
+  <!-- Custom Main Often Used (Global and Generic Styles) -->
+  <link href="Theme/Singular/css/table.css" rel="stylesheet" />
+  <link href="Theme/Singular/css/modal.css" rel="stylesheet" />
+  <link href="Theme/Singular/css/buttons.css" rel="stylesheet" />
+  <link href="Theme/Singular/css/tabs.css" rel="stylesheet" />
+  <link href="Theme/Singular/css/inputs.css" rel="stylesheet" />
+  <link href="Theme/Singular/css/metismenu.css" rel="stylesheet" />
+  <link href="Theme/Singular/css/panels.css" rel="stylesheet" />
+  <link href="Theme/Singular/css/notify.css" rel="stylesheet" />
+  <link href="Theme/Singular/css/modal.css" rel="stylesheet" />
+  <link href="Theme/Singular/css/dropzone.css" rel="stylesheet" />
+  <link href="Theme/Singular/css/animations.css" rel="stylesheet" />
+  <link href="Theme/Singular/css/toastr.css" rel="stylesheet" />
+
+  <!-- Custom Modularized Styles (page and mdularized styles)  -->
+
+
+  <!-- Skins -->
+  <link href="Theme/Singular/Skins/skin_1.css" rel="stylesheet" />
+  <link href="Theme/Singular/Skins/skin_2.css" rel="stylesheet" />
+  <link href="Theme/Singular/Skins/skin_3.css" rel="stylesheet" />
+  <link href="Theme/Singular/Skins/md_skin.css" rel="stylesheet" />
+  <link href="Theme/Singular/Skins/custom_skin.css" rel="stylesheet" />
+  <link href="Theme/Singular/skins/undp_skin_light.css" rel="stylesheet" />
+
+
+  <!-- CustomWeb Custom Styles -->
+  <link href="Theme/Singular/METTCustomCss/customstyles.css" rel="stylesheet" />
+  <link href="Theme/Inspinia/css/plugins/step-wizard/step-wizard.css" rel="stylesheet" />
+
+  <!-- Javascript -->
+  <script type="text/javascript" src="../Helpers/MEHelpers.js"></script>
+  <script type="text/javascript" src="../Scripts/noty/packaged/jquery.noty.packaged.js"></script>
+  <script type="text/javascript" src="../Scripts/noty/layouts/topRight.js"></script>
+  <script type="text/javascript" src="../Scripts/noty/layouts/bottom.js"></script>
+  <script type="text/javascript" src="../Scripts/noty/layouts/bottomCenter.js"></script>
+  <script type="text/javascript" src="../Scripts/noty/layouts/bottomLeft.js"></script>
+  <script type="text/javascript" src="../Scripts/noty/layouts/bottomRight.js"></script>
+  <script type="text/javascript" src="../Scripts/noty/layouts/center.js"></script>
+  <script type="text/javascript" src="../Scripts/noty/layouts/centerLeft.js"></script>
+  <script type="text/javascript" src="../Scripts/noty/layouts/centerRight.js"></script>
+  <script type="text/javascript" src="../Scripts/noty/layouts/inline.js"></script>
+  <script type="text/javascript" src="../Scripts/noty/layouts/top.js"></script>
+  <script type="text/javascript" src="../Scripts/noty/layouts/topCenter.js"></script>
+  <script type="text/javascript" src="../Scripts/noty/layouts/topLeft.js"></script>
+  <script type="text/javascript" src="../Theme/Inspinia/js/plugins/step-wizard/steps-wizard.js"></script>
+  <%--	<script type="text/javascript" src="../Scripts/ImageChooser.js"></script>
+	<script type="text/javascript" src="../Scripts/jquery.circliful.js"></script>--%>
+
+
+  <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+  </asp:ContentPlaceHolder>
+</head>
+
+<body class="undp-skin">
+  <form runat="server">
+    <div id="wrapper">
+      <nav class="navbar-default navbar-static-side" role="navigation">
+				<div class="sidebar-collapse">
+					<ul class="nav metismenu" id="side-menu">
+
+						<!-- START: Client Badge Area - Top Left of Nav Menu -->
+						<li class="nav-header">
+							<div class="clientbadge-element">
+								<div class="clientbadgeinner-element">
+									<img src="../Theme/Singular/css/Images/Logos/default_logo.png" style="width: 111%" />
+								</div>
+							</div>
+							<div class="logo-element">
+								POP
+							</div>
+						</li>
+						<!-- END: Client Badge Area - Top Left of Nav Menu -->
+
+						<singular:SiteMapDataSource ID="SiteMapMain" runat="server" SiteMapProvider="SiteMapMain" ShowStartingNode="false" />
+						<li id="navMenuControl" runat="server" clientidmode="Static">
+							<!-- The LeftNavMenuV2 Custom Control will be added here. Code executed in the OnLoad method in the code behind this page -->
+						</li>
+
+					</ul>
+
+				</div>
+			</nav>
+
+      <!-- START: Page Area (Excluding Left Nav Menu) -->
+      <div id="page-wrapper" class="gray-bg">
+
+        <!-- START: Top Nav Bar -->
+        <div class="row border-bottom">
+          <nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+						<div class="navbar-header">
+							<a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i></a>
+							<div class="navbar-form-custom">
+
+								<div class="page-heading">
+									<h2>Popcorn</h2>
+								</div>
+
+
+								<%--	<div class="form-group">
+									<input type="text" placeholder="Search for something..." class="form-control" name="top-search" id="top-search" />
+								</div>--%>
+							</div>
+						</div>
+						<ul class="nav navbar-top-links navbar-right">
+							<!-- The LoginStatusV2 Custom Control will be added here. -->
+							<%= new MEWeb.CustomControls.LoginStatusV2() %>
+						</ul>
+
+					</nav>
+        </div>
+        <!-- END: Top Nav Bar -->
+
+        <!-- START: Breadcrumb Area -->
+
+        <div class="row wrapper border-bottom white-bg page-heading paddingBottom0">
+          <div class="col-lg-10">
+            <asp:ContentPlaceHolder ID="PageTitleContent" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <ol id="breadcrumbControl" runat="server" clientidmode="Static" class="breadcrumb">
+              <!-- The BreadcrumbV2 Custom Control will be added here. Code executed in the OnLoad method in the code behind this page -->
+            </ol>
+          </div>
+          <div class="col-lg-2">
+          </div>
+        </div>
+
+        <!-- END: Breadcrumb Area -->
+
+        <!-- START: Main Content Area -->
+        <div class="wrapper wrapper-content animated fadeInRight paddingTop0">
+          <div style="display: none" data-bind="visible: true">
+            <asp:ScriptManager ID="METTMain" runat="server" AjaxFrameworkMode="Disabled" />
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                      <h5>Card Example 1 <small>Descriptive text to drive user behaviour</small></h5>
+                      <div class="ibox-tools">
+                        <a class="collapse-link">
+                          <i class="fa fa-chevron-up"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="ibox-content">
+                      <div class="row">
+                        <div class="col-sm-12">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                      <h5>Card Example 2 <small>Descriptive text to drive user behaviour</small></h5>
+                      <div class="ibox-tools">
+                        <a class="collapse-link">
+                          <i class="fa fa-chevron-up"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="ibox-content">
+                      <div class="row">
+                        <div class="col-sm-12">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                      <h5>Card Example 3 <small>Descriptive text to drive user behaviour</small></h5>
+                      <div class="ibox-tools">
+                        <a class="collapse-link">
+                          <i class="fa fa-chevron-up"></i>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="ibox-content">
+                      <div class="row">
+                        <div class="col-sm-12">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </asp:ContentPlaceHolder>
+          </div>
+
+          <singular:PageModelRenderer ID="pmrMain" runat="server" />
+
+        </div>
+        <!-- END: Main Content Area -->
+
+        <!-- START: Footer -->
+        <div class="footer">
+          <div class="pull-right">
+            Powered By <strong>Singular Systems (Pty) Ltd.</strong> <%: DateTime.Now.Year %>
+          </div>
+        </div>
+        <!-- END: Footer -->
+
+      </div>
+      <!-- END: Page Area (Excluding Left Nav Menu) -->
+
+    </div>
+  </form>
+
+  <!-- Mainly scripts -->
+  <%--<script type="text/javascript" src="<%= Page.ResolveUrl("~/Inspinia/js/jquery-3.1.1.min.js") %>"></script>--%>
+  <script type="text/javascript" src="<%= Page.ResolveUrl("~/Theme/Inspinia/js/bootstrap.min.js") %>"></script>
+  <script type="text/javascript" src="<%= Page.ResolveUrl("~/Theme/Inspinia/js/plugins/metisMenu/jquery.metisMenu.js") %>"></script>
+  <script type="text/javascript" src="<%= Page.ResolveUrl("~/Theme/Inspinia/js/plugins/slimscroll/jquery.slimscroll.min.js") %>"></script>
+
+  <!-- Custom and plugin javascript -->
+  <script type="text/javascript" src="<%= Page.ResolveUrl("~/Theme/Inspinia/js/inspinia.js") %>"></script>
+  <script type="text/javascript" src="<%= Page.ResolveUrl("~/Theme/Inspinia/js/plugins/pace/pace.min.js") %>"></script>
+
+
+  <!-- Maintenance menu toggle javascript -->
+
+  <script type="text/javascript">
+    //Singular.LoadingGifUrl = '~/Images/loading.gif';
+    Singular.LoadingGifUrl = '/Images/Loading.gif';
+
+    function timerIncrement() {
+      if (!window.location.pathname.includes("Account")) {
+        ViewModel.CallServerMethod("GetSessionIdleTime", {}, function (result) {
+          if (result.Success) {
+            idleTime = result.Data + 1;
+            if (idleTime >= totalIdleTime) {
+              Logout();
+            } else {
+              ViewModel.CallServerMethod("SetSessionIdleTime", { NewIdleTime: idleTime }, function (result) {
+                if (result.Success) {
+                  // No way to test this has worked :'D
+                }
+              });
+            }
+          }
+          else {
+          }
+        })
+      }
+    }
+
+
+  </script>
+
+</body>
+
+</html>

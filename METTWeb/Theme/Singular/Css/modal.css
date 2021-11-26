@@ -1,0 +1,96 @@
+﻿
+/*  Modal Screen Stylesheet
+    Author: Kelly Render
+    Date: 28 Feb 2018
+    Purpose: This holds all the styles for your modal pop ups
+*/
+
+/* MODAL */
+.modal-content {
+  background-clip: padding-box;
+  background-color: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  outline: 0 none;
+  position: relative;
+}
+.modal-dialog {
+  z-index: 2200;
+}
+.modal-body {
+  padding: 20px 30px 30px 30px;
+}
+.inmodal .modal-body {
+  background: #f8fafb;
+}
+.inmodal .modal-header {
+  padding: 30px 15px;
+  text-align: center;
+}
+.animated.modal.fade .modal-dialog {
+  -webkit-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none;
+}
+.inmodal .modal-title {
+  font-size: 26px;
+}
+.inmodal .modal-icon {
+  font-size: 84px;
+  color: #e2e3e3;
+}
+.modal-footer {
+  margin-top: 0;
+}
+.ibox.fullscreen {
+  z-index: 2030;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: auto;
+  margin-bottom: 0;
+}
+.ibox.fullscreen .collapse-link {
+  display: none;
+}
+.ibox.fullscreen .ibox-content {
+  min-height: calc(100% - 48px);
+}
+body.modal-open {
+  padding-right: inherit !important;
+}
+body.modal-open .wrapper-content.animated {
+  -webkit-animation: none;
+  -ms-animation-nam: none;
+  animation: none;
+}
+body.modal-open .animated {
+  animation-fill-mode: initial;
+  z-index: inherit;
+}
+/* Show profile dropdown on fixed sidebar */
+body.mini-navbar.fixed-sidebar .profile-element,
+.block {
+  display: block !important;
+}
+body.mini-navbar.fixed-sidebar .nav-header {
+  padding: 33px 25px;
+}
+body.mini-navbar.fixed-sidebar .logo-element {
+  display: none;
+}
+.fullscreen-video .animated {
+  animation: none;
+}
+.modal-content {
+  width: 58.5%;
+  position: relative;
+  left: 20%;
+}
+.modal-header {
+  text-align:center;
+}

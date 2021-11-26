@@ -1,0 +1,440 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{2CB7EBC8-A8A2-441C-A6B8-A76F64B2158D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Singular</RootNamespace>
+    <AssemblyName>Singular.Silverlight</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <SccProjectName>%24/Singular.Server/Singular.Server</SccProjectName>
+    <SccLocalPath>.</SccLocalPath>
+    <SccAuxPath>http://singulardev1:8080/tfs/dev</SccAuxPath>
+    <SccProvider>{4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Singular.Silverlight.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Singular.Silverlight.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Singular.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+		<Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+			<SpecificVersion>False</SpecificVersion>
+			<HintPath>Dlls\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+		</Reference>
+		<Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+			<SpecificVersion>False</SpecificVersion>
+			<HintPath>Dlls\CrystalDecisions.Shared.dll</HintPath>
+		</Reference>
+    <Reference Include="Csla, Version=4.2.0.0, Culture=neutral, PublicKeyToken=93be5fdc093e4c30, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dlls\Csla.dll</HintPath>
+    </Reference>
+    <Reference Include="DelegateDecompiler, Version=1.0.0.0, Culture=neutral, PublicKeyToken=93b26a10a04705bd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dlls\DelegateDecompiler.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.85.5.452, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dlls\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Documents.Excel.v12.2, Version=12.2.20122.2038, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dlls\Infragistics4.Documents.Excel.v12.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Documents.Reports.v12.2, Version=12.2.20122.2038, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dlls\Infragistics4.Documents.Reports.v12.2.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.5.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dlls\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.xmlworker, Version=5.5.5.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dlls\itextsharp.xmlworker.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data45, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dlls\MySql.Data45.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Helpers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dlls\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Presentation" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="zxing, Version=0.8.0.0, Culture=neutral, PublicKeyToken=4e88037ac681fe60, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dlls\zxing.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AuditTrails\ROAuditTrailDetail.vb" />
+    <Compile Include="AuditTrails\ROAuditTrail.vb" />
+    <Compile Include="AuditTrails\ROAuditTrailHeader.vb" />
+    <Compile Include="AuditTrails\ROAuditTrailTable.vb" />
+    <Compile Include="AuditTrails\ROAuditTrailTableList.vb" />
+    <Compile Include="AuditTrails\ROAuditTrailUserList.vb" />
+    <Compile Include="CheckQueries\CheckQuery.vb" />
+    <Compile Include="CheckQueries\CheckQueryData.vb" />
+    <Compile Include="CheckQueries\CheckQueryList.vb" />
+    <Compile Include="CommonData.vb" />
+    <Compile Include="Compression\CompressedHost.vb" />
+    <Compile Include="Compression\CompressionUtility.vb" />
+    <Compile Include="Correspondence\Correspondence.vb" />
+    <Compile Include="Correspondence\CorrespondenceSettingsBase.vb" />
+    <Compile Include="Correspondence\CorrespondenceTemplates\CorrespondanceDataSource.vb" />
+    <Compile Include="Correspondence\CorrespondenceTemplates\CorrespondanceDataSourceList.vb" />
+    <Compile Include="Correspondence\CorrespondenceTemplates\CorrespondanceTemplate.vb" />
+    <Compile Include="Correspondence\CorrespondenceTemplates\CorrespondanceTemplateAttachment.vb" />
+    <Compile Include="Correspondence\CorrespondenceTemplates\CorrespondanceTemplateAttachmentList.vb" />
+    <Compile Include="Correspondence\CorrespondenceTemplates\CorrespondanceTemplateList.vb" />
+    <Compile Include="Correspondence\DevicePush\AppleSender.vb" />
+    <Compile Include="Correspondence\DevicePush\DeviceMessageSender.vb" />
+    <Compile Include="Correspondence\DevicePush\DeviceNotification.vb" />
+    <Compile Include="Correspondence\DevicePush\DeviceNotificationList.vb" />
+    <Compile Include="Correspondence\Smses\CellFindWS.vb" />
+    <Compile Include="Correspondence\Smses\SmsProviders.vb" />
+    <Compile Include="CSLA\ChildObjectContainer.vb" />
+    <Compile Include="CSLA\CommandBase.vb" />
+    <Compile Include="CSLA\CommandProc.vb" />
+    <Compile Include="CSLA\CSLALib.vb" />
+    <Compile Include="CSLA\DataAnnotations.vb" />
+    <Compile Include="CSLA\Database\ROProc.vb" />
+    <Compile Include="CSLA\Database\ROProcList.vb" />
+    <Compile Include="CSLA\Database\ROProcParameter.vb" />
+    <Compile Include="CSLA\Database\ROProcParameterList.vb" />
+    <Compile Include="CSLA\Documents\Document.vb" />
+    <Compile Include="CSLA\Documents\DocumentList.vb" />
+    <Compile Include="CSLA\Documents\DocumentProviderBase.vb" />
+    <Compile Include="CSLA\Documents\DocumentProviderListBase.vb" />
+    <Compile Include="CSLA\Documents\IDocument.vb" />
+    <Compile Include="CSLA\Documents\IDocumentProvider.vb" />
+    <Compile Include="CSLA\Documents\Settings.vb" />
+    <Compile Include="CSLA\Documents\TemporaryDocument.vb" />
+    <Compile Include="CSLA\DropDownInfo.vb" />
+    <Compile Include="CSLA\ErrorLogs\ErrorLog.vb" />
+    <Compile Include="CSLA\FindCriteriaBase.vb" />
+    <Compile Include="CSLA\Home\HomeScreen.vb" />
+    <Compile Include="CSLA\Home\HomeScreenList.vb" />
+    <Compile Include="CSLA\ISavable.vb" />
+    <Compile Include="CSLA\ISingularBase.vb" />
+    <Compile Include="CSLA\ISingularBusinessBase.vb" />
+    <Compile Include="CSLA\ISingularBusinessListBase.vb" />
+    <Compile Include="CSLA\ISingularListBase.vb" />
+    <Compile Include="CSLA\ISingularReadOnlyBase.vb" />
+    <Compile Include="CSLA\ISingularReadOnlyListBase.vb" />
+    <Compile Include="CSLA\LightObjectBase.vb" />
+    <Compile Include="CSLA\MySqlSingularBusinessBase.vb" />
+    <Compile Include="CSLA\MySqlSingularBusinessListBase.vb" />
+    <Compile Include="CSLA\ObjectErrors.vb" />
+    <Compile Include="CSLA\ObjectIterator.vb" />
+    <Compile Include="CSLA\Paging.vb" />
+    <Compile Include="Localisation\DataLocalisation\Attributes.vb" />
+    <Compile Include="Localisation\DataLocalisation\ObjectVisitor.vb" />
+    <Compile Include="Localisation\DataLocalisation\ObjectVisitorInfo.vb" />
+    <Compile Include="Localisation\DataLocalisation\DataLocalisation.vb" />
+    <Compile Include="Localisation\DataLocalisation\DataValue.vb" />
+    <Compile Include="Localisation\LocalStrings.vb" />
+    <Compile Include="PDF\PdfDocument.vb" />
+    <Compile Include="PDF\PdfDocumentSegment.vb" />
+    <Compile Include="CSLA\PropertySorter.vb" />
+    <Compile Include="CSLA\Rules\RecordChecker.vb" />
+    <Compile Include="CSLA\Rules\RuleHelpers.vb" />
+    <Compile Include="CSLA\Rules\Rules.vb" />
+    <Compile Include="CSLA\SingularBusinessBase.vb" />
+    <Compile Include="CSLA\SingularBusinessListBase.vb" />
+    <Compile Include="CSLA\SingularCriteriaBase.vb" />
+    <Compile Include="CSLA\SingularDataSet.vb" />
+    <Compile Include="CSLA\SingularReadOnlyBase.vb" />
+    <Compile Include="CSLA\SingularReadOnlyListBase.vb" />
+    <Compile Include="CSLA\TableReferences\ROTableReference.vb" />
+    <Compile Include="CSLA\TableReferences\ROTableReferenceList.vb" />
+    <Compile Include="Data\Data.vb" />
+    <Compile Include="Data\FileImporting.vb" />
+    <Compile Include="Data\MySql.vb" />
+    <Compile Include="Data\Sql.vb" />
+    <Compile Include="Correspondence\Emails\Email.vb" />
+    <Compile Include="Correspondence\Emails\EmailAttachment.vb" />
+    <Compile Include="Correspondence\Emails\EmailAttachmentList.vb" />
+    <Compile Include="Correspondence\Emails\EmailList.vb" />
+    <Compile Include="Correspondence\Emails\Emails.vb" />
+    <Compile Include="Correspondence\Emails\SingularCalendarEntry.vb" />
+    <Compile Include="Correspondence\Emails\SingularMail.vb" />
+    <Compile Include="Correspondence\Emails\SingularMailSettings.vb" />
+    <Compile Include="Extensions\CSLAExtensions.vb" />
+    <Compile Include="Extensions\LinqExtensions.vb" />
+    <Compile Include="Extensions\Numeric.vb" />
+    <Compile Include="Extensions\Strings.vb" />
+    <Compile Include="FileHandling\SingularDownloader.vb" />
+    <Compile Include="FileHandling\SingularExplorer.vb" />
+    <Compile Include="FileHandling\SingularUploader.vb" />
+    <Compile Include="Linq\Expressions.vb" />
+    <Compile Include="Localisation\BusinessObjects\ROLocalisationKeyList.vb" />
+    <Compile Include="Localisation\Localisation.vb" />
+    <Compile Include="Localisation\localstring.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>localstring.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Localisation\ObservableResources.vb" />
+    <Compile Include="Misc\Arrays.vb" />
+    <Compile Include="Misc\Barcodes\QRGenerator.vb" />
+    <Compile Include="Misc\Captcha.vb" />
+    <Compile Include="Misc\Colors.vb" />
+    <Compile Include="Misc\Dates.vb" />
+    <Compile Include="Misc\Debug.vb" />
+    <Compile Include="Misc\Defaultable.vb" />
+    <Compile Include="Misc\Dynamic.vb" />
+    <Compile Include="Misc\Files.vb" />
+    <Compile Include="Misc\Formatting.vb" />
+    <Compile Include="Misc\Imaging.vb" />
+    <Compile Include="Misc\Misc.vb" />
+    <Compile Include="Misc\Reflection.Cached.vb" />
+    <Compile Include="Misc\Reflection.vb" />
+    <Compile Include="Misc\Strings.vb" />
+    <Compile Include="Misc\Xml.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PDF\Objects.vb" />
+    <Compile Include="Reporting\DynamicDropDowns\DynamicDropDownList.vb" />
+    <Compile Include="Reporting\DynamicReports\DynamicDropDown.vb" />
+    <Compile Include="Reporting\DynamicReports\DynamicReports.vb" />
+    <Compile Include="Reporting\DynamicReports\Report.vb" />
+    <Compile Include="Reporting\DynamicReports\ReportGroup.vb" />
+    <Compile Include="Reporting\DynamicReports\ReportGroupList.vb" />
+    <Compile Include="Reporting\DynamicReports\ReportList.vb" />
+    <Compile Include="Reporting\DynamicReports\ReportParameter.vb" />
+    <Compile Include="Reporting\DynamicReports\ReportParameterList.vb" />
+    <Compile Include="Reporting\DynamicReports\ROParameter.vb" />
+    <Compile Include="Reporting\DynamicReports\ROParameterList.vb" />
+    <Compile Include="Reporting\DynamicReports\ROReportSource.vb" />
+    <Compile Include="Reporting\DynamicReports\ROReportSourceList.vb" />
+    <Compile Include="Reporting\Grid\GridInfo.vb" />
+    <Compile Include="Reporting\PDFReport.vb" />
+    <Compile Include="Reporting\ReportBase.vb" />
+    <Compile Include="Reporting\ReportCriteriaBase.vb" />
+    <Compile Include="Reporting\ReportFunctions.vb" />
+    <Compile Include="Reporting\ReportHierarchy.vb" />
+    <Compile Include="Security\Objects\ISecurityModel.vb" />
+    <Compile Include="Security\Objects\IUser.vb" />
+    <Compile Include="Security\Objects\IUserList.vb" />
+    <Compile Include="Security\Objects\SecurityModelListBase.vb" />
+    <Compile Include="Security\Objects\ISecurityGroup.vb" />
+    <Compile Include="Security\Objects\ISecurityGroupList.vb" />
+    <Compile Include="Security\Objects\SecurityGroupBase.vb" />
+    <Compile Include="Security\Objects\SecurityGroupListBase.vb" />
+    <Compile Include="Security\Objects\SecurityModelBase.vb" />
+    <Compile Include="Security\Objects\UserBase.vb" />
+    <Compile Include="Security\Objects\UserListBase.vb" />
+    <Compile Include="Security\PrincipalGetter.vb" />
+    <Compile Include="Service\Scheduling.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Scheduling.js</DependentUpon>
+    </Compile>
+    <Compile Include="Service\Scheduling\DailyFrequency.vb" />
+    <Compile Include="Service\Scheduling\Duration.vb" />
+    <Compile Include="Service\Scheduling\Occurs.vb" />
+    <Compile Include="Service\Scheduling\ROScheduleProgress.vb" />
+    <Compile Include="Service\Scheduling\ROScheduleProgressList.vb" />
+    <Compile Include="Service\Scheduling\Schedule.vb" />
+    <Compile Include="Service\ServerProgramInfoBase.vb" />
+    <Compile Include="Service\Service.vb" />
+    <Compile Include="Service\Scheduling\ScheduleTimer.vb" />
+    <Compile Include="Security\Encryption.vb" />
+    <Compile Include="Security\Identity.vb" />
+    <Compile Include="Security\IdentityBase.vb" />
+    <Compile Include="Security\IIdentity.vb" />
+    <Compile Include="Security\IPrincipal.vb" />
+    <Compile Include="Security\Objects\CmdInsSecurityRole.vb" />
+    <Compile Include="Security\Objects\PasswordChecker.vb" />
+    <Compile Include="Security\Objects\ROSecurityRole.vb" />
+    <Compile Include="Security\Objects\ROSecurityRoleHeader.vb" />
+    <Compile Include="Security\Objects\ROSecurityRoleHeaderList.vb" />
+    <Compile Include="Security\Objects\ROSecurityRoleList.vb" />
+    <Compile Include="Security\Objects\SecurityGroup.vb" />
+    <Compile Include="Security\Objects\SecurityGroupList.vb" />
+    <Compile Include="Security\Objects\SecurityGroupRole.vb" />
+    <Compile Include="Security\Objects\SecurityGroupRoleList.vb" />
+    <Compile Include="Security\Objects\SecurityGroupUser.vb" />
+    <Compile Include="Security\Objects\SecurityGroupUserList.vb" />
+    <Compile Include="Security\Objects\SecurityModel.vb" />
+    <Compile Include="Security\Objects\SecurityModelList.vb" />
+    <Compile Include="Security\Objects\User.vb" />
+    <Compile Include="Security\Objects\UserList.vb" />
+    <Compile Include="Security\PasswordPolicyDefinition.vb" />
+    <Compile Include="Security\Principal.vb" />
+    <Compile Include="Security\PrincipleBase.vb" />
+    <Compile Include="Security\Security.vb" />
+    <Compile Include="Service\ServerProgramType.vb" />
+    <Compile Include="Service\ServerProgramTypeList.vb" />
+    <Compile Include="Settings.vb" />
+    <Compile Include="Correspondence\Smses\ISmsChild.vb" />
+    <Compile Include="Correspondence\Smses\PushServerWS.vb" />
+    <Compile Include="Correspondence\Smses\Sms.vb" />
+    <Compile Include="Correspondence\Smses\SmsList.vb" />
+    <Compile Include="Correspondence\Smses\SmsRecipient.vb" />
+    <Compile Include="Correspondence\Smses\SmsRecipientList.vb" />
+    <Compile Include="Correspondence\Smses\SmsSender.vb" />
+    <Compile Include="SystemSettings\SystemSetting.vb" />
+    <Compile Include="SystemSettings\SystemSettingList.vb" />
+    <Compile Include="SystemSettings\SystemSettings.vb" />
+    <Compile Include="SystemSettings\SystemSettingValue.vb" />
+    <Compile Include="SystemSettings\SystemSettingValueList.vb" />
+    <Compile Include="Web\ITypeRenderer.vb" />
+    <Compile Include="Web\JavascriptWriter.vb" />
+    <Compile Include="Web\JSFunctions.vb" />
+    <Compile Include="Web\JSRule.vb" />
+    <Compile Include="Web\Serialisation\JSonWriter.vb" />
+    <Compile Include="Web\Serialisation\JSSerialiser.vb" />
+    <Compile Include="Web\Serialisation\ObjectInfo\ObjectInfo.ArrayMember.vb" />
+    <Compile Include="Web\Serialisation\ObjectInfo\ObjectInfo.ComplexListMember.vb" />
+    <Compile Include="Web\Serialisation\ObjectInfo\ObjectInfo.MemberBase.vb" />
+    <Compile Include="Web\Serialisation\ObjectInfo\ObjectInfo.MemberList.vb" />
+    <Compile Include="Web\Serialisation\ObjectInfo\ObjectInfo.ObjectMember.vb" />
+    <Compile Include="Web\Serialisation\ObjectInfo\ObjectInfo.SimpleMember.vb" />
+    <Compile Include="Web\Serialisation\ObjectInfo\PropertyHelper.vb" />
+    <Compile Include="Web\TypeDefinition.vb" />
+    <Compile Include="Web\Utilities.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Localisation\localstring.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>localstring.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Singular.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controls\" />
+    <Folder Include="CorrespondanceTemplates\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Dlls\Csla.dll" />
+    <Content Include="Dlls\DelegateDecompiler.dll" />
+    <Content Include="Dlls\ICSharpCode.SharpZipLib.dll" />
+    <Content Include="Dlls\Infragistics4.Documents.Excel.v12.2.dll" />
+    <Content Include="Dlls\Infragistics4.Documents.Reports.v12.2.dll" />
+    <Content Include="Dlls\itextsharp.dll" />
+    <Content Include="Dlls\itextsharp.xmlworker.dll" />
+    <Content Include="Dlls\MySql.Data45.dll" />
+    <Content Include="Dlls\System.Web.Helpers.dll" />
+    <Content Include="Dlls\zxing.dll" />
+    <Content Include="Service\Scheduling.js">
+      <Generator>JSCodeGen</Generator>
+      <LastGenOutput>Scheduling.vb</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

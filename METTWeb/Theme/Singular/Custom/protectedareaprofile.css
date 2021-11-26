@@ -1,0 +1,269 @@
+﻿/*Protected Areas Profile Modularised CSS page*/
+/*Author: Amanda Nolokwe
+Purpose:for this page ONLY*/
+
+
+.ExistingUserTablePadding30 {
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 10px;
+}
+.page-heading {
+	border-top: 0;
+	padding: 15px 15px 23px 10px;
+}
+
+.marginBottom20 {
+	margin-bottom: 20px;
+}
+
+.margin0 {
+	margin: 0px;
+}
+
+.ui-widget-header {
+	border: none;
+	background: #f3f3f4;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+div.nav.nav-tabs.ui-tabs.ui-corner-all.ui-widget.ui-widget-content {
+	clear: both;
+	background: #f3f3f4;
+	border: none;
+}
+
+.ui-tabs .ui-tabs-nav li a {
+	float: left;
+	padding: .5em 1em;
+	text-decoration: none;
+	color: #7a7a7a;
+	text-transform: capitalize;
+	font-weight: 400;
+}
+
+.nav.nav-tabs li {
+	background: none;
+	border: none;
+	padding: 12px 12px 12px 12px;
+}
+
+.userTabs .nav.nav-tabs li {
+	padding: 0px;
+	min-height: 48px;
+}
+
+li.ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab.ui-tabs-active.ui-state-active {
+	border-top: 2px solid #1ab394;
+	border-left: 2px solid #1ab394;
+	border-right: 2px solid #1ab394;
+	background: white;
+	font-weight: 500;
+}
+
+.backgroundColor {
+	background-color: #fafafa;
+}
+
+a#ui-id-1.ui-tabs-anchor {
+	box-sizing: unset;
+	box-decoration-break: unset;
+	box-shadow: none;
+}
+
+.ibox-titleContainer {
+	border-top: none;
+	border-bottom: 1px solid #eee;
+	margin-bottom: 15px;
+}
+
+.panel-body {
+	border: none !important;
+	padding-top: 0 !important;
+}
+
+.ibox-contentOrganisationUser {
+	background-color: transparent;
+	border-top: none;
+}
+
+.ui-tabs .ui-tabs-nav li {
+	margin: 0;
+}
+
+.ui-tabs .ui-tabs-panel {
+	display: block;
+	border-width: 0;
+	padding-right: 0px;
+	padding-left: 15px;
+	min-height:350px;
+	height: auto;
+	max-height:100%;
+	background: #fff;
+}
+
+.ui-tabs .ui-tabs-nav li a:active {
+	font-weight: 600;
+}
+
+.ui-widget-content {
+	color: #7a7a7a;
+}
+
+.marginBottomRightButton {
+	margin-bottom: 40px;
+	margin-right: 5px;
+}
+
+.page-heading > div.col-lg-10 > h2 {
+	margin-top: 10px;
+}
+ div.row.col-lg-12 > div > table {
+	width: 102.5%;
+}
+.marginLeft2 {
+	margin-left:2px;
+}
+.buttonColStyling {
+	float: right;
+	padding-right: 0px;
+	display: -webkit-box;
+	padding-left: 5.5%;
+}
+/*.fa.fa-plus-circle{
+	display:none;
+}*/
+.btn-group-sm > .btn, .btn-sm {
+	padding: 5px 10px;
+	font-size: 14px;
+	line-height: 1.5;
+	border-radius: 3px;
+	width: auto;
+	height: 34px;
+}
+.ValBorderErr {
+	border: 1px #8C2300 solid !important;
+	width: 400% !important;
+	padding: 5px;
+	margin-bottom: 12px;
+}
+#tab-Biodiversity > div > div:nth-child(2) > table > thead > tr > th:nth-child(1) {
+	font-weight: 400;
+	padding-bottom: 10px;
+
+}
+.Grid .RButtons .btn {
+	padding: 9px 9px 9px 10px;
+	font-size: 14px;
+	margin-left: 585px;
+	margin-bottom: 10px;
+}
+#tab-Objectives > div > div:nth-child(2) > table > thead > tr > th:nth-child(1) {
+	font-weight: 400;
+	padding-bottom: 10px;
+}
+tbody > tr > td > input {
+	width: 396% !important;
+	padding: 5px;
+	margin-bottom: 12px;
+}
+
+#modalNewUserAdd > div.modal-content.animated.fadeIn.modalNewUserAdd > div:nth-child(3) {
+	padding: 15px;
+}
+#modalExistingUserAdd > div.modal-content.animated.fadeIn.modalExistingUserAdd > div:nth-child(3) {
+	padding: 15px;
+}
+.modal-body{
+	display:none;
+}
+.inmodal .modal-header {
+	padding: 15px 15px;
+	text-align: center;
+}
+select.ValBorderErr{
+	width:100%!important;
+}
+.ibox-content {
+	padding: 15px 0px 15px 15px;
+}
+a {
+	outline: none;
+}
+.ibox-content {
+	border: none;
+}
+.form-control-with-font-awesome-right {
+	/*width: 85%;*/
+	float: right;
+}
+
+.font-awesome-float-style {
+	width: 100%;
+	text-align: center;
+	border: 1px solid #ccc;
+	padding: 9.5px;
+	color: #7a7a7a;
+}
+
+.control-label-with-font-awesome {
+	width: 100%;
+}
+
+.form-control-with-font-awesome-left {
+	width: 85%;
+	float: left;
+}
+#tab-Biodiversity > div > div:nth-child(2) > table > tfoot > tr > td > button > span:nth-child(2){
+	display:none;
+}
+#tab-Objectives > div > div:nth-child(2) > table > tfoot > tr > td > button > span:nth-child(2) {
+	display: none;
+}
+select{
+	padding:5px;
+}
+.ibox-title {
+	border-bottom: 1px solid #e7eaec;
+}
+.infoIconStyle {
+	font-size: 25px;
+	color: #1ab394;
+	margin-bottom: 4px;
+}
+.assessmentMessage {
+	color: #1ab394;
+	font-size:16px;
+}
+.assessmentMessageBox {
+	background: #fafafa;
+	margin-right: 15px;
+	margin-left: 0px;
+	padding: 10px;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.assessmentButtonsMargin {
+	margin-top: 12px;
+	margin-bottom: 12px;
+}
+.assessmentInputsNegMarginTop {
+	margin-top: -10px;
+}
+@media (min-width: 768px) and (max-width: 1366px) {
+ .floatNoneResponsive{
+	float:left!important;
+	}
+	.paddingResponsiveTable {
+		padding-right: 15px;
+		padding-left: 0px;
+	}
+}
+input.checkbox#IsUnofficialProtectedAreaInd_9aa7d15b-26c2-48b8-a728-2965e85a9243 {
+  margin-top:12px;
+}
+input[type=checkbox], input[type=radio] {
+  margin-top: 12px;
+}
+
+

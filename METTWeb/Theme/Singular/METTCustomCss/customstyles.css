@@ -1,0 +1,127 @@
+﻿
+/*Custom Button Styles*/
+
+
+/*Description: Custom Button Styles*/
+/*Author::after Kelly Render*/
+/*Date: 18/05/2018*/
+
+
+/*Custom Padding & Margin Styles*/
+.paddingLeftRight0{
+	padding-left:0px;
+	padding-right:0px;
+}
+.PaddingleftRightNone {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.paddingBottom0{
+	padding-bottom:0px!important;
+}
+.paddingTop0{
+	padding-top:0px;
+}
+
+.marginTopNeg10 {
+	margin-top: -10px;
+}
+.paddingLeft0{
+	padding-left:0px;
+}
+.paddingRight0{
+	padding-right:0px;
+}
+a.navbar-minimalize.minimalize-styl-2.btn.btn-primary {
+	padding:10px;
+}
+.marginLeft10 {
+	margin-left:10px;
+}
+.paddingTop24 {
+	padding-top: 24px;
+}
+.marginTop10{
+	margin-top:10px;
+}
+.padding0 {
+	padding: 0px 0px 20px;
+}
+/*Custom Padding & Margin Styles*/
+/*Validation*/
+.ImgIcon.ImgValidation{
+	float:right;
+	margin-top:-25px!important;
+	margin-right:15px;
+}
+.ImgIcon.ImgOk {
+	float: right;
+	margin-top: -28px !important;
+	margin-right: 15px;
+}
+/*Validation*/
+
+/*Modals*/
+.headerColor {
+	color: #18a689;
+}
+/*Modals*/
+
+/*nav tabs*/
+ul#navigation.nav.nav-tabs {
+	background: #fafafa;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.panelRaiseShadow {
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	
+}
+.tabs-container .panel-body{
+	border-radius:0px;
+}
+/*nav tabs*/
+
+/*Other*/
+label {
+	font-weight: 500;
+}
+textarea{
+	padding:5px;
+}
+
+/*Breadcrumbs*/
+/*span.round-tab i:active {
+	color: #fff;
+}
+span.round-tab:active {
+	background: #1ab394;
+	border: 2px solid #ddd;
+	color: #fff;
+}*/
+
+span.round-tab.active {
+	background: #1ab394;
+	border: 2px solid #ddd;
+	color: #fff;
+}
+
+span.round-tab.active i {
+	color: #fff;
+}
+
+.ProgressDiv {
+	border: 5px solid #000000;
+}
+.ui-datepicker select.ui-datepicker-month, .ui-datepicker select.ui-datepicker-year {
+	color: grey;
+}
+.btn-danger:hover {
+	background-color: #d9534f;
+	border-color: #d9534f;
+	opacity:0.8;
+	color: #FFFFFF;
+}
+a:focus {
+	outline: 5px auto white !important;
+	outline-offset: -2px;
+}

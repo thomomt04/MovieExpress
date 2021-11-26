@@ -1,0 +1,253 @@
+﻿
+<!-- Band Info -->
+<div id="divSGridHelpersBandInfo" data-sgrid="GroupByInfo" class="sg-Dialog" style="width: 320px;" data-bind="with: Singular.SGrid.CurrentGroupBy">
+    <div class="sg-MainHeading" style="margin-top: 0">
+      <div style="padding: 3px; display:inline-block">Band Settings</div>
+
+      <div class="sg-RightButtons">
+        <!--<button type="button" class="btn btn-tiny btn-danger" title="Remove this group"><span class="fa fa-trash-o"></span></button>-->
+        <button type="button" data-bind="click: function () { Singular.SGrid.CurrentGroupBy(null); }" class="btn btn-tiny btn-primary" title="Close this window without making changes"><span class="fa fa-times"></span></button>
+      </div>
+               
+    </div>
+    <div class="sg-Transparent">
+
+      <div class="sg-Content">
+        <label><span class="sg-Label">Show in Export?</span><input type="checkbox" style="vertical-align:middle;" data-bind="checked: ShowInExport" /></label><br />
+        <label><span class="sg-Label">Show in Report?</span><input type="checkbox" style="vertical-align:middle;" data-bind="checked: ShowInReport" /></label><br />
+
+        <div style="margin-top: 5px;">
+          <label><span class="sg-Label">Header Lines</span><input type="text" style="width: 30px;" data-bind="value: ColHeaderLines" /></label>
+        </div>
+      </div>
+
+      <div data-bind="if: IsGroupBand" id="Scroller" style="overflow: auto">
+        <!-- Group by -->
+        <div class="sg-MainHeading">
+            <div style="padding: 3px; display:inline-block">Group by Columns</div>
+
+           <div class="sg-RightButtons">
+             <button type="button" data-bind="visible: GroupColsExpanded(), click: AddColumn" class="btn btn-tiny btn-success" title="Add a new column to the group"><span class="fa fa-plus-circle"></span></button>
+             <button type="button" data-bind="click: function () { GroupColsExpanded(!GroupColsExpanded()) }" class="btn btn-tiny btn-primary" title="View Group by Columns"><span data-bind="  css: 'fa ' + (GroupColsExpanded() ? 'fa-chevron-up' : 'fa-chevron-down')"></span></button>
+ 
+           </div> 
+        </div> 
+        <div class="sg-Transparent" data-bind="foreach: GroupColumns, visibleA: { Condition: GroupColsExpanded(), In: 3, Out: 3 }" style="padding-top: 1px" >
+          
+          <div class="sg-SubHeading">
+           
+            <select data-bind="options: $parent.Columns, value: Key, optionsValue: 'Key', optionsText: 'HeaderText', optionsCaption: 'Select Column...' "></select>
+            <div class="sg-RightButtons">
+              <button type="button" style="height:21px;" data-bind="click: function () { $parent.RemoveColumn($data); }" class="btn btn-tiny btn-danger" title="Remove this column"><span class="fa fa-trash-o"></span></button>
+            </div>
+             
+          </div>
+          <div class="sg-Content" data-bind="visibleA: { Condition: Key(), In: 3, Out: 3 }">
+
+            <span style="vertical-align: top; font-weight: bold;">Group by</span>
+
+            <div style="display:inline-block; width: 150px; margin-left: 10px" data-bind="foreach: GetOptions()">
+                <label><input type="radio" data-bind="attr: { name: $parent.Guid }, value: ID, checked: $parent.GroupTypeID" style="margin-right: 5px; vertical-align:middle" /><span data-bind="  text: Desc" style="vertical-align:middle"></span></label><br />
+            </div>
+
+            <div style="margin-top: 5px; text-align: right;" data-bind="if: SelectedOption() && SelectedOption().ParamValue">
+              <label><span data-bind="text: SelectedOption().ParamPrompt" style="vertical-align: middle; margin-right: 10px; font-weight: bold;"></span><input type="text" data-bind="  value: GroupParam" /></label>
+            </div>
+
+          </div>
+           
+        </div> 
+        <!-- Summaries -->
+        <div class="sg-MainHeading">
+            <div style="padding: 3px; display:inline-block">Summaries</div>
+
+           <div class="sg-RightButtons">
+              <button type="button" data-bind="visible: SummaryColsExpanded(), click: AddSummary" class="btn btn-tiny btn-success" title="Add a new summary"><span class="fa fa-plus-circle"></span></button>
+              <button type="button" data-bind="click: function () { SummaryColsExpanded(!SummaryColsExpanded()) }" class="btn btn-tiny btn-primary" title="View Group by Columns"><span data-bind="  css: 'fa ' + (SummaryColsExpanded() ? 'fa-chevron-up' : 'fa-chevron-down')"></span></button>
+           </div> 
+        </div> 
+        <div class="sg-Transparent" style="padding-top: 1px" data-bind="visibleA: { Condition: SummaryColsExpanded(), In: 3, Out: 3 }">
+          
+          <div data-bind="foreach: SummaryColumns">
+            <div data-bind="if: !Hidden()">
+              <div class="sg-SubHeading">
+           
+                <select data-bind="options: GetTypes(), value: SummaryType, optionsValue: 'ID', optionsText: 'Text', optionsCaption: 'Type...' " onchange="Singular.FocusNextControl(this)" style="width: 75px"></select>
+                <select data-bind="visible: SummaryType() != 5, options: GetAllowedColumns(), value: Key, optionsValue: 'Key', optionsText: 'HeaderText', optionsCaption: 'Select Column...' " style="width: 155px;"></select>
+                <div class="sg-RightButtons">
+                  <button type="button" data-bind="click: function () { Expanded(!Expanded()); }" style="height:21px;" class="btn btn-tiny btn-default" title="Advanced Settings"><span class="fa fa-cog"></span></button>
+                  <button type="button" data-bind="click: function () { $parent.RemoveSummary($data); }" style="height:21px;" class="btn btn-tiny btn-danger" title="Remove this column"><span class="fa fa-trash-o"></span></button>
+                </div>
+             
+              </div>
+              <div class="sg-Content" data-bind="visible: Expanded">
+                <label data-bind="visible: ConditionType() != 2"><span class="sg-Label">Show Column?</span><input type="checkbox" data-bind="checked: Visible" style="vertical-align: middle" /></label>
+              
+                <div data-bind="visible: !ConditionType()" style="margin-top:10px;">
+                  <button class="btn btn-tiny btn-default" data-bind="click: function () { ConditionType(1) }"><span class="fa fa-filter"></span> Add Condition</button>
+                  <button class="btn btn-tiny btn-default" data-bind="click: function () { ConditionType(2) }"><span class="fa fa-random"></span> Make Cross Tab</button>
+                </div>
+              
+                <div style="margin-top: 5px" data-bind="if: ConditionType">
+                  <span class="sg-Label" style="font-weight: bold" data-bind="text: ConditionType() == 1 ? 'On Condition' : 'Cross Tab Column'"></span>
+                  <select data-bind="options: $parent.ChildColumns, value: FilterColumn, optionsValue: 'Key', optionsText: 'HeaderText', optionsCaption: 'n/a' "></select>
+                  <div style="margin-top:2px;" data-bind="with: Filter">
+                    <select style="width: 125px;" data-bind="options: $parent.GetFilterTypes(), value: FilterType, optionsValue: 'ID', optionsText: 'Text', optionsCaption: 'No filter'"></select>
+                    <input type="text" data-bind="AnyValue: Binding, visible: Type != 'b'" style="width: 100px;" />
+                  </div>
+                </div>
+              
+              </div>
+            </div>      
+          </div>
+
+        </div> 
+
+      </div>
+
+      <div data-bind="if: !IsGroupBand">
+        
+        <div class="sg-Content" style="padding: 0">
+          <table class="tblColumns">
+            <thead>
+              <tr>
+                <th style="width:220px; padding-left: 4px; text-align:left; cursor: pointer;" data-bind="click: SortColumns">Columns</th>
+                <th style="width: 20px" class="fa fa-eye" title="Visible"></th>
+                <th style="width: 20px" class="bg-sum" title="Show Total"></th>
+                <th style="width: 20px" class="bg-avg" title="Show Average"></th>
+              </tr>
+            </thead>
+            <tbody data-bind="foreach: SummaryColumns">
+              <tr>
+                <td style="width:220px; text-align:left; padding-left: 4px;" data-bind="text: GridColumn.HeaderText"></td>
+                <td style="width: 20px"><input type="checkbox" data-bind="checked: Visible" /></td>
+                <td style="width: 20px"><input type="checkbox" data-bind="checked: Total, visible: GridColumn.Type == 'n'" /></td>
+                <td style="width: 20px"><input type="checkbox" data-bind="checked: Average, visible: GridColumn.Type == 'n'" /></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+      
+      <div style="margin: 5px; text-align:right">
+        <button type="button" class="btn btn-med btn-success" data-bind="click: RefreshBand">
+        Ok <span class="fa fa-arrow-circle-right"></span>
+      </button>
+      </div>
+    </div>      
+  </div>
+
+<!-- Column Info -->
+<div class="sg-Dialog" style="width:279px" data-sgrid="ColInfo" data-bind="with: Singular.SGrid.CurrentColumnInfo">
+  <div class="sg-MainHeading" style="margin-top: 0">
+    <div style="padding: 3px; display:inline-block">Column Info</div>
+
+    <div class="sg-RightButtons">
+      <button type="button" data-bind="click: function () { Singular.SGrid.CurrentColumnInfo(null); }" class="btn btn-tiny btn-primary" title="Close this window and do nothing"><span class="fa fa-times"></span></button>
+    </div>
+  </div>
+    
+  <div class="sg-Transparent">
+   
+    <div class="sg-Content">
+      <div style="margin-bottom: 4px">
+        <span class="sg-Label">Name:</span><input type="text" data-bind="value: Name" style="vertical-align:auto; margin-left: 3px; width:130px" />
+      </div>
+      <div style="margin-bottom: 4px">
+        <span class="sg-Label">Align:</span> 
+        <div style="display: inline-block; box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.5);">
+          <button style="border-radius: 3px 0 0 3px; border:none" class="fa fa-align-left sg-FRadio" data-bind="style: { 'background-color': TextAlign() == 'left' ? '#999' : '' }, click: function () { TextAlign('left') }"></button><!--
+        --><button class="fa fa-align-center sg-FRadio" data-bind="style: { 'background-color': TextAlign() == 'center' ? '#999' : '' }, click: function () { TextAlign('center') }"></button><!--
+        --><button style="border-radius: 0 3px 3px 0" class="fa fa-align-right sg-FRadio" data-bind="style: { 'background-color': TextAlign() == 'right' ? '#999' : '' }, click: function () { TextAlign('right') }"></button>
+
+        </div>
+        
+      </div>
+      <div style="margin-bottom: 4px" data-bind="visible: CanFormat">
+        <span class="sg-Label">Format:</span><input type="text" data-bind="value: FormatString" style="vertical-align:auto; margin-left: 3px; width:130px" />
+      </div>
+
+      <div style="margin-bottom: 4px">
+        <span class="sg-Label">Frozen?</span><input type="checkbox" data-bind="checked: Frozen" style="vertical-align: middle" />
+      </div>
+      
+    </div>
+  
+    <div class="sg-MainHeading">
+      <span style="display: inline-block; padding: 3px;" data-bind="text: Filters().length == 0 ? 'Add a filter' : 'Current Filters'"></span>
+      <div style="float:right">
+        <button type="button" style="height:21px;" data-bind="click: function (d, e) { AddFilter(e); }" class="btn btn-tiny btn-success" title="Add filter"><span class="fa fa-plus-circle"></span></button>
+        <button type="button" class="btn btn-tiny btn-danger" title="Remove all filters" data-bind="click: RemoveAll"><span class="fa fa-trash-o"></span></button>            
+      </div>
+      </div>
+      <div data-bind="visible: Filters().length > 0">
+        <div class="sg-Content" data-bind="template: { foreach: Filters, afterRender: $data.AddedFilter }">
+            <div style="padding: 1px">
+              <select style="width: 125px;" data-bind="options: $parent.GetFilterTypes(), value: FilterType, optionsValue: 'ID', optionsText: 'Text', optionsCaption: 'Select filter...'"></select>
+              <input type="text" data-bind="AnyValue: Binding, visible: $parent.Type != 'b'" style="width: 100px;" />
+              <button type="button" class="btn btn-tiny btn-danger" title="Remove filter" style="margin-left: 6px; vertical-align:middle;" data-bind="click: function () { $parent.RemoveFilter($data); }"><span class="fa fa-trash-o"></span></button>  
+            </div>
+        </div>
+        <div class="sg-Content">
+          <span style="padding-left: 4px">Filter mode:</span><select style="vertical-align: auto; font-weight: bold; width: 130px; margin-left: 10px" data-bind="options: Singular.SGrid.FilterOperators, value: FilterOperator, optionsValue: 'ID', optionsText: 'Text'"></select>
+        </div>
+      </div>
+        
+
+    <div style="margin: 5px; text-align:right">
+      <button type="button" class="btn btn-med btn-success" data-bind="click: RefreshColumn">
+      Ok <span class="fa fa-arrow-circle-right"></span>
+    </button>
+    </div>
+
+  </div>
+
+</div>
+
+ <!-- Context Menu Add Filter -->
+<script type="text/html" id="SGrid-FilterItem">
+  <span style="width: 90px; display:inline-block" data-bind="html: Text"></span>
+  <input type="text" data-bind="AnyValue: Singular.SGrid.CurrentColumnInfo.AddingFilter.Binding, event: { keyup: function (i, e) { if (e.keyCode == 13) { $(e.target).blur(); $parent.ItemClick($data, e, 'input'); } } }" />
+  <button type="button" class="btn btn-tiny btn-primary" style="padding:1px 0px; margin-left: 2px;" data-bind="click: function (i, e) { $parent.ItemClick($data, e, 'button') }"><span class="fa fa-filter"></span></button>
+</script>
+
+ <!-- Save Layout Dialog -->
+<div id="SaveLayoutOptions">
+  <div class="SimplePopup" data-bind="template: { 'if': Singular.SGrid.GridLayoutInfo, data: Singular.SGrid.GridLayoutInfo }">
+
+    <div class="row">
+      <label style="margin-right: 40px; width: 110px"><span class="label">Save over existing layout</span><input type="radio" name="SaveLayout" value="1" data-bind="checked: SaveType" /></label>
+      <label style="width: 100px"><span class="label">Save as new layout</span><input type="radio" name="SaveLayout" value="0" data-bind="checked: SaveType" /></label>
+    </div>
+
+    <div class="row" data-bind="visible: SaveType() == 1">
+      <label><span class="label">Save over:</span><select style="width:250px" data-bind="options: GridInfo.LayoutList, optionsValue: 'LayoutName', optionsText: 'LayoutName', value: LayoutName"></select></label>
+    </div>
+
+    <div class="row" data-bind="visible: SaveType() == 0">
+      <label><span class="label">Layout Name</span><input style="width:250px" type="text" data-bind="value: NewLayoutName" /></label>
+    </div>
+
+    <div data-bind="visible: SaveType() != 2">
+      <div class="row">
+        <label><span class="label">Remember filters?</span><input type="checkbox" data-bind="checked: IncludeFilters" /></label>
+      </div>
+
+      <div class="row" data-bind="visible: ViewModel.AllowOtherUsersLayout && ViewModel.AllowOtherUsersLayout()">
+        <label><span class="label">Visible to other users?</span><input type="checkbox" data-bind="checked: VisibleToOthers" /></label>
+      </div>
+    </div>
+
+    <div data-bind="visible: Singular.DebugMode, html: Layout" style="font-family:monospace; font-size:11px; width:500px; word-wrap:break-word; margin-top:10px; max-height:400px; overflow:auto;"></div>
+
+    <div style="text-align: right; margin-top: 15px;">
+      <button id="btnSGridHelpersDeleteLayout" class="btn btn-sm btn-danger" style="margin-right: 15px;" type="button" title="Delete this layout" data-bind="visible: CanDelete, click: Singular.SGrid.DeleteLayout"><span class="fa fa-trash"></span> Delete</button> 
+      <button class="btn btn-med btn-success" type="button" data-bind="click: function () { Singular.SGrid.DoSaveLayout() }"><span class="fa fa-check"></span> Save</button> 
+      <button class="btn btn-med btn-primary" type="button" data-bind="  click: function () { Singular.SGrid.CancelSaveLayout() }"><span class="fa fa-times"></span> Cancel</button>
+    </div>
+     
+
+  </div>
+</div>
+<div class="SGrid-Tooltip" data-bind="text: Singular.SGrid.Tooltip, visible: Singular.SGrid.Tooltip"></div>

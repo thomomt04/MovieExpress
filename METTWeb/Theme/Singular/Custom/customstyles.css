@@ -1,0 +1,403 @@
+﻿
+/*Custom Button Styles*/
+
+
+/*Description: Custom Button Styles*/
+/*Author::after Kelly Render*/
+/*Date: 18/05/2018*/
+
+
+/*Custom Padding & Margin Styles*/
+.paddingLeftRight0{
+	padding-left:0px;
+	padding-right:0px;
+}
+.PaddingleftRightNone {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.paddingBottom0{
+	padding-bottom:0px!important;
+}
+.paddingTop0{
+	padding-top:0px;
+}
+
+.marginTopNeg10 {
+	margin-top: -10px;
+}
+.paddingLeft0{
+	padding-left:0px;
+}
+.paddingRight0{
+	padding-right:0px;
+}
+a.navbar-minimalize.minimalize-styl-2.btn.btn-primary {
+	padding:10px;
+}
+.marginLeft10 {
+	margin-left:10px;
+}
+.paddingTop24 {
+	padding-top: 24px;
+}
+.marginTop10{
+	margin-top:10px;
+}
+.padding0 {
+	padding: 0px 0px 20px;
+}
+/*Custom Padding & Margin Styles*/
+/*Validation*/
+.ImgIcon.ImgValidation{
+	float:right;
+	margin-top:-25px!important;
+	margin-right:15px;
+}
+.ImgIcon.ImgOk {
+	float: right;
+	margin-top: -28px !important;
+	margin-right: 15px;
+}
+/*Validation*/
+
+/*Modals*/
+.headerColor {
+	color: #18a689;
+}
+/*Modals*/
+
+/*nav tabs*/
+ul#navigation.nav.nav-tabs {
+	background: #fafafa;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.panelRaiseShadow {
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+
+}
+.tabs-container .panel-body{
+	border-radius:0px;
+}
+/*nav tabs*/
+
+/*Other*/
+label {
+	font-weight: 500;
+}
+textarea{
+	padding:5px;
+}
+
+/*Breadcrumbs*/
+/*span.round-tab i:active {
+	color: #fff;
+}
+span.round-tab:active {
+	background: #1ab394;
+	border: 2px solid #ddd;
+	color: #fff;
+}*/
+
+span.round-tab.active {
+	background: #1ab394;
+	border: 2px solid #ddd;
+	color: #fff;
+}
+
+span.round-tab.active i {
+	color: #fff;
+}
+
+/*.ProgressDiv {
+	border: 5px solid #000000;
+}*/
+.ui-datepicker select.ui-datepicker-month, .ui-datepicker select.ui-datepicker-year {
+	color: grey;
+}
+.btn-danger:hover {
+	background-color: #d9534f;
+	border-color: #d9534f;
+	opacity:0.8;
+	color: #FFFFFF;
+}
+a:focus {
+	outline: 5px auto white !important;
+	outline-offset: -2px;
+}
+.filterButtonWidths {
+    min-width: 30%;
+    width: auto;
+}
+.filterButtonSurveyWidth {
+    min-width: 49%;
+    width: auto;
+}
+
+.btn-bg-color-green {
+  background-color: #1ab394;
+  margin-right: 10px;
+}
+
+.btn-bg-color-teal {
+  background-color: #23c6c8;
+  margin-right: 10px;
+}
+
+
+
+.page-heading {
+  border-top: 0;
+  padding: 15px 15px 23px 10px;
+}
+
+.marginBottom20 {
+  margin-bottom: 20px;
+}
+
+.margin0 {
+  margin: 0px;
+}
+
+.ui-widget-header {
+	border: none;
+	background: #c8d8e4;
+	color: #ffffff;
+	font-weight: bold;
+}
+
+div.nav.nav-tabs.ui-tabs.ui-corner-all.ui-widget.ui-widget-content {
+  clear: both;
+  background: #f3f3f4;
+  border: none;
+}
+
+.ui-tabs .ui-tabs-nav li a {
+  float: left;
+  padding: .5em 1em;
+  text-decoration: none;
+  color: #7a7a7a;
+  text-transform: capitalize;
+  font-weight: 400;
+  outline: none;
+}
+
+.nav.nav-tabs li {
+  background: none;
+  border: none;
+  padding: 12px 12px 12px 12px;
+}
+
+.userTabs .nav.nav-tabs li {
+  padding: 0px;
+  min-height: 48px;
+}
+
+li.ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab.ui-tabs-active.ui-state-active {
+	border-top: 2px solid #52aba8;
+	border-left: 2px solid #52aba8;
+	border-right: 2px solid #52aba8;
+	background: white;
+	font-weight: 500;
+}
+
+.backgroundColor {
+  background-color: #fafafa;
+}
+
+a#ui-id-1.ui-tabs-anchor {
+  box-sizing: unset;
+  box-decoration-break: unset;
+  box-shadow: none;
+}
+
+.ibox-titleContainer {
+  border-top: none;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 15px;
+}
+
+.panel-body {
+  border: none !important;
+  padding-top: 0 !important;
+}
+
+.ibox-contentOrganisationUser {
+  background-color: transparent;
+  border-top: none;
+}
+
+.ui-tabs .ui-tabs-nav li {
+  margin: 0;
+}
+
+.ui-tabs .ui-tabs-panel {
+  display: block;
+  border-width: 0;
+  padding: 20px;
+  /*height: 220px;*/ /*HENDRIK*/
+  background: #fff;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.ui-tabs .ui-tabs-nav li a:active {
+  font-weight: 600;
+}
+
+.ui-widget-content {
+  color: #7a7a7a;
+}
+
+.marginBottomRightButton {
+  margin-bottom: 40px;
+  margin-right: 5px;
+}
+
+.page-heading > div.col-lg-10 > h2 {
+  margin-top: 10px;
+}
+
+div.wizard {
+  margin-top: -15px;
+}
+
+.headingFontColorWeight {
+  color: #1ab394;
+  font-weight: 400;
+}
+
+.tabs-container .tabs-left > .nav-tabs > li > a {
+  padding: 14px 20px 14px 15px;
+}
+
+
+.parent {
+  width: 50px;
+}
+
+.ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.block-ellipsis {
+  display: block;
+  display: -webkit-box;
+  max-width: 100%;
+  height: 43px;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 1;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.checkbox label:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+
+.checkbox .crSmall {
+  position: relative;
+  display: inline-block;
+  border: 1px solid #a9a9a9;
+  border-radius: .25em;
+  width: 0.9em;
+  height: 0.9em;
+  float: left;
+  margin-right: .5em;
+}
+
+.checkbox .cr {
+  position: relative;
+  display: inline-block;
+  border: 1px solid #a9a9a9;
+  border-radius: .25em;
+  width: 1.1em;
+  height: 1.1em;
+  float: left;
+  margin-right: .5em;
+}
+
+  .checkbox .cr .cr-icon {
+    position: absolute;
+    font-size: .6em;
+    line-height: 0;
+    top: 50%;
+    left: 20%;
+  }
+
+.checkbox .crSmall .cr-icon {
+  position: absolute;
+  font-size: .6em;
+  line-height: 0;
+  top: 50%;
+  left: 20%;
+}
+
+.checkbox label input[type="checkbox"] {
+  display: none;
+}
+
+  .checkbox label input[type="checkbox"] + .cr > .cr-icon {
+    transform: scale(3) rotateZ(-20deg);
+    opacity: 0;
+    transition: all .3s ease-in;
+  }
+
+  .checkbox label input[type="checkbox"]:checked + .cr > .cr-icon {
+    transform: scale(1) rotateZ(0deg);
+    opacity: 1;
+  }
+
+  .checkbox label input[type="checkbox"]:disabled + .cr {
+    opacity: .5;
+  }
+
+  .checkbox label input[type="checkbox"] + .crSmall > .cr-icon {
+    transform: scale(3) rotateZ(-20deg);
+    opacity: 0;
+    transition: all .3s ease-in;
+  }
+
+  .checkbox label input[type="checkbox"]:checked + .crSmall > .cr-icon {
+    transform: scale(1) rotateZ(0deg);
+    opacity: 1;
+  }
+
+  .checkbox label input[type="checkbox"]:disabled + .crSmall {
+    opacity: .5;
+  }
+
+
+.form-control-with-font-awesome-right {
+  /*width: 85%;*/
+  float: right;
+}
+
+.font-awesome-float-style {
+  width: 100%;
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 9.5px;
+  color: #7a7a7a;
+}
+
+.control-label-with-font-awesome {
+  width: 100%;
+}
+
+.form-control-with-font-awesome-left {
+  width: 85%;
+  float: left;
+}
+
+.overviewSmallBoxHeight {
+  min-height: 115px;
+  height: auto;
+}

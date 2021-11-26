@@ -1,0 +1,195 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Singular.Service
+</name>
+</assembly>
+<members>
+<member name="T:Singular.Service.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Singular.Service.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Singular.Service.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="M:Singular.Service.ServerProgramBase.RefetchServiceInfo">
+ <summary>
+ Refetches the ServerProgramType object from the database. Returns false if the fetch fails.
+ </summary>
+</member>
+<member name="P:Singular.Service.EmailQueueService.ResendThreshold">
+ <summary>
+ If the email list contains this amount of items or more, it will be refetched once all the email have sent.
+ Use this if your get email proc has a SELECT TOP x clause. The Threshold should be the same or less than the TOP value.
+ </summary>
+</member>
+<member name="P:Singular.Service.SMSQueueService.ResendThreshold">
+ <summary>
+ If the sms list contains this amount of items or more, it will be refetched once all the smses have sent.
+ Use this if your get sms proc has a SELECT TOP x clause. The Threshold should be the same or less than the TOP value.
+ </summary>
+</member>
+<member name="P:Singular.Service.SmsScheduleBase.SenderID">
+ <summary>
+ Required Only for SMS Warehouse.
+ </summary>
+</member>
+<member name="P:Singular.Service.JobManager.RunInfo.JobDate">
+ <summary>
+ The date and time the job was meant to run.
+ </summary>
+</member>
+<member name="P:Singular.Service.JobManager.RunInfo.CompleteDate">
+ <summary>
+ The date and time the job actually completed (database time).
+ </summary>
+</member>
+<member name="M:Singular.Service.JobManager.GetLastRunTime(System.Int32)">
+ <summary>
+ Gets the last run time of a job. 
+ </summary>
+</member>
+<member name="M:Singular.Service.JobManager.RunOncePerDay(System.Int32,System.Action)">
+ <summary>
+ Runs the job today. If the job has run today, it wont run again.
+ </summary>
+ <param name="SubType">Sub Type for this server program. Make an enum and pass in the enum value.</param>
+ <param name="DoWork">Callback if the job hasnt been run.</param>
+</member>
+<member name="M:Singular.Service.JobManager.RunOncePerDay(System.Int32,System.Func{System.Boolean})">
+ <summary>
+ Runs the job today. If the job has run today, it wont run again.
+ </summary>
+ <param name="SubType">Sub Type for this server program. Make an enum and pass in the enum value.</param>
+ <param name="DoWork">Callback if the job hasnt been run. Must return true if the job completed successfully.</param>
+</member>
+<member name="M:Singular.Service.JobManager.RunUntilToday(System.Int32,System.Action{System.DateTime},System.Nullable{System.Int32})">
+ <summary>
+ Runs the job for every day since the last day it ran. Wont run more than once per day.
+ </summary>
+ <param name="subType">Sub Type for this server program. Make an enum and pass in the enum value.</param>
+ <param name="DoWork">Callback if the job hasnt been run. Run date is passed in</param>
+ <param name="MaxNoOfDays">If this is the first time the job ever runs, how far back must it run from?</param>
+ <remarks></remarks>
+</member>
+<member name="M:Singular.Service.JobManager.RunOncePerMonth(System.Int32,System.Action)">
+ <summary>
+ Runs once a month. If the job has run this month, it wont run again. Doesn't restrict to the 1st of the month.
+ </summary>
+ <param name="SubType">Sub Type for this server program. Make an enum and pass in the enum value.</param>
+ <param name="DoWork">Callback if the job hasnt been run.</param>
+</member>
+<member name="T:Singular.Service.MultiInstanceHandler">
+ <summary>
+ Ensures only one instance of the service is running at a time.
+ </summary>
+</member>
+<member name="P:Singular.Service.MultiInstanceHandler.Enabled">
+ <summary>
+ Enable multiple instance checking. This requires a command proc called CmdProcs.cmdCheckServerProgramLock found in the blank DB.
+ </summary>
+</member>
+<member name="P:Singular.Service.MultiInstanceHandler.InstanceName">
+ <summary>
+ The Instance name of this service. Defaults to MachineName.
+ </summary>
+</member>
+<member name="P:Singular.Service.MultiInstanceHandler.ServiceGroupID">
+ <summary>
+ Use this if you have more than one set of services connecting to the database.
+ The multi instance checker will only allow one service to be active per group.
+ </summary>
+</member>
+<member name="P:Singular.Service.MultiInstanceHandler.CheckTimeoutInSeconds">
+ <summary>
+ Time in seconds before checking again if the active service is still running.
+ </summary>
+</member>
+<member name="T:Singular.Service.ServiceUpdater">
+ <summary>
+ Listens for updates to the services / system settings tables.
+ </summary>
+</member>
+<member name="M:Singular.Service.ServiceUpdater.SystemSettingsChanged(System.String)">
+ <summary>
+ Called when a system settings object is saved. The cached setting will be removed, and each program will be notified.
+ </summary>
+ <param name="Message">Full Type name</param>
+</member>
+<member name="P:Singular.Service.ServerProgramProgress.ServerProgramProgressID">
+ <Summary>
+ Gets the Server Program Progress value
+ </Summary>
+</member>
+<member name="P:Singular.Service.ServerProgramProgress.ServerProgramTypeID">
+ <Summary>
+ Gets and sets the Server Program Type value
+ </Summary>
+</member>
+<member name="P:Singular.Service.ServerProgramProgress.Progress">
+ <Summary>
+ Gets and sets the Progress value
+ </Summary>
+</member>
+<member name="P:Singular.Service.ServerProgramProgress.CreatedDate">
+ <Summary>
+ Gets the Created Date value
+ </Summary>
+</member>
+<member name="P:Singular.Service.ServerProgramProgress.Version">
+ <Summary>
+ Gets and sets the Version value
+ </Summary>
+</member>
+<member name="P:Singular.Service.ServerProgramProgress.ProgressTypeID">
+ <Summary>
+ Gets and sets the Progress Type value
+ </Summary>
+</member>
+<member name="P:Singular.Service.ServerProgramProgressDetail.ServerProgramProgressDetailID">
+ <Summary>
+ Gets the Server Program Progress Detail value
+ </Summary>
+</member>
+<member name="P:Singular.Service.ServerProgramProgressDetail.ServerProgramProgressID">
+ <Summary>
+ Gets the Server Program Progress value
+ </Summary>
+</member>
+<member name="P:Singular.Service.ServerProgramProgressDetail.ProgressDetail">
+ <Summary>
+ Gets and sets the Progress Detail value
+ </Summary>
+</member>
+<member name="P:Singular.Service.ServerProgramProgressDetail.CreatedDate">
+ <Summary>
+ Gets the Created Date value
+ </Summary>
+</member>
+<member name="P:Singular.Service.ServerProgramProgressDetail.ProgressTypeID">
+ <Summary>
+ Gets and sets the Progress Type value
+ </Summary>
+</member>
+<member name="M:Singular.Service.ServiceBase.PreSetup">
+ <summary>
+ Called before any settings path / connection setup is done.
+ </summary>
+</member>
+<member name="M:Singular.Service.ServiceBase.OtherSetup">
+ <summary>
+ Called when a database connection has been established.
+ </summary>
+</member>
+</members>
+</doc>

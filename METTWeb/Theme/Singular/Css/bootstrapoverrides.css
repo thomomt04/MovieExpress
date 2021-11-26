@@ -1,0 +1,13 @@
+﻿/*
+    Bootstrap Overrides Style Sheet
+    Author: Dave Elliott
+    Date: 4 March 2018
+    Purpose: This stylesheet holds any base bootstrap CSS classes that have been overriden
+*/
+
+.dropdown-menu .divider {
+  height: 1px;
+  margin: 0px 0;
+  overflow: hidden;
+  background-color: #e5e5e5;
+}

@@ -1,0 +1,239 @@
+﻿/* Version 1.5 */
+body
+{
+  margin: 0;
+  padding: 0;
+  /*overflow: hidden;*/
+}
+.sg-Dialog
+{
+  font-family: Calibri;
+  color: #fff;
+  font-size: 13px;
+  position: absolute;
+  z-index: 99999;
+}
+.sg-MainHeading, .sg-SubHeading
+{
+  margin-top: 3px;
+  padding: 3px;
+  position: relative;
+  box-shadow: 0px 1px 1px rgba(0,0,0,0.5);
+}
+.sg-MainHeading
+{
+  background-color: #222;
+}
+.sg-SubHeading
+{
+  background-color: #333;
+}
+.sg-Content
+{
+  background-color: #464646;
+  padding: 5px;
+  margin-bottom: 3px;
+  padding-right: 0;
+}
+.sg-Transparent
+{
+  background-color: rgba(100,100,100,0.6);
+  padding: 0 4px 3px 4px;
+}
+.sg-Dialog select
+{
+  border: 1px solid transparent;
+  font: inherit;
+  background-color: transparent;
+  color: #fff;
+  vertical-align: middle;
+}
+.sg-Dialog select option
+{
+  color: #000;
+  background-color: #fff;
+}
+.sg-Content input[type=text]
+{
+  width: 80px;
+  border-color: transparent;
+  background-color: #666;
+  color: #fff;
+  vertical-align: middle;
+  font:inherit;
+  border-radius: 1px;
+  box-shadow: 0px 1px 4px 0px rgba(0,0,0,0.5);
+}
+.sg-MainHeading .sg-RightButtons, .sg-SubHeading .sg-RightButtons
+{
+  position: absolute;
+  right: 3px;
+  top: 3px;
+}
+.sg-Label
+{
+  width: 100px;
+  display: inline-block;
+  vertical-align:middle;
+}
+.sg-FRadio
+{
+  font-size: 14px;
+  background-color: #666;
+  padding: 3px 6px;
+  border: none;
+  border-left: 1px solid #aaa;
+  color: #fff;
+}
+.sg-FRadio:hover
+{
+  cursor: pointer;
+  background-color: #777;
+}
+
+
+.tblColumns
+{
+  width: 100%;
+  border-collapse: collapse;
+}
+.tblColumns input
+{
+  margin: 0;
+}
+.tblColumns thead
+{
+  background-color: #222;
+  display: block;
+  box-shadow: 0px 1px 1px rgba(0,0,0,0.5);
+}
+.tblColumns th
+{
+  padding: 5px 0;
+  line-height: 14px;
+  background-position:center;
+  background-repeat: no-repeat;
+}
+.tblColumns tbody
+{
+  display: block;
+  padding-top: 3px;
+  max-height: 500px;
+  overflow-y: auto;
+}
+.tblColumns td
+{
+  padding: 2px 0;
+  text-align: center;
+  word-wrap: break-word;
+}
+.bg-sum
+{
+  padding: 0 !important;
+  height: 14px;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAALHRFWHRDcmVhdGlvbiBUaW1lAEZyaSAxNyBPY3QgMjAxNCAxMjozMToxNiArMDIwMAKV0EgAAAAHdElNRQfeChQGHRCXfQ9cAAAACXBIWXMAAB7CAAAewgFu0HU+AAAABGdBTUEAALGPC/xhBQAAAS5JREFUeNpjYCATMIKIz58//ydG8REg8PT0tAWxWaAC02xsbLKA9BtGRsZLQKE3yBr+//8vC5S3BDIvwMTAGllZWauPHj36HShZDDIVyJ8IFH4HU/Tnz59UoPA3oKGdKBqB4AMQ9wAl/wM11wFpZqDmFqDYD6iNx4CaXrOwsHyAaWSCm8DC8gIo2Qu0eRJQc/Xv37+rYHJAQ64C5TcAmV8wNMI0A3E90Ma5QM21QM0Hgc5MxhZQTFjEWIA2qxAKYRZkDtB0CSA10dra2h5o62KgE+NwaWRC01QC1BQG1DQHqCkDJgd0sjZQPgDI5EHXKADEpUBNoOhoBmoqB/K/wVMJI6MVMGRzgJoFUJwKNLEVmgDeAhXZABVooCUAGVACAMpXALk5YMNABDlJjmwAAOdri8T9uZTdAAAAAElFTkSuQmCC);
+}
+.bg-avg
+{
+  padding: 0 !important;
+  height: 14px;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAALHRFWHRDcmVhdGlvbiBUaW1lAE1vbiAyMCBPY3QgMjAxNCAwODoyNDo0NyArMDIwMDRRbAQAAAAHdElNRQfeChQGHR3pzHPhAAAACXBIWXMAAB7CAAAewgFu0HU+AAAABGdBTUEAALGPC/xhBQAAAShJREFUeNpjYKAE/P//H4a5vn79WvLly5f7QHz6x48fKkhyKJgJST8fUFMGUDCLkZHxIRBz/vnzZy5QTBubZXCN379/1wRS+SBbgXT7v3//GoG0ItCAGrwagQo4QLYC6S1AfJmHh2c1kP8biMWwaWSB0oJ///5NAtIfgJoOcXJyPoP6/SGQkgE6N5Kbm3s50FWBQJf4A8VegTUCA4EXSLkB8UYuLq51MFPZ2Ngygf48AjTA4du3b5+AdCXQYEUgfZ0JarIkkGIHCn4D0l+QNL4ASQNxNBDPA8p/AtpoD7TdjgWqcRbI2UD6O5pXfgLxYqAGGaDceyYmprlAv1+DywLj7B0QXwBiB1zxhiseQc65B3TCAWITDXIC+E9KaoNpvApKLaRoJBsAAAKmu/FT2YAOAAAAAElFTkSuQmCC);
+}
+.SGrid-Tooltip
+{
+  position: absolute;
+  top: 0;
+  background-color: #ffe;
+  font-family: Calibri, Arial;
+  font-size: 12px;
+  padding: 5px;
+  border: 1px solid #222;
+  box-shadow: 0 0 1px rgba(0,0,0,0.7);
+  z-index: 20000;
+}
+
+/* Report data grid page styles */
+.SimplePopup
+{
+  font-family: Calibri, Arial;
+  font-size: 13.5px;
+}
+.SimplePopup div.row
+{
+  padding: 5px 0;
+}
+.SimplePopup div.row span.label
+{
+  display: inline-block;
+  width: 150px;
+  vertical-align: middle;
+}
+.SimplePopup div.row input
+{
+  vertical-align: middle;
+}
+.SimplePopup div.row input[type=text], div.row select
+{
+  border: 1px solid #ccc;
+  padding: 5px;
+  font: inherit;
+}
+.Overlay
+{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width:100%;
+  background-color: rgba(0,0,0,0.8);
+}
+.Popup
+{
+  min-width: 300px;
+  background-color: #fff;
+  position: fixed;
+  padding: 20px;
+  box-shadow: 0 0 20px 2px #000;
+}
+
+.SGrid-Toolbar
+{
+  font-family: Calibri, Arial;
+  font-size: 13.5px;
+  background-color: #f0f0f0;
+  padding: 4px 10px;
+}
+.SGrid-Toolbar input[type=text], .SGrid-Toolbar select
+{
+  border: 1px solid #ccc;
+  padding: 3px;
+  font: inherit;
+}
+.SGrid-ChartBuilder label
+{
+  padding: 6px 0px 3px 6px;
+  display: block;
+}
+.SGrid-ChartBuilder select, .SGrid-ChartBuilder input[type=text]
+{
+  width: 100%;
+  padding: 6px;
+  margin-bottom: 3px;
+  box-sizing:border-box;
+}
+.SGrid-Toolbar .ReportName
+{
+  background-color: #f7f7f7;
+  padding: 4px 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.sg-Loading
+{
+  margin: 3px 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.sg-CellEdit {
+  position: absolute;
+}

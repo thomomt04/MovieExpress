@@ -1,0 +1,96 @@
+﻿.infoIconStyle {
+	font-size: 25px;
+	color: #1ab394;
+	margin-bottom: 4px;
+}
+
+.assessmentMessage {
+	color: #1ab394;
+	font-size: 16px;
+}
+
+.assessmentMessageBox {
+	background: #fafafa;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	padding-top: 10px;
+}
+.txtCommentsInfo {
+	font-size: 11px;
+	color: #808080;
+}
+.threatsButtonWidth{
+	width:70px;
+}
+.tdPosition {
+    position: relative;
+}
+
+.tdRedBackground {
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-color: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: solid;
+    border-width: 2px;
+    /*		border-color: #ed5565;  */
+    border-color: #f8ac59;
+}
+
+
+.infoIconBlue {
+    color: #1b6296;
+}
+
+.SortIcon {
+    background-image: url('../Images/IconSort.png') !important;
+}
+.btnHyperlink {
+    background: none;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    border-image: none;
+    font-family: Arial;
+    font-size: 12px;
+    text-decoration: underline;
+    cursor: pointer;
+   color: #7a7a7a;
+}
+.singulartooltip {
+    position: absolute;
+    display: inline-block;
+    font-size: 9px;
+    font-family: Arial;
+}
+
+.singulartooltip-icon {
+    background: #0026ff;
+    color: #fff;
+    padding: 5px 5px;
+    border-radius: 50%;
+    font-size: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.singulartooltip .singulartooltiptext {
+    visibility: hidden;
+    width: 350px;
+    background-color: black;
+    color: #fff;
+    text-align: left;
+    border-radius: 6px;
+    padding: 10px;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    left: 20px;
+    top: -40%;
+}
+
+.singulartooltip:hover .singulartooltiptext {
+    visibility: visible;
+}

@@ -1,0 +1,65 @@
+﻿.qprogress {
+	position: relative;
+	margin: 4px;
+	float: left;
+	text-align: center;
+	height: 40px;
+}
+
+.qbarOverflow { /* Wraps the rotating .bar */
+	position: relative;
+	overflow: hidden; /* Comment this line to understand the trick */
+	width: 90px;
+	height: 45px; /* Half circle (overflow) */
+	margin-bottom: -14px; /* bring the numbers up */
+}
+
+.qbar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 90px;
+	height: 90px; /* full circle! */
+	border-radius: 50%;
+	box-sizing: border-box;
+	border: 8px solid #eee; /* half gray, */
+	border-bottom-color: #1ab394; /* half azure */
+	border-right-color: #1ab394;
+}
+.inlineFlex {
+	display: inline-flex;
+}
+.marginRight{
+	margin-right:4px;
+}
+ div.row > div:nth-child(2) > div > div.ibox-content > div > table > thead > tr > th.inlineFlex{
+	 border-left:none;
+	 border-right:none;
+	 border-bottom:none;
+}
+.form-control-with-font-awesome-right {
+	/*width: 85%;*/
+	float: right;
+}
+
+.font-awesome-float-style {
+	width: 100%;
+	text-align: center;
+	border: 1px solid #ccc;
+	padding: 9.5px;
+	color: #7a7a7a;
+}
+
+.control-label-with-font-awesome {
+	width: 100%;
+}
+
+.form-control-with-font-awesome-left {
+	width: 85%;
+	float: left;
+}
+@media (min-width: 768px) and (max-width: 1366px) {
+	.paddingResponsiveLeftNone {
+		padding-left: 0px;
+	}
+}

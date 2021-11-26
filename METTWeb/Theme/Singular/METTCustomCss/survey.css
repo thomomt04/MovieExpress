@@ -1,0 +1,23 @@
+﻿.infoIconStyle {
+	font-size: 25px;
+	color: #1ab394;
+	margin-bottom: 4px;
+}
+
+.assessmentMessage {
+	color: #1ab394;
+	font-size: 16px;
+}
+
+.assessmentMessageBox {
+	background: #fafafa;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	padding-top: 10px;
+}
+.txtCommentsInfo {
+	font-size: 11px;
+	color: #808080;
+}
+.threatsButtonWidth{
+	width:70px;
+}

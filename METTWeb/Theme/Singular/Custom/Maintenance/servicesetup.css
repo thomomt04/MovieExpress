@@ -1,0 +1,44 @@
+﻿
+div.DivToolbar {
+	display: none;
+}
+
+div.ui-dialog.ui-corner-all.ui-widget.ui-widget-content.ui-front.ui-draggable.ui-resizable {
+	position: absolute !important;
+	height: auto !important;
+	width: 800px !important;
+	top: 67px !important;
+	left: 402.5px !important;
+	display: block;
+	background: white;
+}
+.fa-check-circle.fa {
+	display: none;
+}
+div.ui-dialog-titlebar.ui-corner-all.ui-widget-header.ui-helper-clearfix.ui-draggable-handle{
+	background:transparent;
+	color:#7a7a7a;
+	border-bottom:1px solid #ddd;
+	padding:10px;
+}
+button.btn.btn-primary {
+	width:100px;
+}
+button.btn-warning.btn.btn-xs {
+	width:100px;
+}
+.fa.fa-edit{
+	display:none;
+}
+button.btn.btn-success {
+	float: right;
+	margin-bottom: 5px;
+	background: #1ab394;
+	border: 1px solid #1ab394;
+	width:100px;
+}
+.btn-warning.btn.btn-xs {
+	background: transparent;
+	color: #1ab394;
+	border: 1px solid #1ab394;
+}

@@ -1,0 +1,606 @@
+﻿body {
+}
+
+@font-face {
+	font-family: 'Roboto-Regular';
+	src: url('fonts/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Roboto-Regular';
+	src: url('fonts/Roboto-Regular.eot') format('embedded-opentype');
+}
+
+@font-face {
+	font-family: 'Roboto-Regular';
+	src: url('fonts/Roboto-Regular.woff') format('woff');
+}
+
+html {
+	-ms-overflow-style: scrollbar;
+}
+
+body {
+	-ms-overflow-style: scrollbar;
+}
+
+
+body {
+	background: #e5e8e8;
+	font-size: 13px;
+	font-family: "Roboto-Regular";
+	margin: 0px;
+	padding: 0px;
+	color: #555;
+}
+
+.DivToolbar {
+	position: relative;
+	padding: 0px;
+	margin: 0px;
+	background: transparent;
+}
+
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+	background-color: transparent !important;
+	background-image: none;
+	color: #337ab7 !important;
+}
+
+.BackgroundContainer {
+	padding: 0;
+	background-color: #f6f6f6;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url('../../Images/backgroundimage.jpg');
+	height: 100vh;
+}
+
+.ContainerBackGroundStyle12 {
+	background-color: white;
+	padding: 5px;
+	height: 70vh;
+	overflow: auto;
+	vertical-align: middle;
+	margin-top: 60px;
+	/*border-radius: 4px;*/
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.ContainerBackGroundStyle10 {
+	padding: 5px;
+	background-color: transparent;
+}
+
+
+legend {
+	display: block;
+	color: #1ab394;
+	text-align: center;
+}
+
+fieldset legend {
+	font-weight: 500;
+}
+
+.LoginMargin.fa.fa-user {
+	margin-right: 10px;
+	margin-top: 4px;
+}
+
+i.fa.fa-caret-down {
+	float: right;
+	margin-right: 12px;
+	margin-top: 5px;
+}
+
+	i.fa.fa-caret-down:first-child {
+		margin-bottom: -20px;
+	}
+
+
+input, input[type='text'] {
+	height: 2.9em;
+}
+
+.LoginButton {
+	width: 300px;
+	margin-left: 0px;
+	background-color: #555;
+	color: #fff;
+	border: solid 1px #555;
+	font-size: 13px;
+}
+
+.LoginButton {
+	left: 0px;
+}
+
+.DivToolbar h1, .DivToolbar h2 {
+	margin-top: 0px;
+	font-weight: normal;
+	text-transform: none;
+}
+
+h1, h2, h3, h4, h5 {
+	font-variant: normal;
+	text-transform: none;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	line-height: 1em;
+	font-weight: 500;
+}
+
+div.row span.label, div.row label, div.row span.display {	
+    padding-top: 10px;
+}
+
+#product em {
+	padding-right: 40px;
+}
+
+.LoggedOutButton {
+	font-weight: 600;
+}
+
+	.LoggedOutButton:hover {
+		font-weight: 600;
+	}
+
+a.LoggedOutButton {
+	font-weight: 600;
+	padding: 5px;
+	margin-bottom: 9px;
+	margin-left: -20px;
+}
+
+	a.LoggedOutButton:hover {
+		font-weight: 600;
+		padding: 5px;
+		margin-bottom: 9px;
+		margin-left: -20px;
+	}
+
+.LoggedOutButtonDropDown {
+	background: #fff;
+	color: #2A3D58;
+	text-transform: capitalize;
+	font-size: 14px;
+	padding-top: 5px;
+	display: none;
+	width: auto;
+	text-align: center;
+	border: 1px solid #2A3D58;
+	margin-top: -10px;
+	height: 35px;
+	vertical-align: middle;
+}
+
+	.LoggedOutButtonDropDown:hover {
+		background: #fafafa;
+		color: #2A3D58;
+		border: 1px solid #2A3D58;
+	}
+
+.btn.active, .btn:active {
+	background-image: none;
+	outline: 0;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+	.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+		outline: none;
+		outline-offset: none;
+	}
+
+.fa-caret-down::before {
+	content: "";
+	margin-left: 0px;
+}
+
+.MarginSpacing {
+	margin-bottom: 10px;
+}
+
+.MarginLeftNeg8 {
+	margin-left: 15%;
+}
+
+.MarginLeft15 {
+	margin-left: 25px;
+}
+
+input[type='checkbox']:before, input[type='radio']:before {
+	content: ' ';
+	position: absolute;
+	top: 0px;
+	left: -15px;
+}
+
+input[type='checkbox']:checked:after, input[type='radio']:checked:after, input.checked:after {
+	content: "\f00c";
+	z-index: 9;
+	position: absolute;
+	font-family: 'FontAwesome';
+	color: #2A3D58;
+	margin-top: 2px;
+	line-height: 16px;
+	text-align: center;
+	margin-left: -12px;
+}
+
+#UserName_d388a0b1-66d0-4476-b286-1fcf001688d8 {
+	margin-left: 12px;
+}
+
+#Form2 > div.page-container > div > div.col-md-12.PaddingTop60 > div > fieldset > div:nth-child(2) > label {
+	margin-left: 12px;
+}
+
+#Form2 > div.page-container > div > div.col-md-12.PaddingTop60 > div > fieldset > div:nth-child(2) > input[type="text"] {
+	margin-left: 12px;
+}
+
+.ForgottPasswordWidth {
+	width: 25%;
+}
+
+.login_block {
+	margin: 0 auto;
+	background: white;
+	border-radius: 4px;
+	margin-top: 50px;
+	float: left;
+	padding-bottom: 15px;
+}
+
+body .ContainerLoggedOut {
+	min-width: 10px;
+}
+
+.LogInButtons {
+	width: 153px;
+	margin-left: -3px;
+	margin-right: 3px;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	.MarginRight4 {
+		margin-right: 4px;
+	}
+
+	#LoadingOverlay > div.page > div.LoginContainer.col-md-12.col-sm-12.col-xs-12 > div > div > div:nth-child(3) > button.LogInButtons.btn.custom_ObtnMD > span.fa.fa-question {
+		margin-right: 4px;
+	}
+
+	#LoadingOverlay > div > div.header > div:nth-child(2) > div.btn-group.btn.LoggedOutButton.PaddingLeft15 > span > span {
+		padding-top: 15px !important;
+	}
+}
+
+#LoadingOverlay > div > div.col-md-12.PaddingTop60 > div > div > div:nth-child(4) > div > div.MarginTop20 > button.DownloadButton.btn {
+	width: 150px;
+}
+
+#LoadingOverlay > div > div.col-md-12.PaddingTop60 > div > div > div:nth-child(4) > div > div.MarginTop20 > button.custom_BbtnMd.btn {
+	width: 145px;
+}
+
+.btn .fa {
+	margin-right: 0px;
+	float: left;
+	padding-top: 0px;
+	margin-left: 0px;
+	margin-top: 2px;
+}
+
+@media screen and (min-width:1024px) and (max-width:1255px) {
+	div.row span.label, div.row label, div.row span.display {
+		display: table;
+		margin-left: 0px;
+	}
+}
+
+.LoginContainer {
+	padding: 0;
+	background-color: #fff;
+	height: 81.5vh;
+	padding-top: 10px;
+	background-image: url(../Images/LoginBackgroundImage.jpg);
+	border-bottom: 3px solid #e60063;
+	margin-bottom: 5px;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+}
+
+.MarginRight1 {
+	margin-right: 1px;
+}
+
+.LoggedInFooterImg {
+	width: 180px;
+	float: right;
+	padding-right: 50px;
+}
+/* IE Only*/ /* IE10+ CSS styles go here */
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+	.btn .fa.fa-question {
+		margin-right: 0px;
+		float: left;
+		padding-top: 0px;
+		margin-left: -5px;
+		margin-top: 0 !important;
+	}
+
+	.btn .fa.fa-lock {
+		margin-right: 0px;
+		float: left;
+		padding-top: 0px;
+		margin-left: -5px;
+		margin-top: 0 !important;
+	}
+}
+
+.header {
+	color: #fff;
+	background: #444;
+	border-bottom: none !important;
+	height: 75px;
+	padding: 0px;
+}
+
+
+.btn.custom_ObtnMD:hover {
+	background-color: #fff;
+	color: #444;
+	border: solid 1px #444;
+}
+
+.LoginSideContainer {
+	float: left;
+	margin-top: 50px;
+}
+
+.LoginHeaddingStyle {
+	color: white;
+	font-weight: 100;
+	font-size: 38px;
+}
+
+.FontWeight {
+	font-weight: bolder;
+}
+
+.SmallText {
+	color: white;
+}
+
+.MarginLeft15 {
+	margin-left: 15%;
+}
+
+.Margin25 {
+	margin-left: 18%;
+}
+
+legend {
+	padding-top: 20px;
+}
+
+
+
+hr {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: 0;
+	border-bottom: 3px solid #e60063;
+}
+
+.Padding20 {
+	padding-left: 20px;
+}
+
+.LogInBox {
+	background: white;
+	padding: 10px;
+	border-radius: 4px;
+	margin-top: 60px;
+}
+
+.TextCenter {
+	text-align: center;
+}
+
+label {
+	display: block;
+	max-width: 100%;
+	margin-bottom: 0px;
+	font-weight: 300;
+	color: #1ab394;
+	font-weight: 500;
+}
+
+.WidthInput {
+	width: 70%;
+}
+
+#UserName_9989e745-19e9-4ca6-907b-efe789ce5efa {
+	width: 70%;
+}
+
+.Margin6 {
+	margin-left: 6px;
+}
+
+.MarginRight5 {
+	margin-left: 50px;
+}
+
+.LoginImgSize {
+	height: 50px;
+	background: #337ab7;
+	padding: 5px;
+	/* width: 100%; */
+	/* text-align: center; */
+}
+
+.md-form label {
+	-webkit-transition: .2s ease-out;
+	transition: .2s ease-out;
+	color: #757575;
+	position: absolute;
+	top: .8rem;
+	left: 0;
+	font-size: 1.6rem;
+	cursor: text;
+}
+
+.LogoSize {
+	width: 150px;
+	/* height: 150; */
+	padding-top: 20px;
+}
+/*Login Styles..*/
+
+.contactButton {
+	float: right;
+	margin-right: 5px;
+	font-size: 14px;
+	background-color: #fff;
+	border: 1px solid #2A3D58;
+	color: #2A3D58;
+	height: 50px;
+	width: 50px;
+	font-weight: 600;
+	border-radius: 49px;
+	margin-top: 0px;
+	margin-bottom: 10px;
+	margin-right: -15px;
+}
+
+	.contactButton:hover {
+		float: right;
+		margin-right: 5px;
+		font-size: 14px;
+		margin-right: -15px;
+		background-color: #004F88;
+		border: 1px solid #004F88;
+		color: #fff;
+	}
+
+.LoginAlias {
+	height: 50px;
+	width: 50px;
+	background: white;
+	border-radius: 49px;
+	border: 1px solid #2A3D58;
+	color: #2A3D58;
+	padding-top: 15px !important;
+	padding-left: 8px;
+	font-size: 18px !important;
+	margin-right: 2px !important;
+	margin-bottom: 9px;
+}
+
+	.LoginAlias:hover {
+		background-color: #004F88;
+		border: 1px solid #004F88;
+		color: #fff;
+	}
+
+.LoggedOutButton {
+	font-weight: 600;
+}
+
+	.LoggedOutButton:hover {
+		font-weight: 600;
+	}
+
+a.LoggedOutButton {
+	font-weight: 600;
+	padding: 5px;
+	margin-bottom: 9px;
+	margin-left: -20px;
+}
+
+	a.LoggedOutButton:hover {
+		font-weight: 600;
+		padding: 5px;
+		margin-bottom: 9px;
+		margin-left: -20px;
+	}
+
+.LoggedOutButtonDropDown {
+	background: #fff;
+	color: #2A3D58;
+	text-transform: capitalize;
+	font-size: 14px;
+	padding-top: 5px;
+	display: none;
+	width: auto;
+	text-align: center;
+	border: 1px solid #4a90e2;
+	margin-top: -10px;
+	height: auto;
+	vertical-align: middle;
+}
+
+	.LoggedOutButtonDropDown:hover {
+		background: #fafafa;
+		color: #2A3D58;
+		border: 1px solid #2A3D58;
+	}
+	
+
+.StackedEditors input[type=text], .StackedEditors input[type=password] {
+	display: block;
+	margin-top: 4px;
+	/*width: 100%;*/
+}
+
+.badge, .btn, .card:not([class*=card-outline-]), .chip, .jumbotron, .modal-dialog.cascading-modal .modal-c-tabs .nav-tabs, .modal-dialog.modal-notify .modal-header, .navbar, .pagination .active .page-link, .z-depth-1 {
+	box-shadow: 
+		0 1px 1px 0 rgba(0,0,0,.14), 
+		0 1px 1px 0 rgba(0,0,0,.12), 
+		0 1px 1px -1px rgba(0,0,0,.2);
+}
+
+input[type=date], input[type=datetime-local], input[type=email], input[type=number], input[type=password], input[type=search-md], input[type=search], input[type=tel], input[type=text], input[type=time], input[type=url], textarea.md-textarea {
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid #bdbdbd;
+	border-radius: 0;
+	outline: 0;
+	height: 2.9rem;
+	width: 100%;
+	font-size: 1.3rem;
+	box-shadow: none;
+	box-sizing: content-box;
+	-webkit-transition: all .3s;
+	transition: all .3s;
+	font-weight: 600;
+	color: #7a7a7a!important;
+}
+.btn-primary {
+	color: #fff;
+	background-color: #1ab394;
+	border-color: #fff;
+	box-shadow:none;
+}
+	.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary, .btn-primary:active:focus, .btn-primary:active:hover, .btn-primary.active:hover, .btn-primary.active:focus {
+		background-color: #18a689;
+		border-color: #18a689;
+		color: #FFFFFF;
+	}
+#RememberMe_de190f92-5cc5-4960-8575-5ac16eeeb3c7{
+	display:none;
+}
+#LoadingOverlay > div > div:nth-child(1) > div:nth-child(5) > fieldset > div:nth-child(4) > label{
+	display:none;
+}
+input[type='checkbox'] {
+	display: none;
+}

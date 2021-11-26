@@ -1,0 +1,161 @@
+﻿.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+	border-top: 1px solid #e7eaec;
+	line-height: 1.42857;
+	padding: 8px;
+	vertical-align: top;
+	font-size: 13px;
+}
+
+.ui-dialog-titlebar.ui-corner-all.ui-widget-header.ui-helper-clearfix.ui-draggable-handle {
+	color: #7a7a7a;
+	background: #fff;
+	border: none;
+	font-weight: 600;
+	font-size: 14px;
+	text-transform: capitalize;
+	border-bottom: 1px solid #ddd;
+	padding-left: 20px;
+}
+
+	.ui-dialog-titlebar.ui-corner-all.ui-widget-header.ui-helper-clearfix.ui-draggable-handle:before {
+		content: "\f234";
+		font-family: FontAwesome;
+		font-style: normal;
+		font-weight: normal;
+		text-decoration: inherit;
+		/*--adjust as necessary--*/
+		color: #7a7a7a;
+		font-size: 14px;
+		padding-right: 0.5em;
+		padding-left: 0.1em;
+		position: absolute;
+		top: 8px;
+		left: -8px;
+		margin-left: 10px;
+	}
+
+.ui-dialog .ui-dialog-content {
+	position: relative;
+	border: 0;
+	padding: 25px;
+	background: none;
+	overflow: auto;
+	zoom: 1;
+	background: #fff;
+}
+
+button.btn-primary.btn.btn-xs {
+	background: #7a7a7a;
+	border: 1px solid #7a7a7a;
+	width: 35px;
+	height: 30px;
+}
+
+.ui-dialog .ui-dialog-titlebar-close {
+	position: absolute;
+	right: .3em;
+	top: 50%;
+	width: 19px;
+	margin: -10px 0 0 0;
+	padding: 1px;
+	height: 18px;
+	display: none;
+}
+
+span.fa-close.fa {
+	display: none;
+}
+
+.fa.fa-plus-circle {
+	display: initial !important;
+	padding-bottom: 5px;
+}
+
+.fa.fa-plus-circle {
+	/*display: none;*/
+}
+
+label {
+	display: inline-block;
+	max-width: 100%;
+	margin-bottom: 5px;
+	font-weight: 600;
+	color: #7a7a7a;
+	margin-top: 5px;
+}
+
+#Cancel {
+	margin-bottom: 15px;
+	padding: 6px;
+	width: 60px;
+	float: right;
+}
+
+.MsgBoxMessage {
+	color: #7a7a7a;
+}
+
+.ui-dialog .ui-dialog-buttonpane button {
+	margin: .5em .4em .5em 0;
+	cursor: pointer;
+	border: 1px solid #23c6c8;
+	background: transparent;
+	color: #23c6c8;
+	width: 130px;
+	height: 32px;
+	border-radius: 4px;
+}
+
+	.ui-dialog .ui-dialog-buttonpane button:hover {
+		margin: .5em .4em .5em 0;
+		cursor: pointer;
+		border: 1px solid #23c6c8;
+		background: transparent;
+		color: #23c6c8;
+		width: 130px;
+		height: 32px;
+		border-radius: 4px;
+	}
+
+div.wrapper.wrapper-content.animated.fadeInRight {
+	background: transparent;
+	margin-top: 0px !important;
+}
+
+table th {
+	font-size: 1.3rem !important;
+	font-weight: 600 !important;
+}
+
+.paddingLeftRight0 {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.fa.fa-floppy-o{
+	display:none;
+}
+#Save {
+	background-color: #1ab394;
+	border-color: #1ab394;
+	color: #FFFFFF;
+}
+#Save:hover {
+	background-color: #1ab394;
+	border-color: #1ab394;
+	opacity:0.8;
+	color: #FFFFFF;
+}
+.btn.btn-outline.btn-warning {
+	background: #1ab394;
+	color: #fff;
+	border: 1px solid #1ab394;
+}
+	.btn.btn-outline.btn-warning:hover {
+		background: #1ab394;
+		color: #fff;
+		border: 1px solid #1ab394;
+		opacity: 0.8;
+	}
+.btn-group-sm > .btn, .btn-sm {
+	font-size: 14px;
+}

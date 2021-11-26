@@ -1,0 +1,493 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{5F74AB00-B5E2-47A3-8DBE-F726CB3D03CD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Singular.Web</RootNamespace>
+    <AssemblyName>Singular.Web</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Singular.Web.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Singular.Web.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</NoWarn>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Singular.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxMin, Version=4.83.4785.14870, Culture=neutral, PublicKeyToken=21ef50ce11b5d80f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dlls\AjaxMin.dll</HintPath>
+    </Reference>
+    <Reference Include="Csla">
+      <HintPath>..\Singular.Server\Dlls\Csla.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Documents.Excel.v12.2, Version=12.2.20122.2038, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Singular.Server\Dlls\Infragistics4.Documents.Excel.v12.2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Helpers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dlls\System.Web.Helpers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Winthusiasm.HtmlEditor, Version=1.9.5.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Dlls\Winthusiasm.HtmlEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Csla" />
+    <Import Include="Csla.Data" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="Singular.Extensions" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Web" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Application\ApplicationSettings.vb" />
+    <Compile Include="BasePages\AuditTrails\AuditTrailLookup.vb" />
+    <Compile Include="BasePages\AuditTrails\AuditTrailLookupControl.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BasePages\CheckQueries\CheckQueryControl.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BasePages\CheckQueries\CheckQueryVM.vb" />
+    <Compile Include="BasePages\Service\ScheduleSetup.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomControls\Helpers\AddOnTheFly.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomControls\Helpers\BindingManager.vb" />
+    <Compile Include="Controls\CustomControls\Helpers\Bootstrap.vb" />
+    <Compile Include="Controls\CustomControls\Helpers\BootstrapGeneral.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomControls\Helpers\FindScreen.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomControls\Helpers\General.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomControls\Helpers\Grid\Grid.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomControls\Helpers\Grid\PagedGrid.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomControls\Helpers\Grid\StaticRowInfo.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomControls\Helpers\ImageResize.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomControls\Helpers\Messages.vb" />
+    <Compile Include="Controls\CustomControls\Helpers\PagedData.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomControls\ServerControls\SMenu.vb" />
+    <Compile Include="Controls\CustomControls\ServerControls\WebSiteStats.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomControls\SGrid\ReportDataVM.vb" />
+    <Compile Include="Controls\CustomControls\SGrid\ROGridUserInfo.vb" />
+    <Compile Include="Controls\CustomControls\SGrid\ROGridUserInfoList.vb" />
+    <Compile Include="Controls\CustomControls\SGrid\SGrid.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\HTMLTextWriter.vb" />
+    <Compile Include="Data\CommonDataJSon.vb" />
+    <Compile Include="Data\DataAnnotations.vb" />
+    <Compile Include="Data\PagedDataManager.vb" />
+    <Compile Include="Data\Serialising\ServerObjectTracker.vb" />
+    <Compile Include="Data\Serialising\SessionJSSerialiser.vb" />
+    <Compile Include="Localisation\JSKeyManager.vb" />
+    <Compile Include="Logging\WebError.vb" />
+    <Compile Include="Misc\BroswerInfo.vb" />
+    <Compile Include="Misc\Enums.vb" />
+    <Compile Include="Reporting\DynamicReports\DynamicCriteria.vb" />
+    <Compile Include="Reporting\DynamicReports\DynamicReportSetupControl.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\DynamicReports\DynamicReportSetupVM.vb" />
+    <Compile Include="Scripts\CSSFile.vb" />
+    <Compile Include="Scripts\JavascriptLocaliser.vb" />
+    <Compile Include="Controls\Controls.vb" />
+    <Compile Include="Controls\CustomControls\Charting\BarChart.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomControls\Charting\ChartingBase.vb" />
+    <Compile Include="Controls\CustomControls\Charting\LineChart.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomControls\Charting\PieChart.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomControls\Helpers\Composite.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomControls\Helpers\ControlScripts.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ControlScripts.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CustomControls\Helpers\Editors.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomControls\Helpers\HelperBase.vb" />
+    <Compile Include="Localisation\LanguageSelector.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BasePages\Security\UsersControl.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Scripts\LibResourceHandler.vb" />
+    <Compile Include="Security\FlatRoleList.vb" />
+    <Compile Include="BasePages\Service\BootstrapServiceSetup.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BasePages\Service\ServiceSetup.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BasePages\Service\ServiceVM.vb" />
+    <Compile Include="Security\WebIdentity.vb" />
+    <Compile Include="ViewModelBase\StatelessViewModel.vb" />
+    <Compile Include="ViewModelBase\ViewModelArgs.vb" />
+    <Compile Include="WebServices\Helpers.vb" />
+    <Compile Include="WebServices\RouteHandler.vb" />
+    <Compile Include="WebServices\StatelessHandlerClient.vb" />
+    <Compile Include="WebServices\StatelessService.vb" />
+    <EmbeddedResource Include="BasePages\SystemSettings\Settings.js" />
+    <Content Include="BasePages\AuditTrails\AuditTrails.css" />
+    <Content Include="Dlls\Infragistics4.Documents.Excel.v12.2.dll" />
+    <EmbeddedResource Include="Files\Javascript\Include\AuditTrails.js" />
+    <EmbeddedResource Include="Files\Javascript\Include\ImageResizer.js" />
+    <EmbeddedResource Include="Files\Javascript\Include\Maintenance.js" />
+    <EmbeddedResource Include="Reporting\DynamicReports\DynamicReportSetup.js" />
+    <EmbeddedResource Include="Controls\CustomControls\SGrid\SGridHelpers.html" />
+    <EmbeddedResource Include="Controls\CustomControls\SGrid\ChartBuilder.html" />
+    <Content Include="Files\CSS\font-awesome.css" />
+    <Content Include="Files\CSS\jquery.comiseo.daterangepicker.css" />
+    <EmbeddedResource Include="Files\CSS\SGrid.css" />
+    <Content Include="Files\Fonts\fontawesome-webfont.svg" />
+    <EmbeddedResource Include="Files\Images\Excl.png" />
+    <EmbeddedResource Include="Files\Images\ExclLarge.png" />
+    <EmbeddedResource Include="Files\Images\IconHelp.png" />
+    <EmbeddedResource Include="Files\Images\IconSort.png" />
+    <EmbeddedResource Include="Files\Images\Info.png" />
+    <EmbeddedResource Include="Files\Images\InfoLarge.png" />
+    <EmbeddedResource Include="Files\Images\MenuIcons-Sm.png" />
+    <EmbeddedResource Include="Files\Images\Ok.png" />
+    <EmbeddedResource Include="Files\Images\OkLarge.png" />
+    <EmbeddedResource Include="Files\Images\Warn.png" />
+    <EmbeddedResource Include="Files\Images\WarnLarge.png" />
+    <EmbeddedResource Include="Files\Javascript\Include\CheckQueries.js" />
+    <EmbeddedResource Include="Files\Javascript\Include\Schedule.js" />
+    <EmbeddedResource Include="Files\Javascript\Include\Security.js" />
+    <EmbeddedResource Include="Files\Images\btnCbo.png" />
+    <Content Include="Files\Javascript\Intellisense.js" />
+    <Content Include="Files\Javascript\JQPlot\jqplot.canvasAxisTickRenderer.js" />
+    <Content Include="Files\Javascript\JQPlot\jqplot.canvasAxisTickRenderer.min.js" />
+    <Content Include="Files\Javascript\JQPlot\jqplot.canvasTextRenderer.js" />
+    <Content Include="Files\Javascript\JQPlot\jqplot.canvasTextRenderer.min.js" />
+    <Content Include="Files\Javascript\JQuery\jquery.comiseo.daterangepicker.js" />
+    <Content Include="Files\Javascript\JQuery\jquery.comiseo.daterangepicker.min.js" />
+    <Content Include="Files\Javascript\JQuery\moment.min.js" />
+    <Content Include="Files\Javascript\Knockout\knockout-2.3.0.patched.min.js" />
+    <Content Include="Files\Javascript\Knockout\knockout-2.3.0.patched.js" />
+    <Content Include="Files\Javascript\Knockout\knockout-2.3.0.debug.js" />
+    <Content Include="Files\Javascript\Knockout\knockout-2.3.0.js" />
+    <Content Include="Files\Javascript\Mobile\CanvasLoader.min.js" />
+    <Content Include="Files\Javascript\Mobile\cordova.js" />
+    <Content Include="Files\Javascript\SGrid\highcharts-custom.js" />
+    <EmbeddedResource Include="Files\Javascript\SGrid\Singular.Drawing.js" />
+    <EmbeddedResource Include="Files\Javascript\SGrid\Singular.Grid.js" />
+    <EmbeddedResource Include="Files\Javascript\SGrid\Singular.GridChart.js" />
+    <EmbeddedResource Include="Files\Javascript\SGrid\Singular.GridReport.js" />
+    <EmbeddedResource Include="Files\Javascript\Singular\KO.Bindings.js" />
+    <Content Include="Files\Javascript\Mobile\KO.Mobile.Bindings.js" />
+    <EmbeddedResource Include="Files\Javascript\Singular\SCombo.js" />
+    <EmbeddedResource Include="Files\Javascript\Singular\Singular.ASPNet.js" />
+    <EmbeddedResource Include="Files\Javascript\Singular\Singular.Controls.js" />
+    <EmbeddedResource Include="Files\Javascript\Singular\Singular.Core.js" />
+    <Compile Include="WebServices\HTTPHandlers\DataHandler.vb" />
+    <Compile Include="WebServices\HTTPHandlers\HttpHandlerBase.vb" />
+    <Compile Include="BasePages\Maintenance\MaintenanceEditor.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BasePages\Maintenance\MaintenanceMenu.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BasePages\Maintenance\MaintenanceStateControl.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomControls\ServerControls\ContentEditing\EditableHTMLControl.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomControls\ServerControls\ContentEditing\WebContent.vb" />
+    <Compile Include="Controls\CustomControls\ServerControls\ContentEditing\WebContentList.vb" />
+    <Compile Include="Controls\CustomControls\ServerControls\MegaMenu.vb" />
+    <Compile Include="Controls\CustomControls\ServerControls\SingularDropDownList.vb" />
+    <Compile Include="Controls\CustomWebControl.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\CustomControls\Helpers\HelperAccessors.vb" />
+    <Compile Include="Data\ClientDataProvider.vb" />
+    <Compile Include="Data\IViewModelPage.vb" />
+    <Compile Include="Controls\PageModelRenderer.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Data\ServerDataProvider.vb" />
+    <Compile Include="Data\FileManager.vb" />
+    <Compile Include="WebServices\HTTPHandlers\FileDownloadHandler.vb" />
+    <Compile Include="WebServices\HTTPHandlers\StatelessHandler.vb" />
+    <Compile Include="WebServices\HTTPHandlers\XapHandler.vb" />
+    <Compile Include="ViewModelBase\EmptyViewModel.vb" />
+    <Compile Include="ViewModelBase\ErrorViewModel.vb" />
+    <Compile Include="WebServices\HTTPHandlers\FileUploadHandler.vb" />
+    <Compile Include="ViewModelBase\ViewModel.vb" />
+    <Compile Include="ViewModelBase\MasterBase.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewModelBase\PageBase.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BasePages\Maintenance\MaintenanceVM.vb" />
+    <Compile Include="WebServices\DataInterfaces.vb" />
+    <Compile Include="WebServices\MobileWCFService.vb" />
+    <Compile Include="Scripts\ScriptFile.vb" />
+    <Compile Include="Scripts\ScriptGroup.vb" />
+    <Compile Include="Scripts\ScriptManager.vb" />
+    <Compile Include="BasePages\SystemSettings\SystemSettingsControl.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BasePages\SystemSettings\SystemSettingsVM.vb" />
+    <Compile Include="Misc\Misc.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Misc\NavigationHelper.vb" />
+    <Compile Include="Reporting\ReportCriteriaControl.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\ReportMenuControl.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\ReportStateControl.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reporting\ReportVM.vb" />
+    <Compile Include="Security\Controls\LoginStatus.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BasePages\Security\SecurityControl.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BasePages\Security\UsersVM.vb" />
+    <Compile Include="Security\IWebIdentity.vb" />
+    <Compile Include="Security\Controls\LoggedInName.vb">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Security\Security.vb" />
+    <Compile Include="BasePages\Security\SecurityVM.vb" />
+    <Compile Include="Security\SiteMapDataSource.vb" />
+    <Compile Include="Security\WebPrinciple.vb" />
+    <Compile Include="Security\WebSecurity.vb" />
+    <Compile Include="Singular.Web.vb" />
+    <Content Include="Files\Javascript\Mobile\Singular.Mobile.Data.js" />
+    <Content Include="Files\Javascript\Mobile\Singular.Mobile.js" />
+    <EmbeddedResource Include="Files\Javascript\Singular\Singular.Paging.js" />
+    <EmbeddedResource Include="Files\Javascript\Singular\Singular.Validation2.js" />
+    <EmbeddedResource Include="Files\Javascript\Singular\Utils.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\CustomControls\Helpers\ControlScripts.resx">
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ControlScripts.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Files\Fonts\fontawesome-webfont.eot" />
+    <None Include="Files\Fonts\fontawesome-webfont.ttf" />
+    <None Include="Files\Fonts\fontawesome-webfont.woff" />
+    <None Include="Files\Fonts\FontAwesome.otf" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Singular.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controls\CustomControls\ServerControls\Localisation\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Dlls\AjaxMin.dll" />
+    <Content Include="Dlls\System.Web.Helpers.dll" />
+    <Content Include="Dlls\Winthusiasm.HtmlEditor.dll" />
+    <Content Include="Files\CSS\jquery.jqplot.min.css" />
+    <EmbeddedResource Include="Files\CSS\Singular.css" />
+    <EmbeddedResource Include="Files\Images\Blank.png" />
+    <EmbeddedResource Include="Files\Images\IconApply.png" />
+    <EmbeddedResource Include="Files\Images\IconAuth.png" />
+    <EmbeddedResource Include="Files\Images\IconBRule.png" />
+    <EmbeddedResource Include="Files\Images\IconDelete.png" />
+    <EmbeddedResource Include="Files\Images\IconEdit.png" />
+    <EmbeddedResource Include="Files\Images\IconError.png" />
+    <EmbeddedResource Include="Files\Images\IconExcel.png" />
+    <EmbeddedResource Include="Files\Images\IconExcelData.png" />
+    <EmbeddedResource Include="Files\Images\IconInfo.png" />
+    <EmbeddedResource Include="Files\Images\IconPDF.png" />
+    <EmbeddedResource Include="Files\Images\IconSave.png" />
+    <EmbeddedResource Include="Files\Images\IconsSmall-1.0.png" />
+    <EmbeddedResource Include="Files\Images\IconUndo.png" />
+    <EmbeddedResource Include="Files\Images\IconWarning.png" />
+    <EmbeddedResource Include="Files\Images\IconWord.png" />
+    <EmbeddedResource Include="Files\Images\Loading.gif" />
+    <EmbeddedResource Include="Files\Images\LoadingSmall.gif" />
+    <EmbeddedResource Include="Files\Images\LockBreak.png" />
+    <EmbeddedResource Include="Files\Images\LockClosed.png" />
+    <EmbeddedResource Include="Files\Images\LockEdit.png" />
+    <EmbeddedResource Include="Files\Images\LockOpen.png" />
+    <EmbeddedResource Include="Files\Images\stars.png" />
+    <Content Include="Files\Javascript\JQPlot\excanvas.min.js" />
+    <Content Include="Files\Javascript\JQPlot\jqplot.barRenderer.js" />
+    <Content Include="Files\Javascript\JQPlot\jqplot.barRenderer.min.js" />
+    <Content Include="Files\Javascript\JQPlot\jqplot.categoryAxisRenderer.js" />
+    <Content Include="Files\Javascript\JQPlot\jqplot.categoryAxisRenderer.min.js" />
+    <Content Include="Files\Javascript\JQPlot\jqplot.dateAxisRenderer.js" />
+    <Content Include="Files\Javascript\JQPlot\jqplot.dateAxisRenderer.min.js" />
+    <Content Include="Files\Javascript\JQPlot\jqplot.highlighter.js" />
+    <Content Include="Files\Javascript\JQPlot\jqplot.highlighter.min.js" />
+    <Content Include="Files\Javascript\JQPlot\jqplot.ohlcRenderer.js" />
+    <Content Include="Files\Javascript\JQPlot\jqplot.ohlcRenderer.min.js" />
+    <Content Include="Files\Javascript\JQPlot\jqplot.pieRenderer.js" />
+    <Content Include="Files\Javascript\JQPlot\jqplot.pieRenderer.min.js" />
+    <Content Include="Files\Javascript\JQPlot\jquery.jqplot.js" />
+    <Content Include="Files\Javascript\JQuery\jquery-1.7.2.js" />
+    <Content Include="Files\Javascript\JQuery\jquery-1.7.2.min.js" />
+    <Content Include="Files\Javascript\JQuery\jquery-ui-1.9.0.custom.js" />
+    <Content Include="Files\Javascript\JQuery\jquery-ui-1.9.0.custom.min.js" />
+    <Content Include="Files\Javascript\JQPlot\jquery.jqplot.min.js" />
+    <EmbeddedResource Include="Files\Javascript\json2.js" />
+    <EmbeddedResource Include="Files\Javascript\Singular\KO.Plugins.js" />
+    <EmbeddedResource Include="Files\Javascript\Singular\Singular.Data.js" />
+    <EmbeddedResource Include="Files\Javascript\Singular\Singular.Graphing.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Singular.Server\Singular.Server.461.vbproj">
+      <Project>{2cb7ebc8-a8a2-441c-a6b8-a76f64b2158d}</Project>
+      <Name>Singular.Server.461</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
